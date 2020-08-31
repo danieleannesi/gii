@@ -1,0 +1,117 @@
+Array
+(
+    [art_codice] => 2471000351
+    [art_descrizione] => CO.E.S. VERDE TA 2504 TUBO DN 25
+    [art_listino1] => 1.4356
+    [art_listino2] => 1.4214
+    [art_data_listino] => 2019-07-13
+    [art_codice_raee] => 
+    [art_uni_mis] => 12
+    [art_cod_iva] => 22
+    [art_scorta_min] => 540.00
+    [art_scorta_max] => 0.00
+    [art_tempo_appro] => 0
+    [art_tipo_art] => 
+    [art_costo_medio] => 0.7100
+    [art_ult_pre_acq] => 0.7100
+    [art_data_ins] => 2019-04-23 00:00:00
+    [art_data_mod] => 0000-00-00 00:00:00
+    [art_cancellato] => 
+    [art_conto_vend] => 
+    [art_classe_merc] => 2
+    [art_sconti_prom] => SI
+    [art_ricar_prev] => 25.0000
+    [art_fornitore] => 90620800
+    [art_min_ordine] => 100.0000
+    [art_trasporto] => 0.0000
+    [art_showroom] => 
+    [art_fittizio] => N
+    [art_escluso_internet] => S
+    [art_iva_agevolata] => S
+    [art_escluso_listino] => S
+    [art_offerta] => N
+    [art_prezzo_offerta] => 0.0000
+    [listino] => 1.4214
+    [raee] => 0
+    [sconto] => 0
+    [val_medio] => 0.71
+    [tqta] => 1052
+    [depositi] => Array
+        (
+            [02] => Array
+                (
+                    [qta] => 0
+                    [val] => -65.04
+                )
+
+            [03] => Array
+                (
+                    [qta] => 0
+                    [val] => -79.95
+                )
+
+            [13] => Array
+                (
+                    [qta] => 268
+                    [val] => 190.28
+                )
+
+            [12] => Array
+                (
+                    [qta] => 784
+                    [val] => 556.64
+                )
+
+            [01] => Array
+                (
+                    [qta] => 0.0000
+                    [val] => 0.0000
+                )
+
+        )
+
+    [valori] => Array
+        (
+            [giac_iniz] => 756
+            [val_iniz] => 536.76
+            [tqta] => 1052
+            [nw_medio] => 0.71
+            [depo_val] => Array
+                (
+                    [02] => Array
+                        (
+                            [qta] => 0
+                            [val] => -65.04
+                        )
+
+                    [03] => Array
+                        (
+                            [qta] => 0
+                            [val] => -79.95
+                        )
+
+                    [13] => Array
+                        (
+                            [qta] => 268
+                            [val] => 190.28
+                        )
+
+                    [12] => Array
+                        (
+                            [qta] => 784
+                            [val] => 556.64
+                        )
+
+                    [01] => Array
+                        (
+                            [qta] => 0.0000
+                            [val] => 0.0000
+                        )
+
+                )
+
+        )
+
+    [ordinato] => 0
+)
+ - SELECT * FROM sconti WHERE CodCli='' AND '0000000001' BETWEEN CodArtDa AND CodArtA ORDER BY (CodArtA - CodArtDa) LIMIT 1 - 

@@ -1,0 +1,757 @@
+#loader {
+  display: none;
+  position: fixed;
+  top:4px;
+  right:4px;
+  border: 1px solid blue;
+}
+
+#pag1 {
+
+}
+
+#pag2 {
+  display: none;
+}
+
+#pag3 {
+  display: none;
+}
+
+li.lista_mod_agg input[type="radio"]:checked ~ span{
+	color:#DDDDDD;
+}
+
+input[id^="cat_radio_"] {
+	display: none;
+}
+
+.tasto_cat_ordine {
+	display: inline-block;
+	height: 70px;
+	width: 200px;
+	margin: 10px;
+	font-size: 24px;
+	text-align: center;
+	padding:10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type="number"] {
+  font-size: inherit;
+  border: 1px solid #A9A9A9;
+  width: 70px;
+  text-align: right;
+}
+
+input[id^="cat_radio_"]:checked + .tasto_cat_ordine {
+	text-decoration: underline;
+	font-weight: bold;
+}
+input[type=radio] {
+    display: none;
+}
+input[type=radio] + label::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+input[type=radio]:checked + label::before {
+    background-color: #45e01f;
+}
+.radio3 + label::before {
+    width: 1em;
+    height: 1em;
+}
+.radio4 + label::before {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.ali_group_ordine {
+	display: none;
+  width: 90%;
+}
+
+
+.tasto_ali_ordine {
+	vertical-align: top;
+	display: inline-block;
+	height: 120px;
+	width: 200px;
+	margin: 2px;
+	padding: 10px;
+  padding-right: 0px;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-size: 24px;
+	cursor :pointer;
+  text-align: center;
+  position: relative;
+}
+
+.tasto_ali_ordine.Pomodoro {
+  background-color: red;
+  color: white;
+}
+
+.tasto_ali_ordine div[id^="qta"] {
+	/* quantita su tasto */
+	position: absolute;
+  background-color: lightgrey;
+	border: 2px solid darkgrey;
+	border-radius: 10px;
+	color: red;
+	font-size: 20px;
+	width: 36px;
+	height: 36px;
+	margin-bottom: 0px;
+  margin-left: 0px;
+	left: -2px;
+  bottom: -2px;
+  padding:7px;
+	display: inline-block;
+	text-align: center;
+}	
+
+.tasto_modifica_alimento {
+  height: 30px;
+	width: 60px;
+	border: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+	display: inline-block;
+  position: absolute;
+  right:0px;
+  bottom:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+	text-align: center;
+}
+
+.ing_group_ordine {
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	position: fixed;
+	z-index:20;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#annulla_mod {
+	background-color: red;
+	display: inline-block;
+	font-size: 18px;
+	margin: 8px;
+	border-radius: 8px;	
+	padding: 6px;
+  margin-top: 25px;
+	border: 2px solid black;
+  vertical-align: top;
+}
+
+#conferma_mod2 {
+	background-color: lightgreen;
+	display: inline-block;
+	margin: 8px;
+  margin-top: 25px;
+	border-radius: 8px;
+	font-size: 18px;
+	padding: 6px;
+	border: 2px solid black;
+  vertical-align: top;
+}
+
+.ing_group_ordine textarea {
+	display: inline-block;
+	margin-top:20px;
+	margin-bottom: 20px;
+	margin-left:25%;
+	margin-right:25%;
+	width: 350px;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	color: black;
+	border: 2px solid darkgrey;
+}
+
+.tasto_ali_ordine .prezzo_ali {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  bottom: 2px;
+}
+
+.ing_group_ordine > div{
+	z-index:20;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background-color: white;
+	border: 2px solid darkgrey;
+  height: 95%;
+}
+
+.tasto_ing_ordine{
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 8px;
+	width:200px;
+	height: 100px;
+	margin: 5px;
+	font-size:18px;
+	background-color: white;
+	color: black;
+	text-align:center;
+}
+
+.sconto_categoria {
+  /* da decidere */
+}
+
+#distanza {
+  position: fixed;
+  top: 53px;
+  left: 950px;
+  display: inline-block;
+  height: 55px;
+  border: 1px solid black;
+  padding: 6px;
+  width: 688px;
+  max-height: 40px;
+}
+
+#distanza span {
+  background-color: #2995d6;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #1e6c9b;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + .tasto_ing_ordine {
+	border: 2px solid green;
+	background-color: lightgreen;
+	text-decoration: underline;
+	color: green;
+}
+
+
+input[type="checkbox"] + .ing_necessario{
+	border: 2px solid darkred;
+	background-color: #ff9191;
+	text-decoration: line-through;
+	color: darkred;
+}
+
+input[type="checkbox"]:checked + .ing_necessario{
+	border: 2px solid green;
+	background-color: lightgreen;
+	text-decoration: none;
+	color: green;
+}
+
+#lista_mod {
+	text-align: center;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	font-size:22px;
+	color: black;
+	margin:5px;
+}
+
+#scroll_ing {
+  width:100%;
+	height: 75%;
+  overflow-y: scroll;
+}
+
+#scroll_ing input[type="checkbox"] {
+	display:none;
+}
+
+
+
+
+#preordine {
+	position: absolute;
+	width: 270px;
+	min-height:80%;
+	border: 1px solid darkgrey;
+	right: 20px;
+	top: 80px;
+  padding: 4px;
+  padding-right: 12px;
+  background-color: white;
+}
+
+/* STRUTTURA DEL CARRELLO */
+#carrello {
+	width:280px;
+  padding-bottom: 45px;
+}
+
+#carrello_container img {
+	width:32px;
+	height: 32px;
+	cursor: pointer;
+  display: inline-block;
+}
+
+#carrello_container {
+	
+}
+
+#carrello_container ul {
+	
+}
+
+#carrello_container ul li{
+	text-align: center;
+	font-weight: bold;
+}
+
+#carrello_container ul li.totali{
+	/* categorie */
+	text-align: right;
+	font-weight: bold;
+}
+
+#carrello_container ul ul{
+
+}
+
+#carrello_container ul ul li{
+	/* pizze */
+	white-space: nowrap;
+	font-weight: normal;
+	text-align: left;
+}
+
+#carrello_container p {
+	display: inline-block;
+	margin: 0px;
+	padding: 1px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#carrello_container p:nth-child(2) {
+	/* qta pizza */
+	width:20px;
+	text-align: right;
+}
+#carrello_container p:nth-child(3) {
+	/* desc pizza */
+	width:140px;
+	text-align: left;
+	white-space: pre-wrap;
+}
+#carrello_container p:nth-child(4) {
+	width:32px;
+	text-align: right;	
+}
+
+#carrello_container .smaller {
+  font-size: smaller;
+}
+
+
+  .anteprima-cliente {
+    border: 1px solid lightgrey;
+    margin: 3px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .anteprima-cliente:hover {
+    border: 2px solid darkgrey;
+    margin: 2px;
+  }
+  
+  .icona-fattura-cliente {
+    float: right;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  
+  #scegli_giorno label div{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    color: darkgrey;
+  }
+  
+  #scegli_giorno input{
+    display:none;
+  }
+  
+  #scegli_giorno input + label{
+    border: 1.5px solid black;
+    color: darkgrey;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+  }
+  
+  #scegli_giorno input:checked + label,
+  #scegli_giorno input:checked + label div{
+    text-decoration: underline;
+    color: black;
+  }
+  
+  #clock {
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+  }
+  
+  #clock + p {
+    display:inline;
+    margin: 2px;
+    padding: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    vertical-align: super;
+  }  
+  
+  #timetable {
+    
+  }
+  
+  #timetable h1 {
+    margin-left:20px;
+  }
+  
+  #timetable > div:nth-child(2) {
+    background-color: white;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    /*height: 90%;*/
+    z-index: 6;
+    /*overflow-y: scroll;*/
+  }
+  
+  #timetable > div:first-child {
+    display:none;
+    /*position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.5);*/
+  }
+  
+  #timetable table {
+    width: 700px;
+    float: left;
+  }
+
+  #timetable th {
+    height:20px;
+    margin: 3px;
+    padding: 3px;
+    border-radius:2px;
+    border: 1.5px solid lightgrey;
+    color: black;
+  }
+
+  
+  #timetable td {
+    width:120px;
+    height:120px;
+    margin: 3px;
+    padding: 3px;
+    border-radius:2px;
+    border: 1.5px solid black;
+    color: black;
+    cursor: pointer;
+  }
+
+  #timetable td div{
+  	display: inline-block;
+  	width: 48%;
+  	max-height: 50px;
+    text-align: center;
+  	font-size: 36px;
+  	color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 100%;
+  }
+
+  #timetable td div p{
+    display: block;
+    height: 10px;
+    margin:0px;
+    padding:0px;
+    font-size: 9px;
+    vertical-align: top;
+  }
+
+  #timetable td div:first-child{
+  /*	background-image: url('../images/moto.png'); */
+    font-size: 30px;
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  }
+
+  #timetable td div:nth-child(2){
+  /*	background-image: url('../images/pizza.png'); */
+  	font-size: 38px;
+    background-size: contain;
+  	background-repeat: no-repeat;
+  }
+
+  #timetable td div:nth-child(3){
+  /*	background-image: url('../images/pizza.png'); */
+  	font-size: 38px;
+    background-size: contain;
+  	background-repeat: no-repeat;
+  }
+
+  #timetable td div:nth-child(4){
+  /*	background-image: url('../images/bibite.png'); */
+  	background-size: contain;
+  	background-position: center top;
+  	background-repeat: no-repeat;
+  }
+
+  
+  #dettaglio_consegna {
+    display: inline-block;
+    width: 700px;
+    padding:0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    vertical-align: top;
+  }
+
+  #dettaglio_consegna .consegne {
+    display: inline-block;
+    width: 300px;
+    padding:10px;
+    margin: 0px;
+    vertical-align: top;
+  }
+
+  .d_consegna {
+    display: inline-block;
+    border: 1px solid lightgrey;
+    padding:5px;
+    width: 95%;
+    margin: 1px;
+  }
+  
+  .vicino {
+  	background-color: lightgreen;
+  }
+  
+  .d_consegna h1 {
+    display: inline-block;
+  }
+  
+  .passato {
+    background-color: lightgrey;
+  }
+  
+  .basso {
+    background-color: #36c948;
+  }
+  
+  .basso:hover {
+    background-color: #94ef9f;
+  }
+  
+  .medio {
+    background-color: #f5b50a;
+  }
+
+  .medio:hover {
+    background-color: #fbde91;
+  }
+
+  .intenso {
+    background-color: red;
+  }
+  
+  .intenso:hover {
+    background-color: #ff5b5b;
+  }
+  
+  .scaduto {
+    background-color: lightgrey;
+    color: white;
+    
+  }
+  
+  .tasto_fattorino {
+  	display: inline-block;
+  	background-color: lightgrey;
+  	border-radius: 5px;
+  	padding: 4px;
+  	margin: 2px;
+  	width: 95%;
+  	min-height: 80px;
+  	cursor: pointer;
+  	border: 1px solid grey;
+    font-size: 28px;
+  }
+  
+  fieldset {
+  	display: inline-block;
+  	background-color: lightgrey;
+  	border-radius: 5px;
+  	padding: 4px;
+  	margin: 2px;
+  	width: 95%;
+  	min-height: 80px;
+  	cursor: pointer;
+  	border: 1px solid grey;
+    font-size: 20px;
+   }
+  
+  .minipizza {
+  	width: 16px;
+  	padding: 1px;
+  	border: 1px solid grey;
+  	margin: 1px;
+
+  }
+  
+  .bottone_generico,
+  #elimina_ordine,
+  #conferma_ordine,
+  .conferma_orario {
+    font-size: 22px;
+    border-radius:5px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 6px;
+    margin: 6px;
+    cursor: pointer;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .conferma_orario {
+  	width: 95%;
+  }
+
+  #imposta_prezzo {
+    position: absolute;
+    right: 5px;
+  }
+
+  #imposta_prezzo > input {
+    display: none;
+    width: 80px;
+    font-size: inherit;
+    text-align: right;
+  }
+
+  #elimina_ordine {
+  	background-color: red;
+  	color: white;
+  	border: 1px solid darkred;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  #bozza_ordine {
+    background-color: #FFD600;
+  }
+  
+  /* tempo */
+  #ordini_incorso {
+  	
+  }
+  #ordini_incorso {
+  	border-collapse: collapse;
+  	border: 1px solid grey;
+  }
+
+  #ordini_incorso tr {
+  	cursor: pointer;
+  }
+
+  #ordini_incorso tr:nth-child(odd) {
+  	background-color: lightgrey;
+  }
+  
+  #ordini_incorso tr:nth-child(even) {
+  	background-color: white;
+  }
+  
+  #step123 {
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;       
+  }
+  
+  #step123 li {
+    display: inline-block;
+    width: 22%;
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 3px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+  
+  #step123 li.done {
+    background-color: lightgreen;
+  }
+  
+  #step123 li.current {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  #step123 li:nth-child(4) {
+    background-color: lightgreen;
+  }
+
+  #step123 li:last-child {
+    width: 40px;
+  }
+
+  #ins_ordine label img{
+    max-height: 40px;
+  }
+
+#bigdialog {
+  display: none;
+}
+
+#map2 {
+  min-width: 1000px;
+  min-height: 800px
+}
+
+#link {
+  display: none;
+}
+

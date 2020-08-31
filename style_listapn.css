@@ -1,0 +1,6 @@
+tr.r:nth-child(even) {background: #CCC}
+tr.r:nth-child(odd) {background: #FFF}
+tr.r { font-size: small; }
+td.r:nth-child(7) { text-align: right; }
+td.r:nth-child(8) { text-align: right; }
+td.r:nth-child(9) { text-align: right; }

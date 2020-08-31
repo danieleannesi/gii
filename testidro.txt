@@ -1,0 +1,1 @@
+SELECT * FROM articoli WHERE 1=1  AND mar_codice='GLS' AND set_codice='38'AND art_descrizioneestesa LIKE '%7311%' ORDER BY art_descrizioneorigine LIMIT 500

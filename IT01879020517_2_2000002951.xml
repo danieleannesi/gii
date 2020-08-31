@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<q1:FatturaElettronica versione="FPA12" xmlns:q1="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>01879020517</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>000001</ProgressivoInvio>
+<FormatoTrasmissione>FPA12</FormatoTrasmissione>
+<CodiceDestinatario>UFM5CR</CodiceDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>00960221000</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>01089330581</CodiceFiscale>
+<Anagrafica>
+<Denominazione>GALLI INNOCENTI E C. SPA</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA R.B.BANDINELLI 54</Indirizzo>
+<CAP>00178</CAP>
+<Comune> ROMA</Comune>
+<Provincia>RM</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<CodiceFiscale>10587971002</CodiceFiscale>
+<Anagrafica>
+<Denominazione>FONDAZIONE MAXXI MUSEO NAZ.D.ARTI XXI SEC.</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA GUIDO RENI 4/A</Indirizzo>
+<CAP>00196</CAP>
+<Comune> ROMA</Comune>
+<Provincia>RM</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2020-03-20</Data>
+<Numero>FPR 00002951/20</Numero>
+<ImportoTotaleDocumento>573.40</ImportoTotaleDocumento>
+</DatiGeneraliDocumento>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>C.I.G. Z442C3A4FD C.U.P.</Descrizione>
+<Quantita>0.00</Quantita>
+<PrezzoUnitario>0.0000</PrezzoUnitario>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<Descrizione>VS.ORDINE PROT. 4130 DEL 21/02/20</Descrizione>
+<Quantita>0.00</Quantita>
+<PrezzoUnitario>0.0000</PrezzoUnitario>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<Descrizione>FRANKE PLATE PIASTRA BASE C/MOTORE X ASCIUG.STRX21</Descrizione>
+<Quantita>2.00</Quantita>
+<PrezzoUnitario>210.0000</PrezzoUnitario>
+<PrezzoTotale>420.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<Descrizione>TRASPORTO</Descrizione>
+<Quantita>1.00</Quantita>
+<PrezzoUnitario>50.0000</PrezzoUnitario>
+<PrezzoTotale>50.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<ImponibileImporto>470.00</ImponibileImporto>
+<Imposta>103.40</Imposta>
+<EsigibilitaIVA>S</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP05</ModalitaPagamento>
+<DataScadenzaPagamento>2020-03-30</DataScadenzaPagamento>
+<ImportoPagamento>470.00</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</q1:FatturaElettronica>

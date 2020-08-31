@@ -1,0 +1,3 @@
+LOAD DATA INFILE 'C:\\wamp64\\tmp\\DEPO.TXT' INTO TABLE articoli_anno
+
+LOAD DATA INFILE 'C:\\wamp64\\tmp\\ARTI.TXT' INTO TABLE articoli

@@ -1,0 +1,1 @@
+SELECT * FROM documtes WHERE DOCT_ID=38532

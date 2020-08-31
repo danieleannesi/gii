@@ -1,0 +1,1 @@
+SELECT * FROM mgforn WHERE mgf_codart='3044813350' AND mgf_codfor='90552900'

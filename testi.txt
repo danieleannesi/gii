@@ -1,0 +1,63 @@
+qr=SELECT * FROM articoli_anno WHERE dep_anno='2020' AND dep_codice='0210606050' - dep_inizio={"02":{"giacenza_ini":"131.0000","valore_ini":"43739.4197","giac_ini_esposizione":"0.0000","giac_ini_riparazione":"0.0000","giac_ini_lavorazione":"0.0000","giac_ini_visione":"0.0000","giac_ini_obsoleta":"0.0000","giac_ini_visforn":"0.0000"},"03":{"giacenza_ini":"15.0000","valore_ini":"5008.3305","giac_ini_esposizione":"0.0000","giac_ini_riparazione":"0.0000","giac_ini_lavorazione":"0.0000","giac_ini_visione":"0.0000","giac_ini_obsoleta":"0.0000","giac_ini_visforn":"0.0000"},"04":{"giacenza_ini":"0.0000","valore_ini":"0.0000","giac_ini_esposizione":"0.0000","giac_ini_riparazione":"0.0000","giac_ini_lavorazione":"0.0000","giac_ini_visione":"0.0000","giac_ini_obsoleta":"0.0000","giac_ini_visforn":"0.0000"},"05":{"giacenza_ini":"0.0000","valore_ini":"0.0000","giac_ini_esposizione":"0.0000","giac_ini_riparazione":"0.0000","giac_ini_lavorazione":"0.0000","giac_ini_visione":"0.0000","giac_ini_obsoleta":"0.0000","giac_ini_visforn":"0.0000"},"06":{"giacenza_ini":"0.0000","valore_ini":"0.0000","giac_ini_esposizione":"0.0000","giac_ini_riparazione":"0.0000","giac_ini_lavorazione":"0.0000","giac_ini_visione":"0.0000","giac_ini_obsoleta":"0.0000","giac_ini_visforn":"0.0000"}} - giac.ini=146 - Array
+(
+    [02] => Array
+        (
+            [giacenza_ini] => 131.0000
+            [valore_ini] => 43739.4197
+            [giac_ini_esposizione] => 0.0000
+            [giac_ini_riparazione] => 0.0000
+            [giac_ini_lavorazione] => 0.0000
+            [giac_ini_visione] => 0.0000
+            [giac_ini_obsoleta] => 0.0000
+            [giac_ini_visforn] => 0.0000
+        )
+
+    [03] => Array
+        (
+            [giacenza_ini] => 15.0000
+            [valore_ini] => 5008.3305
+            [giac_ini_esposizione] => 0.0000
+            [giac_ini_riparazione] => 0.0000
+            [giac_ini_lavorazione] => 0.0000
+            [giac_ini_visione] => 0.0000
+            [giac_ini_obsoleta] => 0.0000
+            [giac_ini_visforn] => 0.0000
+        )
+
+    [04] => Array
+        (
+            [giacenza_ini] => 0.0000
+            [valore_ini] => 0.0000
+            [giac_ini_esposizione] => 0.0000
+            [giac_ini_riparazione] => 0.0000
+            [giac_ini_lavorazione] => 0.0000
+            [giac_ini_visione] => 0.0000
+            [giac_ini_obsoleta] => 0.0000
+            [giac_ini_visforn] => 0.0000
+        )
+
+    [05] => Array
+        (
+            [giacenza_ini] => 0.0000
+            [valore_ini] => 0.0000
+            [giac_ini_esposizione] => 0.0000
+            [giac_ini_riparazione] => 0.0000
+            [giac_ini_lavorazione] => 0.0000
+            [giac_ini_visione] => 0.0000
+            [giac_ini_obsoleta] => 0.0000
+            [giac_ini_visforn] => 0.0000
+        )
+
+    [06] => Array
+        (
+            [giacenza_ini] => 0.0000
+            [valore_ini] => 0.0000
+            [giac_ini_esposizione] => 0.0000
+            [giac_ini_riparazione] => 0.0000
+            [giac_ini_lavorazione] => 0.0000
+            [giac_ini_visione] => 0.0000
+            [giac_ini_obsoleta] => 0.0000
+            [giac_ini_visforn] => 0.0000
+        )
+
+)

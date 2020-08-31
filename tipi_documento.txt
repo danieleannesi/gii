@@ -1,0 +1,11 @@
+1 = Bolla o Doc. Interno da FT010
+2 = Fattura accompagnatoria
+3 = Scontrino
+4 = Buono di acquisto (da reso merce)
+5 = Fattura caparra
+6 = Scontrino caparra
+7 = Fattura differita
+8 = Nota di credito
+9 = Nota di debito
+A = Bolla o Doc. Interno da MG010
+B = Incasso versam. su ORDINE

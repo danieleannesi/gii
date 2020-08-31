@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\wamp64\www\gii\gii.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/gii/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/gii/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+	</lastopfiles>
+	<errors version="5.11">
+		<errfile name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap.min.css">
+			<error val="9;5;24;5;2502;1;"/>
+			<error val="414;5;436;5;2502;1;"/>
+			<error val="392;5;414;5;2502;1;"/>
+			<error val="370;5;392;5;2502;1;"/>
+			<error val="436;5;459;5;2502;1;"/>
+			<error val="352;5;370;5;2502;1;"/>
+			<error val="152;5;167;5;2502;1;"/>
+			<error val="304;5;321;5;2502;1;"/>
+			<error val="337;5;352;5;2502;1;"/>
+			<error val="655;5;758;5;2502;1;"/>
+			<error val="459;5;655;5;2502;1;"/>
+			<error val="180;5;195;5;2502;1;"/>
+			<error val="195;5;215;5;2502;1;"/>
+			<error val="121;5;137;5;2502;1;"/>
+			<error val="24;5;41;5;2502;1;"/>
+			<error val="271;5;286;5;2502;1;"/>
+			<error val="321;5;337;5;2502;1;"/>
+			<error val="87;5;104;5;2502;1;"/>
+			<error val="58;5;73;5;2502;1;"/>
+			<error val="215;5;233;5;2502;1;"/>
+			<error val="41;5;58;5;2502;1;"/>
+			<error val="73;5;87;5;2502;1;"/>
+			<error val="233;5;253;5;2502;1;"/>
+			<error val="253;5;271;5;2502;1;"/>
+			<error val="137;5;152;5;2502;1;"/>
+			<error val="286;5;304;5;2502;1;"/>
+			<error val="167;5;180;5;2502;1;"/>
+			<error val="104;5;121;5;2502;1;"/>
+			<error val="874;5;914;5;2502;1;"/>
+			<error val="844;5;874;5;2502;1;"/>
+			<error val="1557;5;1598;5;2502;1;"/>
+			<error val="1659;5;1697;5;2502;1;"/>
+			<error val="1697;5;1727;5;2502;1;"/>
+			<error val="2572;5;2575;5;2501;1;"/>
+			<error val="6900;5;6919;5;2502;1;"/>
+			<error val="7874;5;7894;5;2502;1;"/>
+			<error val="7835;5;7861;5;2502;1;"/>
+			<error val="7935;5;7953;5;2502;1;"/>
+			<error val="7996;5;8013;5;2502;1;"/>
+			<error val="8054;5;8078;5;2502;1;"/>
+			<error val="8133;5;8150;5;2502;1;"/>
+			<error val="8191;5;8208;5;2502;1;"/>
+			<error val="8249;5;8273;5;2502;1;"/>
+			<error val="8324;5;8342;5;2502;1;"/>
+			<error val="8389;5;8412;5;2502;1;"/>
+			<error val="8458;5;8482;5;2502;1;"/>
+			<error val="8530;5;8547;5;2502;1;"/>
+			<error val="8581;5;8605;5;2502;1;"/>
+			<error val="8653;5;8677;5;2502;1;"/>
+			<error val="8725;5;8742;5;2502;1;"/>
+			<error val="8776;5;8800;5;2502;1;"/>
+			<error val="8848;5;8872;5;2502;1;"/>
+			<error val="8920;5;8937;5;2502;1;"/>
+			<error val="8972;5;8996;5;2502;1;"/>
+			<error val="9045;5;9069;5;2502;1;"/>
+			<error val="9118;5;9136;5;2502;1;"/>
+			<error val="9178;5;9196;5;2502;1;"/>
+			<error val="9217;5;9235;5;2502;1;"/>
+			<error val="9253;5;9270;5;2502;1;"/>
+			<error val="9287;5;9304;5;2502;1;"/>
+			<error val="9321;5;9338;5;2502;1;"/>
+			<error val="9355;5;9372;5;2502;1;"/>
+			<error val="9389;5;9406;5;2502;1;"/>
+			<error val="9423;5;9440;5;2502;1;"/>
+			<error val="9457;5;9474;5;2502;1;"/>
+			<error val="9491;5;9508;5;2502;1;"/>
+			<error val="9525;5;9542;5;2502;1;"/>
+			<error val="9559;5;9576;5;2502;1;"/>
+			<error val="9594;5;9612;5;2502;1;"/>
+			<error val="9631;5;9649;5;2502;1;"/>
+			<error val="9668;5;9686;5;2502;1;"/>
+			<error val="10110;5;10130;5;2502;1;"/>
+			<error val="10071;5;10097;5;2502;1;"/>
+			<error val="10174;5;10192;5;2502;1;"/>
+			<error val="10238;5;10255;5;2502;1;"/>
+			<error val="10299;5;10323;5;2502;1;"/>
+			<error val="10381;5;10398;5;2502;1;"/>
+			<error val="10442;5;10459;5;2502;1;"/>
+			<error val="10503;5;10527;5;2502;1;"/>
+			<error val="10581;5;10599;5;2502;1;"/>
+			<error val="10649;5;10672;5;2502;1;"/>
+			<error val="10721;5;10745;5;2502;1;"/>
+			<error val="10796;5;10813;5;2502;1;"/>
+			<error val="10850;5;10874;5;2502;1;"/>
+			<error val="10925;5;10949;5;2502;1;"/>
+			<error val="11000;5;11017;5;2502;1;"/>
+			<error val="11054;5;11078;5;2502;1;"/>
+			<error val="11129;5;11153;5;2502;1;"/>
+			<error val="11204;5;11221;5;2502;1;"/>
+			<error val="11259;5;11283;5;2502;1;"/>
+			<error val="11335;5;11359;5;2502;1;"/>
+			<error val="11411;5;11429;5;2502;1;"/>
+			<error val="11474;5;11492;5;2502;1;"/>
+			<error val="11516;5;11534;5;2502;1;"/>
+			<error val="11555;5;11572;5;2502;1;"/>
+			<error val="11592;5;11609;5;2502;1;"/>
+			<error val="11629;5;11646;5;2502;1;"/>
+			<error val="11666;5;11683;5;2502;1;"/>
+			<error val="11703;5;11720;5;2502;1;"/>
+			<error val="11740;5;11757;5;2502;1;"/>
+			<error val="11777;5;11794;5;2502;1;"/>
+			<error val="11814;5;11831;5;2502;1;"/>
+			<error val="11851;5;11868;5;2502;1;"/>
+			<error val="11888;5;11905;5;2502;1;"/>
+			<error val="11926;5;11944;5;2502;1;"/>
+			<error val="11966;5;11984;5;2502;1;"/>
+			<error val="12006;5;12024;5;2502;1;"/>
+			<error val="12509;5;12529;5;2502;1;"/>
+			<error val="12470;5;12496;5;2502;1;"/>
+			<error val="12573;5;12591;5;2502;1;"/>
+			<error val="12637;5;12654;5;2502;1;"/>
+			<error val="12698;5;12722;5;2502;1;"/>
+			<error val="12780;5;12797;5;2502;1;"/>
+			<error val="12841;5;12858;5;2502;1;"/>
+			<error val="12902;5;12926;5;2502;1;"/>
+			<error val="12980;5;12998;5;2502;1;"/>
+			<error val="13048;5;13071;5;2502;1;"/>
+			<error val="13120;5;13144;5;2502;1;"/>
+			<error val="13195;5;13212;5;2502;1;"/>
+			<error val="13249;5;13273;5;2502;1;"/>
+			<error val="13324;5;13348;5;2502;1;"/>
+			<error val="13399;5;13416;5;2502;1;"/>
+			<error val="13453;5;13477;5;2502;1;"/>
+			<error val="13528;5;13552;5;2502;1;"/>
+			<error val="13603;5;13620;5;2502;1;"/>
+			<error val="13658;5;13682;5;2502;1;"/>
+			<error val="13734;5;13758;5;2502;1;"/>
+			<error val="13810;5;13828;5;2502;1;"/>
+			<error val="13873;5;13891;5;2502;1;"/>
+			<error val="13915;5;13933;5;2502;1;"/>
+			<error val="13954;5;13971;5;2502;1;"/>
+			<error val="13991;5;14008;5;2502;1;"/>
+			<error val="14028;5;14045;5;2502;1;"/>
+			<error val="14065;5;14082;5;2502;1;"/>
+			<error val="14102;5;14119;5;2502;1;"/>
+			<error val="14139;5;14156;5;2502;1;"/>
+			<error val="14176;5;14193;5;2502;1;"/>
+			<error val="14213;5;14230;5;2502;1;"/>
+			<error val="14250;5;14267;5;2502;1;"/>
+			<error val="14287;5;14304;5;2502;1;"/>
+			<error val="14325;5;14343;5;2502;1;"/>
+			<error val="14365;5;14383;5;2502;1;"/>
+			<error val="14405;5;14423;5;2502;1;"/>
+			<error val="14908;5;14928;5;2502;1;"/>
+			<error val="14869;5;14895;5;2502;1;"/>
+			<error val="14972;5;14990;5;2502;1;"/>
+			<error val="15036;5;15053;5;2502;1;"/>
+			<error val="15097;5;15121;5;2502;1;"/>
+			<error val="15179;5;15196;5;2502;1;"/>
+			<error val="15240;5;15257;5;2502;1;"/>
+			<error val="15301;5;15325;5;2502;1;"/>
+			<error val="15379;5;15397;5;2502;1;"/>
+			<error val="15447;5;15470;5;2502;1;"/>
+			<error val="15519;5;15543;5;2502;1;"/>
+			<error val="15594;5;15611;5;2502;1;"/>
+			<error val="15648;5;15672;5;2502;1;"/>
+			<error val="15723;5;15747;5;2502;1;"/>
+			<error val="15798;5;15815;5;2502;1;"/>
+			<error val="15852;5;15876;5;2502;1;"/>
+			<error val="15927;5;15951;5;2502;1;"/>
+			<error val="16002;5;16019;5;2502;1;"/>
+			<error val="16057;5;16081;5;2502;1;"/>
+			<error val="16133;5;16157;5;2502;1;"/>
+			<error val="16209;5;16227;5;2502;1;"/>
+			<error val="16272;5;16290;5;2502;1;"/>
+			<error val="16314;5;16332;5;2502;1;"/>
+			<error val="16353;5;16370;5;2502;1;"/>
+			<error val="16390;5;16407;5;2502;1;"/>
+			<error val="16427;5;16444;5;2502;1;"/>
+			<error val="16464;5;16481;5;2502;1;"/>
+			<error val="16501;5;16518;5;2502;1;"/>
+			<error val="16538;5;16555;5;2502;1;"/>
+			<error val="16575;5;16592;5;2502;1;"/>
+			<error val="16612;5;16629;5;2502;1;"/>
+			<error val="16649;5;16666;5;2502;1;"/>
+			<error val="16686;5;16703;5;2502;1;"/>
+			<error val="16724;5;16742;5;2502;1;"/>
+			<error val="16764;5;16782;5;2502;1;"/>
+			<error val="16804;5;16822;5;2502;1;"/>
+			<error val="17308;5;17328;5;2502;1;"/>
+			<error val="17269;5;17295;5;2502;1;"/>
+			<error val="17372;5;17390;5;2502;1;"/>
+			<error val="17436;5;17453;5;2502;1;"/>
+			<error val="17497;5;17521;5;2502;1;"/>
+			<error val="17579;5;17596;5;2502;1;"/>
+			<error val="17640;5;17657;5;2502;1;"/>
+			<error val="17701;5;17725;5;2502;1;"/>
+			<error val="17779;5;17797;5;2502;1;"/>
+			<error val="17847;5;17870;5;2502;1;"/>
+			<error val="17919;5;17943;5;2502;1;"/>
+			<error val="17994;5;18011;5;2502;1;"/>
+			<error val="18048;5;18072;5;2502;1;"/>
+			<error val="18123;5;18147;5;2502;1;"/>
+			<error val="18198;5;18215;5;2502;1;"/>
+			<error val="18252;5;18276;5;2502;1;"/>
+			<error val="18327;5;18351;5;2502;1;"/>
+			<error val="18402;5;18419;5;2502;1;"/>
+			<error val="18457;5;18481;5;2502;1;"/>
+			<error val="18533;5;18557;5;2502;1;"/>
+			<error val="18609;5;18627;5;2502;1;"/>
+			<error val="18672;5;18690;5;2502;1;"/>
+			<error val="18714;5;18732;5;2502;1;"/>
+			<error val="18753;5;18770;5;2502;1;"/>
+			<error val="18790;5;18807;5;2502;1;"/>
+			<error val="18827;5;18844;5;2502;1;"/>
+			<error val="18864;5;18881;5;2502;1;"/>
+			<error val="18901;5;18918;5;2502;1;"/>
+			<error val="18938;5;18955;5;2502;1;"/>
+			<error val="18975;5;18992;5;2502;1;"/>
+			<error val="19012;5;19029;5;2502;1;"/>
+			<error val="19049;5;19066;5;2502;1;"/>
+			<error val="19086;5;19103;5;2502;1;"/>
+			<error val="19124;5;19142;5;2502;1;"/>
+			<error val="19164;5;19182;5;2502;1;"/>
+			<error val="19204;5;19222;5;2502;1;"/>
+			<error val="23873;5;23906;5;2502;1;"/>
+			<error val="24043;5;24076;5;2502;1;"/>
+			<error val="24213;5;24246;5;2502;1;"/>
+			<error val="24384;5;24417;5;2502;1;"/>
+			<error val="24523;5;24556;5;2502;1;"/>
+			<error val="26915;5;26934;5;2502;1;"/>
+			<error val="27402;5;27424;5;2502;1;"/>
+			<error val="35104;5;35126;5;2502;1;"/>
+			<error val="35062;5;35085;5;2502;1;"/>
+			<error val="35258;5;35280;5;2502;1;"/>
+			<error val="35299;5;35320;5;2502;1;"/>
+			<error val="35417;5;35435;5;2502;1;"/>
+			<error val="35491;5;35513;5;2502;1;"/>
+			<error val="35449;5;35472;5;2502;1;"/>
+			<error val="35810;5;35832;5;2502;1;"/>
+			<error val="35851;5;35872;5;2502;1;"/>
+			<error val="35970;5;35990;5;2502;1;"/>
+			<error val="36080;5;36102;5;2502;1;"/>
+			<error val="36121;5;36142;5;2502;1;"/>
+			<error val="53760;5;53778;5;2502;1;"/>
+			<error val="54108;5;54128;5;2502;1;"/>
+			<error val="54074;5;54093;5;2502;1;"/>
+			<error val="55114;5;55135;5;2502;1;"/>
+			<error val="55066;5;55092;5;2502;1;"/>
+			<error val="55158;5;55179;5;2502;1;"/>
+			<error val="56119;5;56142;5;2502;1;"/>
+			<error val="56085;5;56104;5;2502;1;"/>
+			<error val="56309;5;56325;5;2502;1;"/>
+			<error val="57459;5;57481;5;2502;1;"/>
+			<error val="58520;5;58542;5;2502;1;"/>
+			<error val="65165;5;65181;5;2502;1;"/>
+			<error val="67127;5;67143;5;2502;1;"/>
+			<error val="67868;5;67884;5;2502;1;"/>
+			<error val="68579;5;68595;5;2502;1;"/>
+			<error val="69077;5;69184;5;2502;1;"/>
+			<error val="69287;5;69303;5;2502;1;"/>
+			<error val="69367;5;69387;5;2502;1;"/>
+			<error val="70427;5;70446;5;2502;1;"/>
+			<error val="71426;5;71444;5;2502;1;"/>
+			<error val="71540;5;71560;5;2502;1;"/>
+			<error val="71501;5;71527;5;2502;1;"/>
+			<error val="71754;5;71776;5;2502;1;"/>
+			<error val="71795;5;71817;5;2502;1;"/>
+			<error val="71720;5;71739;5;2502;1;"/>
+			<error val="72065;5;72087;5;2502;1;"/>
+			<error val="72106;5;72128;5;2502;1;"/>
+			<error val="72031;5;72050;5;2502;1;"/>
+			<error val="72419;5;72445;5;2502;1;"/>
+			<error val="72788;5;72810;5;2502;1;"/>
+			<error val="72756;5;72776;5;2502;1;"/>
+			<error val="72711;5;72740;5;2502;1;"/>
+			<error val="73499;5;73524;5;2502;1;"/>
+			<error val="73545;5;73565;5;2502;1;"/>
+			<error val="73622;5;73645;5;2502;1;"/>
+			<error val="73998;5;74019;5;2502;1;"/>
+			<error val="74124;5;74153;5;2502;1;"/>
+			<error val="74512;5;74537;5;2502;1;"/>
+			<error val="74558;5;74578;5;2502;1;"/>
+			<error val="74635;5;74658;5;2502;1;"/>
+			<error val="75011;5;75032;5;2502;1;"/>
+			<error val="75137;5;75166;5;2502;1;"/>
+			<error val="75525;5;75550;5;2502;1;"/>
+			<error val="75571;5;75591;5;2502;1;"/>
+			<error val="75648;5;75671;5;2502;1;"/>
+			<error val="76024;5;76045;5;2502;1;"/>
+			<error val="76150;5;76179;5;2502;1;"/>
+			<error val="76540;5;76565;5;2502;1;"/>
+			<error val="76586;5;76606;5;2502;1;"/>
+			<error val="76663;5;76686;5;2502;1;"/>
+			<error val="77039;5;77060;5;2502;1;"/>
+			<error val="77165;5;77194;5;2502;1;"/>
+			<error val="77273;5;77298;5;2502;1;"/>
+			<error val="77319;5;77339;5;2502;1;"/>
+			<error val="77598;5;77621;5;2502;1;"/>
+			<error val="77950;5;77971;5;2502;1;"/>
+			<error val="78073;5;78102;5;2502;1;"/>
+			<error val="80458;5;80484;5;2502;1;"/>
+			<error val="80936;5;80954;5;2502;1;"/>
+			<error val="81946;5;81966;5;2502;1;"/>
+			<error val="82323;5;82346;5;2502;1;"/>
+			<error val="82419;5;82435;5;2502;1;"/>
+			<error val="82606;5;82629;5;2502;1;"/>
+			<error val="82666;5;82682;5;2502;1;"/>
+			<error val="84068;5;84087;5;2502;1;"/>
+			<error val="90505;5;90531;5;2502;1;"/>
+			<error val="90553;5;90574;5;2502;1;"/>
+			<error val="91280;5;91301;5;2502;1;"/>
+			<error val="91336;5;91347;5;2502;1;"/>
+			<error val="91399;5;91425;5;2502;1;"/>
+			<error val="92412;5;92435;5;2502;1;"/>
+			<error val="92987;5;93010;5;2502;1;"/>
+			<error val="93578;5;93601;5;2502;1;"/>
+			<error val="94169;5;94192;5;2502;1;"/>
+			<error val="94761;5;94784;5;2502;1;"/>
+			<error val="98456;5;98472;5;2502;1;"/>
+			<error val="98707;5;98742;5;2502;1;"/>
+			<error val="98742;5;98769;5;2502;1;"/>
+			<error val="98978;5;99000;5;2502;1;"/>
+			<error val="100172;5;100192;5;2502;1;"/>
+			<error val="100315;5;100337;5;2502;1;"/>
+			<error val="100514;5;100540;5;2502;1;"/>
+			<error val="100562;5;100583;5;2502;1;"/>
+			<error val="100830;5;100856;5;2502;1;"/>
+			<error val="101235;5;101256;5;2502;1;"/>
+			<error val="101279;5;101301;5;2502;1;"/>
+			<error val="101608;5;101626;5;2502;1;"/>
+			<error val="101734;5;101756;5;2502;1;"/>
+			<error val="101775;5;101793;5;2502;1;"/>
+			<error val="101700;5;101719;5;2502;1;"/>
+			<error val="107983;5;108006;5;2502;1;"/>
+			<error val="109532;5;109554;5;2502;1;"/>
+			<error val="109573;5;109594;5;2502;1;"/>
+			<error val="110755;5;110776;5;2502;1;"/>
+			<error val="110910;5;110928;5;2502;1;"/>
+			<error val="118955;5;118988;5;2502;1;"/>
+			<error val="119030;5;119066;5;2502;1;"/>
+			<error val="119116;5;119157;5;2502;1;"/>
+			<error val="119215;5;119259;5;2502;1;"/>
+			<error val="119310;5;119339;5;2502;1;"/>
+			<error val="119377;5;119408;5;2502;1;"/>
+			<error val="119454;5;119491;5;2502;1;"/>
+			<error val="119535;5;119563;5;2502;1;"/>
+			<error val="119600;5;119630;5;2502;1;"/>
+			<error val="119665;5;119695;5;2502;1;"/>
+			<error val="119732;5;119762;5;2502;1;"/>
+			<error val="119801;5;119831;5;2502;1;"/>
+			<error val="119878;5;119908;5;2502;1;"/>
+			<error val="119966;5;119994;5;2502;1;"/>
+			<error val="120053;5;120084;5;2502;1;"/>
+			<error val="120142;5;120174;5;2502;1;"/>
+			<error val="120238;5;120273;5;2502;1;"/>
+			<error val="120331;5;120362;5;2502;1;"/>
+			<error val="120412;5;120441;5;2502;1;"/>
+			<error val="120492;5;120524;5;2502;1;"/>
+			<error val="120575;5;120609;5;2502;1;"/>
+			<error val="120661;5;120694;5;2502;1;"/>
+			<error val="120745;5;120780;5;2502;1;"/>
+			<error val="120834;5;120867;5;2502;1;"/>
+			<error val="120922;5;120958;5;2502;1;"/>
+			<error val="121012;5;121049;5;2502;1;"/>
+			<error val="121109;5;121149;5;2502;1;"/>
+			<error val="121209;5;121246;5;2502;1;"/>
+			<error val="121295;5;121330;5;2502;1;"/>
+			<error val="121374;5;121410;5;2502;1;"/>
+			<error val="121458;5;121492;5;2502;1;"/>
+			<error val="121541;5;121578;5;2502;1;"/>
+			<error val="121627;5;121666;5;2502;1;"/>
+			<error val="121716;5;121754;5;2502;1;"/>
+			<error val="121821;5;121854;5;2502;1;"/>
+			<error val="121899;5;121935;5;2502;1;"/>
+			<error val="121988;5;122029;5;2502;1;"/>
+			<error val="122090;5;122134;5;2502;1;"/>
+			<error val="122188;5;122217;5;2502;1;"/>
+			<error val="122258;5;122289;5;2502;1;"/>
+			<error val="122338;5;122375;5;2502;1;"/>
+			<error val="122422;5;122450;5;2502;1;"/>
+			<error val="122490;5;122520;5;2502;1;"/>
+			<error val="122558;5;122588;5;2502;1;"/>
+			<error val="122628;5;122658;5;2502;1;"/>
+			<error val="122700;5;122730;5;2502;1;"/>
+			<error val="122780;5;122810;5;2502;1;"/>
+			<error val="122871;5;122899;5;2502;1;"/>
+			<error val="122961;5;122992;5;2502;1;"/>
+			<error val="123053;5;123085;5;2502;1;"/>
+			<error val="123152;5;123187;5;2502;1;"/>
+			<error val="123248;5;123279;5;2502;1;"/>
+			<error val="123332;5;123361;5;2502;1;"/>
+			<error val="123415;5;123447;5;2502;1;"/>
+			<error val="123501;5;123535;5;2502;1;"/>
+			<error val="123590;5;123623;5;2502;1;"/>
+			<error val="123677;5;123712;5;2502;1;"/>
+			<error val="123769;5;123802;5;2502;1;"/>
+			<error val="123860;5;123896;5;2502;1;"/>
+			<error val="123953;5;123990;5;2502;1;"/>
+			<error val="124053;5;124093;5;2502;1;"/>
+			<error val="124156;5;124193;5;2502;1;"/>
+			<error val="124245;5;124280;5;2502;1;"/>
+			<error val="124327;5;124363;5;2502;1;"/>
+			<error val="124414;5;124448;5;2502;1;"/>
+			<error val="124500;5;124537;5;2502;1;"/>
+			<error val="124589;5;124628;5;2502;1;"/>
+			<error val="124681;5;124719;5;2502;1;"/>
+			<error val="124787;5;124820;5;2502;1;"/>
+			<error val="124865;5;124901;5;2502;1;"/>
+			<error val="124954;5;124995;5;2502;1;"/>
+			<error val="125056;5;125100;5;2502;1;"/>
+			<error val="125154;5;125183;5;2502;1;"/>
+			<error val="125224;5;125255;5;2502;1;"/>
+			<error val="125304;5;125341;5;2502;1;"/>
+			<error val="125388;5;125416;5;2502;1;"/>
+			<error val="125456;5;125486;5;2502;1;"/>
+			<error val="125524;5;125554;5;2502;1;"/>
+			<error val="125594;5;125624;5;2502;1;"/>
+			<error val="125666;5;125696;5;2502;1;"/>
+			<error val="125746;5;125776;5;2502;1;"/>
+			<error val="125837;5;125865;5;2502;1;"/>
+			<error val="125927;5;125958;5;2502;1;"/>
+			<error val="126019;5;126051;5;2502;1;"/>
+			<error val="126118;5;126153;5;2502;1;"/>
+			<error val="126214;5;126245;5;2502;1;"/>
+			<error val="126298;5;126327;5;2502;1;"/>
+			<error val="126381;5;126413;5;2502;1;"/>
+			<error val="126467;5;126501;5;2502;1;"/>
+			<error val="126556;5;126589;5;2502;1;"/>
+			<error val="126643;5;126678;5;2502;1;"/>
+			<error val="126735;5;126768;5;2502;1;"/>
+			<error val="126826;5;126862;5;2502;1;"/>
+			<error val="126919;5;126956;5;2502;1;"/>
+			<error val="127019;5;127059;5;2502;1;"/>
+			<error val="127122;5;127159;5;2502;1;"/>
+			<error val="127211;5;127246;5;2502;1;"/>
+			<error val="127293;5;127329;5;2502;1;"/>
+			<error val="127380;5;127414;5;2502;1;"/>
+			<error val="127466;5;127503;5;2502;1;"/>
+			<error val="127555;5;127594;5;2502;1;"/>
+			<error val="127647;5;127685;5;2502;1;"/>
+			<error val="127753;5;127786;5;2502;1;"/>
+			<error val="127831;5;127867;5;2502;1;"/>
+			<error val="127920;5;127961;5;2502;1;"/>
+			<error val="128022;5;128066;5;2502;1;"/>
+			<error val="128120;5;128149;5;2502;1;"/>
+			<error val="128190;5;128221;5;2502;1;"/>
+			<error val="128270;5;128307;5;2502;1;"/>
+			<error val="128354;5;128382;5;2502;1;"/>
+			<error val="128422;5;128452;5;2502;1;"/>
+			<error val="128490;5;128520;5;2502;1;"/>
+			<error val="128560;5;128590;5;2502;1;"/>
+			<error val="128632;5;128662;5;2502;1;"/>
+			<error val="128712;5;128742;5;2502;1;"/>
+			<error val="128803;5;128831;5;2502;1;"/>
+			<error val="128893;5;128924;5;2502;1;"/>
+			<error val="128985;5;129017;5;2502;1;"/>
+			<error val="129084;5;129119;5;2502;1;"/>
+			<error val="129180;5;129211;5;2502;1;"/>
+			<error val="129264;5;129293;5;2502;1;"/>
+			<error val="129347;5;129379;5;2502;1;"/>
+			<error val="129433;5;129467;5;2502;1;"/>
+			<error val="129522;5;129555;5;2502;1;"/>
+			<error val="129609;5;129644;5;2502;1;"/>
+			<error val="129701;5;129734;5;2502;1;"/>
+			<error val="129792;5;129828;5;2502;1;"/>
+			<error val="129885;5;129922;5;2502;1;"/>
+			<error val="129985;5;130025;5;2502;1;"/>
+			<error val="130088;5;130125;5;2502;1;"/>
+			<error val="130177;5;130212;5;2502;1;"/>
+			<error val="130259;5;130295;5;2502;1;"/>
+			<error val="130346;5;130380;5;2502;1;"/>
+			<error val="130432;5;130469;5;2502;1;"/>
+			<error val="130521;5;130560;5;2502;1;"/>
+			<error val="130613;5;130651;5;2502;1;"/>
+			<error val="130720;5;130753;5;2502;1;"/>
+			<error val="130798;5;130834;5;2502;1;"/>
+			<error val="130887;5;130928;5;2502;1;"/>
+			<error val="130989;5;131033;5;2502;1;"/>
+			<error val="131087;5;131116;5;2502;1;"/>
+			<error val="131157;5;131188;5;2502;1;"/>
+			<error val="131237;5;131274;5;2502;1;"/>
+			<error val="131321;5;131349;5;2502;1;"/>
+			<error val="131389;5;131419;5;2502;1;"/>
+			<error val="131457;5;131487;5;2502;1;"/>
+			<error val="131527;5;131557;5;2502;1;"/>
+			<error val="131599;5;131629;5;2502;1;"/>
+			<error val="131679;5;131709;5;2502;1;"/>
+			<error val="131770;5;131798;5;2502;1;"/>
+			<error val="131860;5;131891;5;2502;1;"/>
+			<error val="131952;5;131984;5;2502;1;"/>
+			<error val="132051;5;132086;5;2502;1;"/>
+			<error val="132147;5;132178;5;2502;1;"/>
+			<error val="132231;5;132260;5;2502;1;"/>
+			<error val="132314;5;132346;5;2502;1;"/>
+			<error val="132400;5;132434;5;2502;1;"/>
+			<error val="132489;5;132522;5;2502;1;"/>
+			<error val="132576;5;132611;5;2502;1;"/>
+			<error val="132668;5;132701;5;2502;1;"/>
+			<error val="132759;5;132795;5;2502;1;"/>
+			<error val="132852;5;132889;5;2502;1;"/>
+			<error val="132952;5;132992;5;2502;1;"/>
+			<error val="133055;5;133092;5;2502;1;"/>
+			<error val="133144;5;133179;5;2502;1;"/>
+			<error val="133226;5;133262;5;2502;1;"/>
+			<error val="133313;5;133347;5;2502;1;"/>
+			<error val="133399;5;133436;5;2502;1;"/>
+			<error val="133488;5;133527;5;2502;1;"/>
+			<error val="133580;5;133618;5;2502;1;"/>
+			<error val="158240;5;158275;5;2502;1;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\include\fpdf.php">
+			<error val="24;1186;27;1186;302;2;"/>
+			<error val="27;1234;30;1234;302;2;"/>
+			<error val="24;1186;27;1186;302;2;"/>
+			<error val="27;1234;30;1234;302;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\FPDI\fpdi.php">
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\fpdf\fpdi.php">
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\fpdf\fpdf_tpl.php">
+			<error val="41;374;46;374;303;2;"/>
+			<error val="72;417;77;417;303;2;"/>
+			<error val="41;374;46;374;303;2;"/>
+			<error val="72;417;77;417;303;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\fpdf\fpdf.php">
+			<error val="24;1212;27;1212;302;2;"/>
+			<error val="27;1260;30;1260;302;2;"/>
+			<error val="24;1212;27;1212;302;2;"/>
+			<error val="27;1260;30;1260;302;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\css\jquery-ui.css">
+			<error val="1;450;24;450;2502;1;"/>
+			<error val="1;531;24;531;2502;1;"/>
+			<error val="1;595;24;595;2502;1;"/>
+			<error val="1;662;24;662;2502;1;"/>
+			<error val="1;718;24;718;2502;1;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\style.css">
+			<error val="2;10;40;10;2502;1;"/>
+			<error val="2;27;40;27;2502;1;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\fpdi.php">
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+			<error val="41;292;46;292;303;2;"/>
+			<error val="76;374;81;374;303;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\fpdf_tpl.php">
+			<error val="41;374;46;374;303;2;"/>
+			<error val="72;417;77;417;303;2;"/>
+			<error val="41;374;46;374;303;2;"/>
+			<error val="72;417;77;417;303;2;"/>
+			<error val="41;374;46;374;303;2;"/>
+			<error val="72;417;77;417;303;2;"/>
+			<error val="41;374;46;374;303;2;"/>
+			<error val="72;417;77;417;303;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\fpdf.php">
+			<error val="24;1212;27;1212;302;2;"/>
+			<error val="27;1260;30;1260;302;2;"/>
+			<error val="24;1212;27;1212;302;2;"/>
+			<error val="27;1260;30;1260;302;2;"/>
+		</errfile>
+		<errfile name="C:\wamp64\www\gii\ex_style.css">
+			<error val="2;10;40;10;2502;1;"/>
+			<error val="2;27;40;27;2502;1;"/>
+		</errfile>
+	</errors>
+	<todoblock>
+		<todofile name="C:\wamp64\www\gii\mysql-fix.php">
+			<todo name="TODO: check, if working when called without argument: mysql_affected_rows()" pos="5;71"/>
+		</todofile>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="C:\wamp64\www\gii\tea\DOCJSON.TXT" crc="1580118938"/>
+		<file name="C:\wamp64\www\gii\tea\CLISEQ.TXT" crc="1580118986"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\js\bootstrap.min.js" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\js\bootstrap.js" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\js\bootstrap.bundle.min.js" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\js\bootstrap.bundle.js" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap.min.css" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap.css" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap-reboot.min.css" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap-reboot.css" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap-grid.min.css" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\bootstrap\css\bootstrap-grid.css" crc="1586422702"/>
+		<file name="C:\wamp64\www\gii\include\popper.min.js" crc="1586541807"/>
+		<file name="C:\wamp64\www\gii\include\jQuery.js" crc="1450112506"/>
+		<file name="C:\wamp64\www\gii\include\jquery-ui.min.js" crc="1450112506"/>
+		<file name="C:\wamp64\www\gii\include\jquery-dateFormat.min.js" crc="1450112505"/>
+		<file name="C:\wamp64\www\gii\include\jquery-3.5.0.slim.min.js" crc="1586540440"/>
+		<file name="C:\wamp64\www\gii\include\jquery-2.1.1.min.js" crc="1450112506"/>
+		<file name="C:\wamp64\www\gii\include\java.php" crc="1366439606"/>
+		<file name="C:\wamp64\www\gii\include\idrobox.php" crc="1553887416"/>
+		<file name="C:\wamp64\www\gii\include\functionsJS.js" crc="1538378338"/>
+		<file name="C:\wamp64\www\gii\include\functions.php" crc="1534937076"/>
+		<file name="C:\wamp64\www\gii\include\fpdf.php" crc="1366439607"/>
+		<file name="C:\wamp64\www\gii\include\database.php" crc="1527511952"/>
+		<file name="C:\wamp64\www\gii\immagini\simplistica\readme.txt" crc="1366439579"/>
+		<file name="C:\wamp64\www\gii\FPDI\filters\FilterLZW_FPDI.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\filters\FilterLZW.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\filters\FilterASCII85_FPDI.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php" crc="1370529946"/>
+		<file name="C:\wamp64\www\gii\FPDI\pdf_parser.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\pdf_context.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\FPDI\fpdi.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\makefont\makefont.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\zapfdingbats.php" crc="1366439565"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\timesi.php" crc="1366439565"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\timesbi.php" crc="1366439565"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\timesb.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\times.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\symbol.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\helveticai.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\helveticabi.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\helveticab.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\helvetica.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\fpdf\font\courier.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdf\fpdi.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdf\fpdf_tpl.php" crc="1370530550"/>
+		<file name="C:\wamp64\www\gii\fpdf\fpdf_js.php" crc="1366439555"/>
+		<file name="C:\wamp64\www\gii\fpdf\fpdf.php" crc="1508754529"/>
+		<file name="C:\wamp64\www\gii\font\makefont\makefont.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\font\zapfdingbats.php" crc="1366439565"/>
+		<file name="C:\wamp64\www\gii\font\timesi.php" crc="1366439565"/>
+		<file name="C:\wamp64\www\gii\font\timesbi.php" crc="1366439565"/>
+		<file name="C:\wamp64\www\gii\font\timesb.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\font\times.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\font\symbol.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\font\helveticai.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\font\helveticabi.php" crc="1366439566"/>
+		<file name="C:\wamp64\www\gii\font\helveticab.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\font\helvetica.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\font\courier.php" crc="1366439567"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900001144.xml" crc="1549301964"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000888.xml" crc="1549304751"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000887.xml" crc="1549304751"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000886.xml" crc="1549304750"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000885.xml" crc="1549304750"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000884.xml" crc="1549304750"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000883.xml" crc="1549304750"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_9_1900000882.xml" crc="1549304750"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_7_1900001285.xml" crc="1549905923"/>
+		<file name="C:\wamp64\www\gii\elettroniche\IT01879020517_2_1900000868.xml" crc="1549020123"/>
+		<file name="C:\wamp64\www\gii\elettroniche\desktop.ini" crc="1548073070"/>
+		<file name="C:\wamp64\www\gii\css\ordini.css" crc="1456084409"/>
+		<file name="C:\wamp64\www\gii\css\jquery-ui.css" crc="1483896215"/>
+		<file name="C:\wamp64\www\gii\css\dropdown.css" crc="1529935200"/>
+		<file name="C:\wamp64\www\gii\calendar\_notes\dwsync.xml" crc="1366439562"/>
+		<file name="C:\wamp64\www\gii\calendar\sample4.html" crc="1366439560"/>
+		<file name="C:\wamp64\www\gii\calendar\sample3.html" crc="1366439561"/>
+		<file name="C:\wamp64\www\gii\calendar\sample2.html" crc="1366439561"/>
+		<file name="C:\wamp64\www\gii\calendar\sample1.html" crc="1366439561"/>
+		<file name="C:\wamp64\www\gii\calendar\readme.txt" crc="1366439562"/>
+		<file name="C:\wamp64\www\gii\calendar\calendar_us.js" crc="1366439561"/>
+		<file name="C:\wamp64\www\gii\calendar\calendar_eu.js" crc="1366439562"/>
+		<file name="C:\wamp64\www\gii\calendar\calendar_db.js" crc="1366439562"/>
+		<file name="C:\wamp64\www\gii\calendar\calendar.css" crc="1366439562"/>
+		<file name="C:\wamp64\www\gii\xls_medio2.php" crc="1585737140"/>
+		<file name="C:\wamp64\www\gii\win_idro.php" crc="1553887743"/>
+		<file name="C:\wamp64\www\gii\win_idro.js" crc="1553509425"/>
+		<file name="C:\wamp64\www\gii\valore_medio_json.php" crc="1585741892"/>
+		<file name="C:\wamp64\www\gii\valore_medio.php" crc="1579868233"/>
+		<file name="C:\wamp64\www\gii\tipi_documento.txt" crc="1527838627"/>
+		<file name="C:\wamp64\www\gii\text.txt" crc="1532585655"/>
+		<file name="C:\wamp64\www\gii\testrr.txt" crc="1574250916"/>
+		<file name="C:\wamp64\www\gii\testr.txt" crc="1542974008"/>
+		<file name="C:\wamp64\www\gii\testidro.txt" crc="1569234326"/>
+		<file name="C:\wamp64\www\gii\testi.txt" crc="1582661847"/>
+		<file name="C:\wamp64\www\gii\testf.txt" crc="1575894105"/>
+		<file name="C:\wamp64\www\gii\test1.txt" crc="1541162009"/>
+		<file name="C:\wamp64\www\gii\test_my.php" crc="1543840039"/>
+		<file name="C:\wamp64\www\gii\test_date.php" crc="1582570089"/>
+		<file name="C:\wamp64\www\gii\test_boot.php" crc="1586430101"/>
+		<file name="C:\wamp64\www\gii\test.txt" crc="1585743412"/>
+		<file name="C:\wamp64\www\gii\test.php" crc="1532591474"/>
+		<file name="C:\wamp64\www\gii\taxewin_function.js" crc="1532522084"/>
+		<file name="C:\wamp64\www\gii\tabser.sql" crc="1529315271"/>
+		<file name="C:\wamp64\www\gii\TABJSON.TXT" crc="1569846610"/>
+		<file name="C:\wamp64\www\gii\tabella_prevent.txt" crc="1569833255"/>
+		<file name="C:\wamp64\www\gii\t66_pa.php" crc="1540815974"/>
+		<file name="C:\wamp64\www\gii\style.css" crc="1586798859"/>
+		<file name="C:\wamp64\www\gii\stampaprev.php" crc="1569836760"/>
+		<file name="C:\wamp64\www\gii\stampaordfo.php" crc="1575894101"/>
+		<file name="C:\wamp64\www\gii\stampaordcl_2.php" crc="1512386459"/>
+		<file name="C:\wamp64\www\gii\stampaord.php" crc="1585737073"/>
+		<file name="C:\wamp64\www\gii\stampadoc.php" crc="1585737063"/>
+		<file name="C:\wamp64\www\gii\stafat.php" crc="1585737052"/>
+		<file name="C:\wamp64\www\gii\staboll.php" crc="1585737042"/>
+		<file name="C:\wamp64\www\gii\short_tag.php" crc="1585571832"/>
+		<file name="C:\wamp64\www\gii\SEQMGFOR.TXT" crc="1575286536"/>
+		<file name="C:\wamp64\www\gii\scrivi_tabser.php" crc="1527512584"/>
+		<file name="C:\wamp64\www\gii\scrivi_tabelle.php" crc="1569839661"/>
+		<file name="C:\wamp64\www\gii\script.js" crc="1513769471"/>
+		<file name="C:\wamp64\www\gii\salva_sconti.php" crc="1571651116"/>
+		<file name="C:\wamp64\www\gii\salva_prev.php" crc="1571587662"/>
+		<file name="C:\wamp64\www\gii\salva_pnmagaz.php" crc="1586788053"/>
+		<file name="C:\wamp64\www\gii\salva_ordfo.php" crc="1575628828"/>
+		<file name="C:\wamp64\www\gii\salva_ord.php" crc="1572800500"/>
+		<file name="C:\wamp64\www\gii\salva_doc.php" crc="1576519001"/>
+		<file name="C:\wamp64\www\gii\salva_cliente.php" crc="1538736094"/>
+		<file name="C:\wamp64\www\gii\salva_cassa.php" crc="1573238143"/>
+		<file name="C:\wamp64\www\gii\PSEQ.TXT" crc="1528707236"/>
+		<file name="C:\wamp64\www\gii\password.txt" crc="1528707103"/>
+		<file name="C:\wamp64\www\gii\ORDINI.TXT" crc="1570467442"/>
+		<file name="C:\wamp64\www\gii\mysql-fix.php" crc="1585221235"/>
+		<file name="C:\wamp64\www\gii\MyAjax.js" crc="1493148656"/>
+		<file name="C:\wamp64\www\gii\MOVMAG2.TXT" crc="1584803379"/>
+		<file name="C:\wamp64\www\gii\MOVMAG.TXT" crc="1584357201"/>
+		<file name="C:\wamp64\www\gii\menu_120420.php" crc="1586705194"/>
+		<file name="C:\wamp64\www\gii\menu.php" crc="1586713668"/>
+		<file name="C:\wamp64\www\gii\login.php" crc="1584551431"/>
+		<file name="C:\wamp64\www\gii\lista_sconti.php" crc="1585736942"/>
+		<file name="C:\wamp64\www\gii\lista_sconti.js" crc="1571652266"/>
+		<file name="C:\wamp64\www\gii\lista_prev.php" crc="1585736884"/>
+		<file name="C:\wamp64\www\gii\lista_prev.js" crc="1571586300"/>
+		<file name="C:\wamp64\www\gii\lista_ordifo.php" crc="1585736892"/>
+		<file name="C:\wamp64\www\gii\lista_ordifo.js" crc="1575295837"/>
+		<file name="C:\wamp64\www\gii\lista_ordi.php" crc="1585736786"/>
+		<file name="C:\wamp64\www\gii\lista_ordi.js" crc="1572801795"/>
+		<file name="C:\wamp64\www\gii\lista_doc.php" crc="1585736746"/>
+		<file name="C:\wamp64\www\gii\lista_doc.js" crc="1573410811"/>
+		<file name="C:\wamp64\www\gii\lib2.js" crc="1586765327"/>
+		<file name="C:\wamp64\www\gii\leggi_settori.php" crc="1542360481"/>
+		<file name="C:\wamp64\www\gii\leggi_macrofamiglia.php" crc="1542473558"/>
+		<file name="C:\wamp64\www\gii\leggi_famiglia.php" crc="1542475464"/>
+		<file name="C:\wamp64\www\gii\leggi_codiva.php" crc="1535018677"/>
+		<file name="C:\wamp64\www\gii\leggi_codici.php" crc="1581883492"/>
+		<file name="C:\wamp64\www\gii\leggi_cliente.php" crc="1501927822"/>
+		<file name="C:\wamp64\www\gii\leggi_causale.php" crc="1579543692"/>
+		<file name="C:\wamp64\www\gii\json_3.php" crc="1531731533"/>
+		<file name="C:\wamp64\www\gii\json_2.php" crc="1531477644"/>
+		<file name="C:\wamp64\www\gii\json_1.php" crc="1531477689"/>
+		<file name="C:\wamp64\www\gii\IT01879020517_8_2000000061.xml" crc="1586197312"/>
+		<file name="C:\wamp64\www\gii\IT01879020517_2_2000002951.xml" crc="1585573492"/>
+		<file name="C:\wamp64\www\gii\IT01879020517_00012126.xml" crc="1543844648"/>
+		<file name="C:\wamp64\www\gii\info.php" crc="1580473913"/>
+		<file name="C:\wamp64\www\gii\index.php" crc="1586798121"/>
+		<file name="C:\wamp64\www\gii\importa_depo.txt" crc="1537173907"/>
+		<file name="C:\wamp64\www\gii\idrodata.sql" crc="1570025461"/>
+		<file name="C:\wamp64\www\gii\gii.sql" crc="1585221949"/>
+		<file name="C:\wamp64\www\gii\giace_articoli.php" crc="1532436094"/>
+		<file name="C:\wamp64\www\gii\get_preventivo_num.php" crc="1572861667"/>
+		<file name="C:\wamp64\www\gii\get_preventivo.php" crc="1569837284"/>
+		<file name="C:\wamp64\www\gii\get_ordinefo.php" crc="1575305867"/>
+		<file name="C:\wamp64\www\gii\get_ordine.php" crc="1570640121"/>
+		<file name="C:\wamp64\www\gii\get_numero_scontrino.php" crc="1573156159"/>
+		<file name="C:\wamp64\www\gii\get_idrobox.php" crc="1541583938"/>
+		<file name="C:\wamp64\www\gii\get_fornitore.php" crc="1575304968"/>
+		<file name="C:\wamp64\www\gii\get_documento.php" crc="1576510335"/>
+		<file name="C:\wamp64\www\gii\get_cliente.php" crc="1576511112"/>
+		<file name="C:\wamp64\www\gii\get_articolofo.php" crc="1579723839"/>
+		<file name="C:\wamp64\www\gii\get_articolo_191118.php" crc="1542630652"/>
+		<file name="C:\wamp64\www\gii\get_articolo.php" crc="1585742983"/>
+		<file name="C:\wamp64\www\gii\get_art.php" crc="1538989709"/>
+		<file name="C:\wamp64\www\gii\ges_prev.php" crc="1585736013"/>
+		<file name="C:\wamp64\www\gii\ges_prev.js" crc="1572795877"/>
+		<file name="C:\wamp64\www\gii\ges_ordfo.php" crc="1585735859"/>
+		<file name="C:\wamp64\www\gii\ges_ordfo.js" crc="1575632650"/>
+		<file name="C:\wamp64\www\gii\ges_ord.php" crc="1585735776"/>
+		<file name="C:\wamp64\www\gii\ges_ord.js" crc="1575280055"/>
+		<file name="C:\wamp64\www\gii\ges_magaz_130420.php" crc="1586776540"/>
+		<file name="C:\wamp64\www\gii\ges_magaz.php" crc="1586793752"/>
+		<file name="C:\wamp64\www\gii\ges_magaz.js" crc="1586798691"/>
+		<file name="C:\wamp64\www\gii\ges_doc.php" crc="1585735622"/>
+		<file name="C:\wamp64\www\gii\ges_doc.js" crc="1579257980"/>
+		<file name="C:\wamp64\www\gii\ges_cassa.php" crc="1585735352"/>
+		<file name="C:\wamp64\www\gii\ges_cassa.js" crc="1573402531"/>
+		<file name="C:\wamp64\www\gii\functions_ajax.php" crc="1493148068"/>
+		<file name="C:\wamp64\www\gii\fpdi2tcpdf_bridge.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdi_pdf_parser.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdi.php" crc="1370529947"/>
+		<file name="C:\wamp64\www\gii\fpdf_tpl.php" crc="1370530550"/>
+		<file name="C:\wamp64\www\gii\fpdf_js.php" crc="1366439555"/>
+		<file name="C:\wamp64\www\gii\fpdf.php" crc="1366439555"/>
+		<file name="C:\wamp64\www\gii\ex_style.css" crc="1542476979"/>
+		<file name="C:\wamp64\www\gii\elimina_sconti.php" crc="1571652331"/>
+		<file name="C:\wamp64\www\gii\elenchi.js" crc="1581539036"/>
+		<file name="C:\wamp64\www\gii\ele_preventivi.php" crc="1571581155"/>
+		<file name="C:\wamp64\www\gii\ele_preventivi.js" crc="1571580823"/>
+		<file name="C:\wamp64\www\gii\ele_ordini.php" crc="1571580626"/>
+		<file name="C:\wamp64\www\gii\ele_ordini.js" crc="1571515584"/>
+		<file name="C:\wamp64\www\gii\dropdowns.js" crc="1445166073"/>
+		<file name="C:\wamp64\www\gii\dropdowns.css" crc="1445166073"/>
+		<file name="C:\wamp64\www\gii\dropdowns-skin-discrete.css" crc="1500386132"/>
+		<file name="C:\wamp64\www\gii\dropdowns-skin-default.css" crc="1445166073"/>
+		<file name="C:\wamp64\www\gii\draw.php" crc="1516102249"/>
+		<file name="C:\wamp64\www\gii\DragDrop.js" crc="1397665286"/>
+		<file name="C:\wamp64\www\gii\documtes.sql" crc="1568832105"/>
+		<file name="C:\wamp64\www\gii\DOCJSON.TXT" crc="1569238517"/>
+		<file name="C:\wamp64\www\gii\DESJSON.TXT" crc="1527844151"/>
+		<file name="C:\wamp64\www\gii\DEPO.TXT" crc="1584800324"/>
+		<file name="C:\wamp64\www\gii\debugqr.txt" crc="1585743061"/>
+		<file name="C:\wamp64\www\gii\debug.txt" crc="1586798149"/>
+		<file name="C:\wamp64\www\gii\controlla_cliente.php" crc="1507832114"/>
+		<file name="C:\wamp64\www\gii\CLISEQ.TXT" crc="1575303917"/>
+		<file name="C:\wamp64\www\gii\clienti.php" crc="1585735234"/>
+		<file name="C:\wamp64\www\gii\clienti.js" crc="1538983907"/>
+		<file name="C:\wamp64\www\gii\class_varie.php" crc="1534928924"/>
+		<file name="C:\wamp64\www\gii\cerca_idrobox.php" crc="1569233751"/>
+		<file name="C:\wamp64\www\gii\causali.txt" crc="1582659795"/>
+		<file name="C:\wamp64\www\gii\carica_nazioni.php" crc="1537778948"/>
+		<file name="C:\wamp64\www\gii\carica_fornitori.php" crc="1538994764"/>
+		<file name="C:\wamp64\www\gii\carica_descrizione.php" crc="1541162274"/>
+		<file name="C:\wamp64\www\gii\carica_clienti.php" crc="1537784777"/>
+		<file name="C:\wamp64\www\gii\carica_citta.php" crc="1537779154"/>
+		<file name="C:\wamp64\www\gii\carica_articoli.php" crc="1530523691"/>
+		<file name="C:\wamp64\www\gii\calcola_scadenze.php" crc="1576498336"/>
+		<file name="C:\wamp64\www\gii\articoli.php" crc="1585735131"/>
+		<file name="C:\wamp64\www\gii\articoli.js" crc="1539341367"/>
+		<file name="C:\wamp64\www\gii\ARTI.TXT" crc="1584800324"/>
+		<file name="C:\wamp64\www\gii\ajax.css" crc="1462524143"/>
+		<file name="C:\wamp64\www\gii\aggiorna_gii.php" crc="1563790571"/>
+	</filescache>
+</project>

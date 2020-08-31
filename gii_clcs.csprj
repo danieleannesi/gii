@@ -1,0 +1,578 @@
+<codestructure version="5.15">
+<phptree>
+<treenode node="class_varie.php;PHP:PHP Include;C:\wamp64\www\gii\elimina_sconti.php;f9;11;24;11;;C:\wamp64\www\gii\salva_cassa.php;f9;11;24;11;;C:\wamp64\www\gii\salva_cliente.php;f9;21;24;21;;C:\wamp64\www\gii\salva_doc.php;f9;11;24;11;;C:\wamp64\www\gii\salva_ord.php;f9;11;24;11;;C:\wamp64\www\gii\salva_ordfo.php;f9;11;24;11;;C:\wamp64\www\gii\salva_prev.php;f9;11;24;11;;C:\wamp64\www\gii\salva_sconti.php;f9;11;24;11;;C:\wamp64\www\gii\login.php;f9;5;24;5;;C:\wamp64\www\gii\salva_pnmagaz.php;f9;11;24;11;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="FilterASCII85.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\filters\FilterASCII85_FPDI.php;f14;19;31;19;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="FilterLZW.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\filters\FilterLZW_FPDI.php;f14;19;27;19;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fpdf.php;PHP:PHP Include;C:\wamp64\www\gii\fpdf\fpdf_js.php;f9;1;17;1;;C:\wamp64\www\gii\fpdf_js.php;f9;1;17;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fpdf/fpdf.php;PHP:PHP Include;C:\wamp64\www\gii\draw.php;f9;1;22;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fpdf_js.php;PHP:PHP Include;C:\wamp64\www\gii\stampaordcl_2.php;f9;1;20;1;;C:\wamp64\www\gii\staboll.php;f9;13;20;13;;C:\wamp64\www\gii\stafat.php;f9;14;20;14;;C:\wamp64\www\gii\stampaord.php;f9;1;20;1;;C:\wamp64\www\gii\stampaordfo.php;f9;1;20;1;;C:\wamp64\www\gii\stampaprev.php;f9;3;20;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fpdf_tpl.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\fpdi.php;f14;26;26;26;;C:\wamp64\www\gii\fpdf\fpdi.php;f14;26;26;26;;C:\wamp64\www\gii\fpdi.php;f14;26;26;26;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="FPDF_VERSION;PHP:PHP Word;C:\wamp64\www\gii\include\fpdf.php;f8;13;20;13;;C:\wamp64\www\gii\fpdf\fpdf.php;f8;13;20;13;;C:\wamp64\www\gii\fpdf.php;f8;13;20;13;;;;vpos;;v;;a;;r&apos;1.53&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fpdi_pdf_parser.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\fpdi.php;f14;27;33;27;;C:\wamp64\www\gii\fpdf\fpdi.php;f14;27;33;27;;C:\wamp64\www\gii\fpdi.php;f14;27;33;27;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="FPDI_VERSION;PHP:PHP Word;C:\wamp64\www\gii\FPDI\fpdi.php;f8;19;20;19;;C:\wamp64\www\gii\fpdf\fpdi.php;f8;19;20;19;;C:\wamp64\www\gii\fpdi.php;f8;19;20;19;;;;vpos;;v;;a;;r&apos;1.4.4&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fpdi2tcpdf_bridge.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\fpdi.php;f18;23;39;23;;C:\wamp64\www\gii\fpdf\fpdi.php;f18;23;39;23;;C:\wamp64\www\gii\fpdi.php;f18;23;39;23;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="functions_ajax.php;PHP:PHP Include;C:\wamp64\www\gii\menu_120420.php;f14;52;32;52;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="include/database.php;PHP:PHP Include;C:\wamp64\www\gii\t66_pa.php;f9;2;29;2;;C:\wamp64\www\gii\stampaordcl_2.php;f9;2;29;2;;C:\wamp64\www\gii\scrivi_tabser.php;f9;1;29;1;;C:\wamp64\www\gii\get_articolo_191118.php;f9;1;29;1;;C:\wamp64\www\gii\aggiorna_gii.php;f14;1;34;1;;C:\wamp64\www\gii\articoli.php;f9;46;29;46;;C:\wamp64\www\gii\calcola_scadenze.php;f9;2;29;2;;C:\wamp64\www\gii\carica_articoli.php;f14;2;34;2;;C:\wamp64\www\gii\carica_citta.php;f14;2;34;2;;C:\wamp64\www\gii\carica_clienti.php;f14;2;34;2;;C:\wamp64\www\gii\carica_descrizione.php;f14;2;34;2;;C:\wamp64\www\gii\carica_fornitori.php;f14;2;34;2;;C:\wamp64\www\gii\carica_nazioni.php;f14;2;34;2;;C:\wamp64\www\gii\clienti.php;f9;46;29;46;;C:\wamp64\www\gii\controlla_cliente.php;f9;2;29;2;;C:\wamp64\www\gii\ele_ordini.php;f9;3;29;3;;C:\wamp64\www\gii\ele_preventivi.php;f9;3;29;3;;C:\wamp64\www\gii\elimina_sconti.php;f9;9;29;9;;C:\wamp64\www\gii\ges_cassa.php;f9;38;29;38;;C:\wamp64\www\gii\ges_doc.php;f9;44;29;44;;C:\wamp64\www\gii\ges_ord.php;f9;38;29;38;;C:\wamp64\www\gii\ges_ordfo.php;f9;38;29;38;;C:\wamp64\www\gii\ges_prev.php;f9;42;29;42;;C:\wamp64\www\gii\get_art.php;f9;1;29;1;;C:\wamp64\www\gii\get_articolofo.php;f9;1;29;1;;C:\wamp64\www\gii\get_cliente.php;f9;1;29;1;;C:\wamp64\www\gii\get_documento.php;f9;1;29;1;;C:\wamp64\www\gii\get_fornitore.php;f9;1;29;1;;C:\wamp64\www\gii\get_idrobox.php;f9;1;29;1;;C:\wamp64\www\gii\get_numero_scontrino.php;f9;1;29;1;;C:\wamp64\www\gii\get_ordine.php;f9;1;29;1;;C:\wamp64\www\gii\get_ordinefo.php;f9;1;29;1;;C:\wamp64\www\gii\get_preventivo.php;f9;1;29;1;;C:\wamp64\www\gii\get_preventivo_num.php;f9;1;29;1;;C:\wamp64\www\gii\giace_articoli.php;f14;2;34;2;;C:\wamp64\www\gii\leggi_causale.php;f9;2;29;2;;C:\wamp64\www\gii\leggi_cliente.php;f9;2;29;2;;C:\wamp64\www\gii\leggi_codiva.php;f9;2;29;2;;C:\wamp64\www\gii\lista_doc.php;f9;43;29;43;;C:\wamp64\www\gii\lista_ordi.php;f9;43;29;43;;C:\wamp64\www\gii\lista_ordifo.php;f9;43;29;43;;C:\wamp64\www\gii\lista_prev.php;f9;43;29;43;;C:\wamp64\www\gii\lista_sconti.php;f9;45;29;45;;C:\wamp64\www\gii\salva_cassa.php;f9;9;29;9;;C:\wamp64\www\gii\salva_cliente.php;f9;19;29;19;;C:\wamp64\www\gii\salva_doc.php;f9;9;29;9;;C:\wamp64\www\gii\salva_ord.php;f9;9;29;9;;C:\wamp64\www\gii\salva_ordfo.php;f9;9;29;9;;C:\wamp64\www\gii\salva_prev.php;f9;9;29;9;;C:\wamp64\www\gii\salva_sconti.php;f9;9;29;9;;C:\wamp64\www\gii\scrivi_tabelle.php;f9;1;29;1;;C:\wamp64\www\gii\staboll.php;f9;14;29;14;;C:\wamp64\www\gii\stafat.php;f9;15;29;15;;C:\wamp64\www\gii\stampaord.php;f9;2;29;2;;C:\wamp64\www\gii\stampaordfo.php;f9;2;29;2;;C:\wamp64\www\gii\stampaprev.php;f9;4;29;4;;C:\wamp64\www\gii\win_idro.php;f9;7;29;7;;C:\wamp64\www\gii\valore_medio_json.php;f9;2;29;2;;C:\wamp64\www\gii\get_articolo.php;f9;1;29;1;;C:\wamp64\www\gii\login.php;f9;4;29;4;;C:\wamp64\www\gii\menu_120420.php;f9;8;29;8;;C:\wamp64\www\gii\ges_magaz_130420.php;f9;54;29;54;;C:\wamp64\www\gii\salva_pnmagaz.php;f9;9;29;9;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="include/functions.php;PHP:PHP Include;C:\wamp64\www\gii\elimina_sconti.php;f9;10;30;10;;C:\wamp64\www\gii\salva_cassa.php;f9;10;30;10;;C:\wamp64\www\gii\salva_doc.php;f9;10;30;10;;C:\wamp64\www\gii\salva_ord.php;f9;10;30;10;;C:\wamp64\www\gii\salva_ordfo.php;f9;10;30;10;;C:\wamp64\www\gii\salva_prev.php;f9;10;30;10;;C:\wamp64\www\gii\salva_sconti.php;f9;10;30;10;;C:\wamp64\www\gii\salva_pnmagaz.php;f9;10;30;10;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="include/functionsJS.js;PHP:PHP Include;C:\wamp64\www\gii\articoli.php;f9;49;31;49;;C:\wamp64\www\gii\clienti.php;f9;49;31;49;;C:\wamp64\www\gii\ges_cassa.php;f9;36;31;36;;C:\wamp64\www\gii\ges_doc.php;f9;34;31;34;;C:\wamp64\www\gii\ges_ord.php;f9;36;31;36;;C:\wamp64\www\gii\ges_ordfo.php;f9;36;31;36;;C:\wamp64\www\gii\ges_prev.php;f9;40;31;40;;C:\wamp64\www\gii\lista_doc.php;f9;45;31;45;;C:\wamp64\www\gii\lista_ordi.php;f9;45;31;45;;C:\wamp64\www\gii\lista_ordifo.php;f9;45;31;45;;C:\wamp64\www\gii\lista_prev.php;f9;45;31;45;;C:\wamp64\www\gii\lista_sconti.php;f9;47;31;47;;C:\wamp64\www\gii\ges_magaz_130420.php;f9;52;31;52;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="include/idrobox.php;PHP:PHP Include;C:\wamp64\www\gii\cerca_idrobox.php;f9;2;28;2;;C:\wamp64\www\gii\get_articolofo.php;f9;2;28;2;;C:\wamp64\www\gii\get_idrobox.php;f9;2;28;2;;C:\wamp64\www\gii\leggi_famiglia.php;f9;2;28;2;;C:\wamp64\www\gii\leggi_macrofamiglia.php;f9;2;28;2;;C:\wamp64\www\gii\leggi_settori.php;f9;2;28;2;;C:\wamp64\www\gii\win_idro.php;f9;8;28;8;;C:\wamp64\www\gii\get_articolo.php;f9;2;28;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="include/java.php;PHP:PHP Include;C:\wamp64\www\gii\articoli.php;f9;47;25;47;;C:\wamp64\www\gii\calcola_scadenze.php;f9;3;25;3;;C:\wamp64\www\gii\clienti.php;f9;47;25;47;;C:\wamp64\www\gii\ele_ordini.php;f9;4;25;4;;C:\wamp64\www\gii\ele_preventivi.php;f9;4;25;4;;C:\wamp64\www\gii\ges_cassa.php;f9;37;25;37;;C:\wamp64\www\gii\ges_doc.php;f9;43;25;43;;C:\wamp64\www\gii\ges_ord.php;f9;37;25;37;;C:\wamp64\www\gii\ges_ordfo.php;f9;37;25;37;;C:\wamp64\www\gii\ges_prev.php;f9;41;25;41;;C:\wamp64\www\gii\leggi_cliente.php;f9;3;25;3;;C:\wamp64\www\gii\lista_doc.php;f9;44;25;44;;C:\wamp64\www\gii\lista_ordi.php;f9;44;25;44;;C:\wamp64\www\gii\lista_ordifo.php;f9;44;25;44;;C:\wamp64\www\gii\lista_prev.php;f9;44;25;44;;C:\wamp64\www\gii\lista_sconti.php;f9;46;25;46;;C:\wamp64\www\gii\salva_cliente.php;f9;20;25;20;;C:\wamp64\www\gii\staboll.php;f9;15;25;15;;C:\wamp64\www\gii\stafat.php;f9;16;25;16;;C:\wamp64\www\gii\xls_medio2.php;f9;133;25;133;;C:\wamp64\www\gii\ges_magaz_130420.php;f9;53;25;53;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="leggi_codici.php;PHP:PHP Include;C:\wamp64\www\gii\articoli.php;f9;48;25;48;;C:\wamp64\www\gii\clienti.php;f9;48;25;48;;C:\wamp64\www\gii\ges_cassa.php;f9;68;25;68;;C:\wamp64\www\gii\ges_doc.php;f9;77;25;77;;C:\wamp64\www\gii\ges_ord.php;f9;68;25;68;;C:\wamp64\www\gii\ges_ordfo.php;f9;68;25;68;;C:\wamp64\www\gii\ges_prev.php;f14;72;30;72;;C:\wamp64\www\gii\lista_doc.php;f14;46;30;46;;C:\wamp64\www\gii\lista_ordi.php;f14;46;30;46;;C:\wamp64\www\gii\lista_ordifo.php;f14;46;30;46;;C:\wamp64\www\gii\lista_prev.php;f14;46;30;46;;C:\wamp64\www\gii\lista_sconti.php;f14;48;30;48;;C:\wamp64\www\gii\ges_magaz_130420.php;f9;84;25;84;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="MYSQL_ASSOC;PHP:PHP Word;C:\wamp64\www\gii\mysql-fix.php;f10;6;21;6;;;;vpos;;v;;a;;rMYSQLI_ASSOC;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="MYSQL_BOTH;PHP:PHP Word;C:\wamp64\www\gii\mysql-fix.php;f10;8;20;8;;;;vpos;;v;;a;;rMYSQLI_BOTH;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="MYSQL_NUM;PHP:PHP Word;C:\wamp64\www\gii\mysql-fix.php;f10;7;19;7;;;;vpos;;v;;a;;rMYSQLI_NUM;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="ORD_exclmark;PHP:PHP Word;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f9;22;21;22;;;;vpos;;v;;a;;rord(&apos;!&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="ORD_tilde;PHP:PHP Word;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f9;26;18;26;;;;vpos;;v;;a;;rord(&apos;~&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="ORD_u;PHP:PHP Word;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f9;24;14;24;;;;vpos;;v;;a;;rord(&apos;u&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="ORD_z;PHP:PHP Word;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f9;20;14;20;;;;vpos;;v;;a;;rord(&apos;z&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_context.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\pdf_parser.php;f14;46;29;46;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_parser.php;PHP:PHP Include;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f14;19;28;19;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f14;19;28;19;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f14;19;28;19;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_ARRAY;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;32;27;32;;;;vpos;;v;;a;;r6;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_BOOLEAN;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;42;29;42;;;;vpos;;v;;a;;r11;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_DICTIONARY;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;30;32;30;;;;vpos;;v;;a;;r5;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_HEX;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;26;25;26;;;;vpos;;v;;a;;r3;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_NULL;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;20;26;20;;;;vpos;;v;;a;;r0;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_NUMERIC;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;22;29;22;;;;vpos;;v;;a;;r1;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_OBJDEC;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;34;28;34;;;;vpos;;v;;a;;r7;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_OBJECT;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;38;28;38;;;;vpos;;v;;a;;r9;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_OBJREF;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;36;28;36;;;;vpos;;v;;a;;r8;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_REAL;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;44;26;44;;;;vpos;;v;;a;;r12;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_STREAM;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;40;28;40;;;;vpos;;v;;a;;r10;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_STRING;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;28;28;28;;;;vpos;;v;;a;;r4;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="PDF_TYPE_TOKEN;PHP:PHP Word;C:\wamp64\www\gii\FPDI\pdf_parser.php;f13;24;27;24;;;;vpos;;v;;a;;r2;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="codice_fiscale;PHP:Class Name;C:\wamp64\www\gii\class_varie.php;f2;88;3;311;;;;vpos;;v;;a;;r;;d23,88;;b0,0;;m0;;e">
+<treenode node="calcola_codice_fiscale;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f4;102;6;125;;;;vpos;;v;;a;;r;;d3,103;;b0,0;;m0;;e">
+<treenode node="include/database.php;PHP:PHP Include;C:\wamp64\www\gii\class_varie.php;f13;104;33;104;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+</treenode>
+<treenode node="CodFiscControl;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f0;247;1;310;;;;vpos;;v;;a;;r;;d0,248;;b0,0;;m0;;estrCod;;p">
+</treenode>
+<treenode node="codice_fiscale;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f4;98;7;100;;;;vpos;;v;;a;;r;;d3,99;;b0,0;;m0;;e">
+</treenode>
+<treenode node="ExtractBegin;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f0;127;1;191;;;;vpos;;v;;a;;r;;d0,128;;b0,0;;m0;;estrVal;;pbCog;;p">
+</treenode>
+<treenode node="ExtractDate;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f0;193;1;245;;;;vpos;;v;;a;;r;;d0,194;;b0,0;;m0;;edt;;pbSex;;p">
+</treenode>
+</treenode>
+<treenode node="e_mail;PHP:Class Name;C:\wamp64\www\gii\class_varie.php;f2;22;3;28;;;;vpos;;v;;a;;r;;d15,22;;b0,0;;m0;;e">
+<treenode node="e_mail;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f4;24;7;26;;;;vpos;;v;;a;;r;;d51,24;;b0,0;;m0;;eutente;;poggetto;;pmessaggio;;p">
+</treenode>
+</treenode>
+<treenode node="e_mailp;PHP:Class Name;C:\wamp64\www\gii\class_varie.php;f2;32;3;84;;;;vpos;;v;;a;;r;;d16,32;;b0,0;;m0;;e">
+<treenode node="e_mailp;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f4;34;7;82;;;;vpos;;v;;a;;r;;d62,34;;b0,0;;m0;;eutente;;poggetto;;pmessaggio;;pallegato;;p">
+</treenode>
+</treenode>
+<treenode node="FilterASCII85;PHP:Class Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f4;30;5;99;;;;vpos;;v;;a;;r;;d24,30;;b0,0;;m0;;e">
+<treenode node="decode;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f8;36;9;94;;;;vpos;;v;;a;;r;;d29,36;;b0,0;;m0;;ein;;p">
+</treenode>
+<treenode node="encode;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f8;96;9;98;;;;vpos;;v;;a;;r;;d29,96;;b0,0;;m0;;ein;;p">
+</treenode>
+<treenode node="error;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85.php;f8;32;9;34;;;;vpos;;v;;a;;r;;d29,32;;b0,0;;m0;;emsg;;p">
+</treenode>
+</treenode>
+<treenode node="FilterASCII85_FPDI;PHP:Class Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85_FPDI.php;f0;21;1;32;;;;vpos;;v;;aFilterASCII85;;c;;r;;d47,21;;b0,0;;m0;;e">
+<treenode node="error;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85_FPDI.php;f4;29;5;31;;;;vpos;;v;;a;;r;;d25,29;;b0,0;;m0;;emsg;;p">
+</treenode>
+<treenode node="FilterASCII85_FPDI;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterASCII85_FPDI.php;f4;25;5;27;;;;vpos;;v;;a;;r;;d40,25;;b0,0;;m0;;efpdi;;p">
+</treenode>
+</treenode>
+<treenode node="FilterLZW;PHP:Class Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f4;21;5;155;;;;vpos;;v;;a;;r;;d20,21;;b0,0;;m0;;e">
+<treenode node="addStringToTable;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f8;117;9;130;;;;vpos;;v;;a;;r&#10;Definition&#10;    addStringToTable ($oldString, $newString=&apos;&apos;)&#10;&#10;Description&#10;     Add a new string to the string table.;;d62,117;;b0,0;;m0;;eoldString;;pnewString;;p">
+</treenode>
+<treenode node="decode;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f8;43;9;98;;;;vpos;;v;;a;;r&#10;Definition&#10;    decode($data)&#10;&#10;Description&#10;     Method to decode LZW compressed data.&#10;&#10;Parameters:&#10;    string - data    The compressed data;;d31,43;;b0,0;;m0;;estring;;p">
+</treenode>
+<treenode node="encode;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f8;152;9;154;;;;vpos;;v;;a;;r;;d29,152;;b0,0;;m0;;ein;;p">
+</treenode>
+<treenode node="error;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f8;34;9;36;;;;vpos;;v;;a;;r;;d29,34;;b0,0;;m0;;emsg;;p">
+</treenode>
+<treenode node="getNextCode;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f8;133;9;150;;;;vpos;;v;;a;;r;;d31,133;;b0,0;;m0;;e">
+</treenode>
+<treenode node="initsTable;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW.php;f8;104;9;112;;;;vpos;;v;;a;;r&#10;Definition&#10;    initsTable()&#10;&#10;Description&#10;     Initialize the string table.;;d30,104;;b0,0;;m0;;e">
+</treenode>
+</treenode>
+<treenode node="FilterLZW_FPDI;PHP:Class Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW_FPDI.php;f0;21;1;32;;;;vpos;;v;;aFilterLZW;;c;;r;;d39,21;;b0,0;;m0;;e">
+<treenode node="error;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW_FPDI.php;f4;29;5;31;;;;vpos;;v;;a;;r;;d25,29;;b0,0;;m0;;emsg;;p">
+</treenode>
+<treenode node="FilterLZW_FPDI;PHP:Function Name;C:\wamp64\www\gii\FPDI\filters\FilterLZW_FPDI.php;f4;25;5;27;;;;vpos;;v;;a;;r;;d36,25;;b0,0;;m0;;efpdi;;p">
+</treenode>
+</treenode>
+<treenode node="FPDF;PHP:Class Name;C:\wamp64\www\gii\include\fpdf.php;f0;15;1;1607;;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f0;28;1;166;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f0;28;1;166;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;15;1;1683;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f0;28;1;166;;C:\wamp64\www\gii\fpdf.php;f0;15;1;1645;;;;vpos;;v;;a;;r;;d0,16;;b0,0;;m0;;e">
+<treenode node="_begindoc;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1073;1;1078;;;;vpos;;v;;a;;r;;d0,1074;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_beginpage;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1400;1;1437;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1441;1;1478;;C:\wamp64\www\gii\fpdf.php;f0;1441;1;1478;;;;vpos;;v;;a;;r;;d0,1442;;b0,0;;m0;;eorientation;;p">
+</treenode>
+<treenode node="_dochecks;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1063;1;1071;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1068;1;1076;;C:\wamp64\www\gii\fpdf.php;f0;1068;1;1076;;;;vpos;;v;;a;;r;;d0,1069;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_dounderline;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1453;1;1460;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1494;1;1501;;C:\wamp64\www\gii\fpdf.php;f0;1494;1;1501;;;;vpos;;v;;a;;r;;d0,1495;;b0,0;;m0;;ex;;py;;ptxt;;p">
+</treenode>
+<treenode node="_enddoc;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1366;1;1398;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1406;1;1439;;C:\wamp64\www\gii\fpdf.php;f0;1406;1;1439;;;;vpos;;v;;a;;r;;d0,1407;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_endpage;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1439;1;1443;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1480;1;1484;;C:\wamp64\www\gii\fpdf.php;f0;1480;1;1484;;;;vpos;;v;;a;;r;;d0,1481;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_escape;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1585;1;1589;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1623;1;1627;;C:\wamp64\www\gii\fpdf.php;f0;1623;1;1627;;;;vpos;;v;;a;;r;;d0,1624;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="_freadint;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1569;1;1577;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1610;1;1615;;C:\wamp64\www\gii\fpdf.php;f0;1610;1;1615;;;;vpos;;v;;a;;r;;d0,1611;;b0,0;;m0;;ef;;p">
+</treenode>
+<treenode node="_getfontpath;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1078;1;1083;;C:\wamp64\www\gii\fpdf.php;f0;1078;1;1083;;;;vpos;;v;;a;;r;;d0,1079;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_getxobjectdict;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f1;34;5;43;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f1;34;5;43;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f1;34;5;43;;;;vpos;;v;;a;;r;;d28,34;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_newobj;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1445;1;1451;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1486;1;1492;;C:\wamp64\www\gii\fpdf.php;f0;1486;1;1492;;;;vpos;;v;;a;;r;;d0,1487;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_out;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1598;1;1605;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1636;1;1643;;C:\wamp64\www\gii\fpdf.php;f0;1636;1;1643;;;;vpos;;v;;a;;r;;d0,1637;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="_parsejpg;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1462;1;1484;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1503;1;1525;;C:\wamp64\www\gii\fpdf.php;f0;1503;1;1525;;;;vpos;;v;;a;;r;;d0,1504;;b0,0;;m0;;efile;;p">
+</treenode>
+<treenode node="_parsepng;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1486;1;1567;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1527;1;1608;;C:\wamp64\www\gii\fpdf.php;f0;1527;1;1608;;;;vpos;;v;;a;;r;;d0,1528;;b0,0;;m0;;efile;;p">
+</treenode>
+<treenode node="_putcatalog;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1339;1;1357;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1374;1;1392;;C:\wamp64\www\gii\fpdf.php;f0;1374;1;1392;;;;vpos;;v;;a;;r;;d0,1375;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putfonts;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1151;1;1251;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1156;1;1277;;C:\wamp64\www\gii\fpdf.php;f0;1156;1;1277;;;;vpos;;v;;a;;r;;d0,1157;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putheader;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1394;1;1397;;C:\wamp64\www\gii\fpdf.php;f0;1394;1;1397;;;;vpos;;v;;a;;r;;d0,1395;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putimages;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1253;1;1298;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1279;1;1325;;C:\wamp64\www\gii\fpdf.php;f0;1279;1;1325;;;;vpos;;v;;a;;r;;d0,1280;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putinfo;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1323;1;1337;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1358;1;1372;;C:\wamp64\www\gii\fpdf.php;f0;1358;1;1372;;;;vpos;;v;;a;;r;;d0,1359;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putpages;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1080;1;1149;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1085;1;1154;;C:\wamp64\www\gii\fpdf.php;f0;1085;1;1154;;;;vpos;;v;;a;;r;;d0,1086;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putresourcedict;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1333;1;1343;;C:\wamp64\www\gii\fpdf.php;f0;1333;1;1343;;;;vpos;;v;;a;;r;;d0,1334;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putresources;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1300;1;1321;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1345;1;1356;;C:\wamp64\www\gii\fpdf.php;f0;1345;1;1356;;;;vpos;;v;;a;;r;;d0,1346;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putstream;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1591;1;1596;;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f1;30;2;32;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f1;30;2;32;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1629;1;1634;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f1;30;2;32;;C:\wamp64\www\gii\fpdf.php;f0;1629;1;1634;;;;vpos;;v;;a;;r;;d0,1630;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="_puttrailer;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1359;1;1364;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1399;1;1404;;C:\wamp64\www\gii\fpdf.php;f0;1399;1;1404;;;;vpos;;v;;a;;r;;d0,1400;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putxobjectdict;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1327;1;1331;;C:\wamp64\www\gii\fpdf.php;f0;1327;1;1331;;;;vpos;;v;;a;;r;;d0,1328;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_textstring;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;1579;1;1583;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1617;1;1621;;C:\wamp64\www\gii\fpdf.php;f0;1617;1;1621;;;;vpos;;v;;a;;r;;d0,1618;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="_unescape;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f4;88;5;145;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f4;88;5;145;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f4;88;5;145;;;;vpos;;v;;astring;;r&#10;Definition&#10;    _unescape($s)&#10;&#10;Description&#10;     Unescapes a PDF string&#10;&#10;Parameters:&#10;    string $s;;d27,88;;b0,0;;m0;;estring $s;;p">
+</treenode>
+<treenode node="AcceptPageBreak;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;615;1;619;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;616;1;620;;C:\wamp64\www\gii\fpdf.php;f0;616;1;620;;;;vpos;;v;;a;;r;;d0,617;;b0,0;;m0;;e">
+</treenode>
+<treenode node="AddFont;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;459;1;504;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;462;1;508;;C:\wamp64\www\gii\fpdf.php;f0;462;1;508;;;;vpos;;v;;a;;r;;d0,463;;b0,0;;m0;;efamily;;pstyle;;pfile;;p">
+</treenode>
+<treenode node="AddLink;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;580;1;586;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;581;1;587;;C:\wamp64\www\gii\fpdf.php;f0;581;1;587;;;;vpos;;v;;a;;r;;d0,582;;b0,0;;m0;;e">
+</treenode>
+<treenode node="AddPage;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;305;1;370;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;308;1;373;;C:\wamp64\www\gii\fpdf.php;f0;308;1;373;;;;vpos;;v;;a;;r;;d0,309;;b0,0;;m0;;eorientation;;p">
+</treenode>
+<treenode node="AliasNbPages;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;269;1;273;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;273;1;277;;C:\wamp64\www\gii\fpdf.php;f0;273;1;277;;;;vpos;;v;;a;;r;;d0,274;;b0,0;;m0;;ealias;;p">
+</treenode>
+<treenode node="Cell;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;621;1;698;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;622;1;699;;C:\wamp64\www\gii\fpdf.php;f0;622;1;699;;;;vpos;;v;;a;;r;;d0,623;;b0,0;;m0;;ew;;ph;;ptxt;;pborder;;pln;;palign;;pfill;;plink;;p">
+</treenode>
+<treenode node="Circle;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1645;1;1648;;;;vpos;;v;;a;;r;;d0,1646;;b0,0;;m0;;ex;;py;;pr;;pstyle;;p">
+</treenode>
+<treenode node="Close;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;288;1;303;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;291;1;306;;C:\wamp64\www\gii\fpdf.php;f0;291;1;306;;;;vpos;;v;;a;;r;;d0,292;;b0,0;;m0;;e">
+</treenode>
+<treenode node="Ellipse;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf.php;f0;1650;1;1680;;;;vpos;;v;;a;;r;;d0,1651;;b0,0;;m0;;ex;;py;;prx;;pry;;pstyle;;p">
+</treenode>
+<treenode node="Error;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;275;1;279;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;279;1;283;;C:\wamp64\www\gii\fpdf.php;f0;279;1;283;;;;vpos;;v;;a;;r;;d0,280;;b0,0;;m0;;emsg;;p">
+</treenode>
+<treenode node="Footer;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;377;1;380;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;380;1;383;;C:\wamp64\www\gii\fpdf.php;f0;380;1;383;;;;vpos;;v;;a;;r;;d0,381;;b0,0;;m0;;e">
+</treenode>
+<treenode node="FPDF;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;76;1;177;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;77;1;181;;C:\wamp64\www\gii\fpdf.php;f0;77;1;181;;;;vpos;;v;;a;;r;;d0,78;;b0,0;;m0;;eorientation;;punit;;pformat;;p">
+</treenode>
+<treenode node="GetStringWidth;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;421;1;431;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;424;1;434;;C:\wamp64\www\gii\fpdf.php;f0;424;1;434;;;;vpos;;v;;a;;r;;d0,425;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="GetX;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;954;1;958;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;957;1;961;;C:\wamp64\www\gii\fpdf.php;f0;957;1;961;;;;vpos;;v;;a;;r;;d0,958;;b0,0;;m0;;e">
+</treenode>
+<treenode node="GetY;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;969;1;973;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;972;1;976;;C:\wamp64\www\gii\fpdf.php;f0;972;1;976;;;;vpos;;v;;a;;r;;d0,973;;b0,0;;m0;;e">
+</treenode>
+<treenode node="Header;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;372;1;375;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;375;1;378;;C:\wamp64\www\gii\fpdf.php;f0;375;1;378;;;;vpos;;v;;a;;r;;d0,376;;b0,0;;m0;;e">
+</treenode>
+<treenode node="hex2str;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f4;153;5;155;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f4;153;5;155;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f4;153;5;155;;;;vpos;;v;;astring;;r&#10;Definition&#10;    hex2str($hex)&#10;&#10;Description&#10;     Hexadecimal to string&#10;&#10;Parameters:&#10;    string $hex;;d27,153;;b0,0;;m0;;estring $hex;;p">
+</treenode>
+<treenode node="Image;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;894;1;942;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;895;1;945;;C:\wamp64\www\gii\fpdf.php;f0;895;1;945;;;;vpos;;v;;a;;r;;d0,896;;b0,0;;m0;;efile;;px;;py;;pw;;ph;;ptype;;plink;;p">
+</treenode>
+<treenode node="Line;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;441;1;445;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;444;1;448;;C:\wamp64\www\gii\fpdf.php;f0;444;1;448;;;;vpos;;v;;a;;r;;d0,445;;b0,0;;m0;;ex1;;py1;;px2;;py2;;p">
+</treenode>
+<treenode node="Link;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;598;1;602;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;599;1;603;;C:\wamp64\www\gii\fpdf.php;f0;599;1;603;;;;vpos;;v;;a;;r;;d0,600;;b0,0;;m0;;ex;;py;;pw;;ph;;plink;;p">
+</treenode>
+<treenode node="Ln;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;944;1;952;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;947;1;955;;C:\wamp64\www\gii\fpdf.php;f0;947;1;955;;;;vpos;;v;;a;;r;;d0,948;;b0,0;;m0;;eh;;p">
+</treenode>
+<treenode node="MultiCell;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;700;1;811;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;701;1;812;;C:\wamp64\www\gii\fpdf.php;f0;701;1;812;;;;vpos;;v;;a;;r;;d0,702;;b0,0;;m0;;ew;;ph;;ptxt;;pborder;;palign;;pfill;;p">
+</treenode>
+<treenode node="Open;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;281;1;286;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;285;1;289;;C:\wamp64\www\gii\fpdf.php;f0;285;1;289;;;;vpos;;v;;a;;r;;d0,286;;b0,0;;m0;;e">
+</treenode>
+<treenode node="Output;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;992;1;1056;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;995;1;1061;;C:\wamp64\www\gii\fpdf.php;f0;995;1;1061;;;;vpos;;v;;a;;r;;d0,996;;b0,0;;m0;;ename;;pdest;;p">
+</treenode>
+<treenode node="PageNo;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;382;1;386;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;385;1;389;;C:\wamp64\www\gii\fpdf.php;f0;385;1;389;;;;vpos;;v;;a;;r;;d0,386;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_write_value;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f4;50;5;80;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f4;50;5;80;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f4;50;5;80;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_write_value(&amp;$value)&#10;&#10;Description&#10;     Encryption of imported data by FPDI&#10;&#10;Parameters:&#10;    array $value;;d38,50;;b0,0;;m0;;earray $value;;p">
+</treenode>
+<treenode node="Rect;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;447;1;457;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;450;1;460;;C:\wamp64\www\gii\fpdf.php;f0;450;1;460;;;;vpos;;v;;a;;r;;d0,451;;b0,0;;m0;;ex;;py;;pw;;ph;;pstyle;;p">
+</treenode>
+<treenode node="SetAuthor;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;251;1;255;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;255;1;259;;C:\wamp64\www\gii\fpdf.php;f0;255;1;259;;;;vpos;;v;;a;;r;;d0,256;;b0,0;;m0;;eauthor;;p">
+</treenode>
+<treenode node="SetAutoPageBreak;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;209;1;215;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;213;1;219;;C:\wamp64\www\gii\fpdf.php;f0;213;1;219;;;;vpos;;v;;a;;r;;d0,214;;b0,0;;m0;;eauto;;pmargin;;p">
+</treenode>
+<treenode node="SetCompression;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;230;1;237;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;234;1;241;;C:\wamp64\www\gii\fpdf.php;f0;234;1;241;;;;vpos;;v;;a;;r;;d0,235;;b0,0;;m0;;ecompress;;p">
+</treenode>
+<treenode node="SetCreator;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;263;1;267;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;267;1;271;;C:\wamp64\www\gii\fpdf.php;f0;267;1;271;;;;vpos;;v;;a;;r;;d0,268;;b0,0;;m0;;ecreator;;p">
+</treenode>
+<treenode node="SetDisplayMode;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;217;1;228;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;221;1;232;;C:\wamp64\www\gii\fpdf.php;f0;221;1;232;;;;vpos;;v;;a;;r;;d0,222;;b0,0;;m0;;ezoom;;playout;;p">
+</treenode>
+<treenode node="SetDrawColor;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;388;1;397;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;391;1;400;;C:\wamp64\www\gii\fpdf.php;f0;391;1;400;;;;vpos;;v;;a;;r;;d0,392;;b0,0;;m0;;er;;pg;;pb;;p">
+</treenode>
+<treenode node="SetFillColor;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;399;1;409;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;402;1;412;;C:\wamp64\www\gii\fpdf.php;f0;402;1;412;;;;vpos;;v;;a;;r;;d0,403;;b0,0;;m0;;er;;pg;;pb;;p">
+</treenode>
+<treenode node="SetFont;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;506;1;567;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;510;1;568;;C:\wamp64\www\gii\fpdf.php;f0;510;1;568;;;;vpos;;v;;a;;r;;d0,511;;b0,0;;m0;;efamily;;pstyle;;psize;;p">
+</treenode>
+<treenode node="SetFontSize;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;569;1;578;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;570;1;579;;C:\wamp64\www\gii\fpdf.php;f0;570;1;579;;;;vpos;;v;;a;;r;;d0,571;;b0,0;;m0;;esize;;p">
+</treenode>
+<treenode node="SetKeywords;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;257;1;261;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;261;1;265;;C:\wamp64\www\gii\fpdf.php;f0;261;1;265;;;;vpos;;v;;a;;r;;d0,262;;b0,0;;m0;;ekeywords;;p">
+</treenode>
+<treenode node="SetLeftMargin;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;189;1;195;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;193;1;199;;C:\wamp64\www\gii\fpdf.php;f0;193;1;199;;;;vpos;;v;;a;;r;;d0,194;;b0,0;;m0;;emargin;;p">
+</treenode>
+<treenode node="SetLineWidth;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;433;1;439;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;436;1;442;;C:\wamp64\www\gii\fpdf.php;f0;436;1;442;;;;vpos;;v;;a;;r;;d0,437;;b0,0;;m0;;ewidth;;p">
+</treenode>
+<treenode node="SetLink;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;588;1;596;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;589;1;597;;C:\wamp64\www\gii\fpdf.php;f0;589;1;597;;;;vpos;;v;;a;;r;;d0,590;;b0,0;;m0;;elink;;py;;ppage;;p">
+</treenode>
+<treenode node="SetMargins;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;179;1;187;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;183;1;191;;C:\wamp64\www\gii\fpdf.php;f0;183;1;191;;;;vpos;;v;;a;;r;;d0,184;;b0,0;;m0;;eleft;;ptop;;pright;;p">
+</treenode>
+<treenode node="SetRightMargin;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;203;1;207;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;207;1;211;;C:\wamp64\www\gii\fpdf.php;f0;207;1;211;;;;vpos;;v;;a;;r;;d0,208;;b0,0;;m0;;emargin;;p">
+</treenode>
+<treenode node="SetSubject;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;245;1;249;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;249;1;253;;C:\wamp64\www\gii\fpdf.php;f0;249;1;253;;;;vpos;;v;;a;;r;;d0,250;;b0,0;;m0;;esubject;;p">
+</treenode>
+<treenode node="SetTextColor;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;411;1;419;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;414;1;422;;C:\wamp64\www\gii\fpdf.php;f0;414;1;422;;;;vpos;;v;;a;;r;;d0,415;;b0,0;;m0;;er;;pg;;pb;;p">
+</treenode>
+<treenode node="SetTitle;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;239;1;243;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;243;1;247;;C:\wamp64\www\gii\fpdf.php;f0;243;1;247;;;;vpos;;v;;a;;r;;d0,244;;b0,0;;m0;;etitle;;p">
+</treenode>
+<treenode node="SetTopMargin;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;197;1;201;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;201;1;205;;C:\wamp64\www\gii\fpdf.php;f0;201;1;205;;;;vpos;;v;;a;;r;;d0,202;;b0,0;;m0;;emargin;;p">
+</treenode>
+<treenode node="SetX;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;960;1;967;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;963;1;970;;C:\wamp64\www\gii\fpdf.php;f0;963;1;970;;;;vpos;;v;;a;;r;;d0,964;;b0,0;;m0;;ex;;p">
+</treenode>
+<treenode node="SetXY;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;985;1;990;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;988;1;993;;C:\wamp64\www\gii\fpdf.php;f0;988;1;993;;;;vpos;;v;;a;;r;;d0,989;;b0,0;;m0;;ex;;py;;p">
+</treenode>
+<treenode node="SetY;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;975;1;983;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;978;1;986;;C:\wamp64\www\gii\fpdf.php;f0;978;1;986;;;;vpos;;v;;a;;r;;d0,979;;b0,0;;m0;;ey;;p">
+</treenode>
+<treenode node="str2hex;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi2tcpdf_bridge.php;f4;163;5;165;;C:\wamp64\www\gii\fpdf\fpdi2tcpdf_bridge.php;f4;163;5;165;;C:\wamp64\www\gii\fpdi2tcpdf_bridge.php;f4;163;5;165;;;;vpos;;v;;astring;;r&#10;Definition&#10;    str2hex($str)&#10;&#10;Description&#10;     String to hexadecimal&#10;&#10;Parameters:&#10;    string $str;;d27,163;;b0,0;;m0;;estring $str;;p">
+</treenode>
+<treenode node="Text;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;604;1;613;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;605;1;614;;C:\wamp64\www\gii\fpdf.php;f0;605;1;614;;;;vpos;;v;;a;;r;;d0,606;;b0,0;;m0;;ex;;py;;ptxt;;p">
+</treenode>
+<treenode node="Write;PHP:Function Name;C:\wamp64\www\gii\include\fpdf.php;f0;813;1;892;;C:\wamp64\www\gii\fpdf\fpdf.php;f0;814;1;893;;C:\wamp64\www\gii\fpdf.php;f0;814;1;893;;;;vpos;;v;;a;;r;;d0,815;;b0,0;;m0;;eh;;ptxt;;plink;;p">
+</treenode>
+</treenode>
+<treenode node="FPDF_TPL;PHP:Class Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f0;19;1;459;;C:\wamp64\www\gii\fpdf_tpl.php;f0;19;1;459;;;;vpos;;v;;aFPDF;;c;;r;;d28,19;;b0,0;;m0;;e">
+<treenode node="_out;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;452;5;458;;C:\wamp64\www\gii\fpdf_tpl.php;f4;452;5;458;;;;vpos;;v;;a;;r&#10;Definition&#10;    _out($s)&#10;&#10;Description&#10;     Private Method;;d22,452;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="_putformxobjects;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;371;5;428;;C:\wamp64\www\gii\fpdf_tpl.php;f4;371;5;428;;;;vpos;;v;;a;;r&#10;Definition&#10;    _putformxobjects()&#10;&#10;Description&#10;     Private Method that writes the form xobjects;;d32,371;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putimages;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;434;5;437;;C:\wamp64\www\gii\fpdf_tpl.php;f4;434;5;437;;;;vpos;;v;;a;;r&#10;Definition&#10;    _putimages()&#10;&#10;Description&#10;     Overwritten to add _putformxobjects() after _putimages();;d26,434;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putxobjectdict;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;439;5;447;;C:\wamp64\www\gii\fpdf_tpl.php;f4;439;5;447;;;;vpos;;v;;a;;r;;d31,439;;b0,0;;m0;;e">
+</treenode>
+<treenode node="AddLink;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;346;5;355;;C:\wamp64\www\gii\fpdf_tpl.php;f4;346;5;355;;;;vpos;;v;;a;;r;;d23,346;;b0,0;;m0;;e">
+</treenode>
+<treenode node="AddPage;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;319;5;329;;C:\wamp64\www\gii\fpdf_tpl.php;f4;319;5;329;;;;vpos;;v;;a;;r&#10;Definition&#10;    AddPage($orientation = &apos;&apos;, $format = &apos;&apos;, $keepmargins = false, $tocpage = false)&#10;&#10;Description&#10;     See FPDF-Documentation ;s-);;d94,319;;b0,0;;m0;;eorientation;;pformat;;pkeepmargins;;ptocpage;;p">
+</treenode>
+<treenode node="beginTemplate;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;75;5;135;;C:\wamp64\www\gii\fpdf_tpl.php;f4;75;5;135;;;;vpos;;v;;aint;;r&#10;Definition&#10;    beginTemplate($x = null, $y = null, $w = null, $h = null)&#10;&#10;Description&#10;     Start a Template&#10;&#10;Parameters:&#10;    int $x - The x-coordinate given in user-unit&#10;    int $y - The y-coordinate given in user-unit&#10;    int $w - The width given in user-unit&#10;    int $h - The height given in user-unit&#10;&#10;Return:&#10;   The ID of new created Template;;d71,75;;b0,0;;m0;;eint $x;;pint $y;;pint $w;;pint $h;;p">
+</treenode>
+<treenode node="endTemplate;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;144;5;174;;C:\wamp64\www\gii\fpdf_tpl.php;f4;144;5;174;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    endTemplate()&#10;&#10;Description&#10;     End Template&#10;&#10;Return:&#10;   If a template is opened, the ID is returned;;d27,144;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getTemplateSize;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;250;5;269;;C:\wamp64\www\gii\fpdf_tpl.php;f4;250;5;269;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    getTemplateSize($tplidx, $_w = 0, $_h = 0)&#10;&#10;Description&#10;     Get The calculated Size of a Template&#10;&#10;Parameters:&#10;    int $tplidx - A valid template-Id&#10;    int $_w - The width of the template&#10;    int $_h - The height of the template&#10;&#10;Return:&#10;   The height and width of the template;;d56,250;;b0,0;;m0;;eint $tplidx;;pint $_w;;pint $_h;;p">
+</treenode>
+<treenode node="Image;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;294;5;312;;C:\wamp64\www\gii\fpdf_tpl.php;f4;294;5;312;;;;vpos;;v;;a;;r&#10;Definition&#10;    Image(&#10;  $file, $x = &apos;&apos;, $y = &apos;&apos;, $w = 0, $h = 0, $type = &apos;&apos;, $link = &apos;&apos;, $align = &apos;&apos;, $resize = false,&#10;  $dpi = 300, $palign = &apos;&apos;, $ismask = false, $imgmask = false, $border = 0, $fitbox = false,&#10;  $hidden = false, $fitonpage = false, $alt = false, $altimgs = array()&#10;    )&#10;&#10;Description&#10;     See FPDF/TCPDF-Documentation ;s-);;d6,298;;b0,0;;m0;;efile;;px;;py;;pw;;ph;;ptype;;plink;;palign;;presize;;pdpi;;ppalign;;pismask;;pimgmask;;pborder;;pfitbox;;phidden;;pfitonpage;;palt;;paltimgs;;p">
+</treenode>
+<treenode node="Link;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;334;5;344;;C:\wamp64\www\gii\fpdf_tpl.php;f4;334;5;344;;;;vpos;;v;;a;;r&#10;Definition&#10;    Link($x, $y, $w, $h, $link, $spaces = 0)&#10;&#10;Description&#10;     Preserve adding Links in Templates ...won&apos;t work;;d54,334;;b0,0;;m0;;ex;;py;;pw;;ph;;plink;;pspaces;;p">
+</treenode>
+<treenode node="SetFont;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f11;274;5;289;;C:\wamp64\www\gii\fpdf_tpl.php;f11;274;5;289;;;;vpos;;v;;a;;r&#10;Definition&#10;    SetFont($family, $style = &apos;&apos;, $size = 0)&#10;&#10;Description&#10;     See FPDF/TCPDF-Documentation ;s-);;d61,274;;b1,0;;m0;;efamily;;pstyle;;psize;;p">
+</treenode>
+<treenode node="SetLink;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;357;5;366;;C:\wamp64\www\gii\fpdf_tpl.php;f4;357;5;366;;;;vpos;;v;;a;;r;;d48,357;;b0,0;;m0;;elink;;py;;ppage;;p">
+</treenode>
+<treenode node="useTemplate;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_tpl.php;f4;193;5;238;;C:\wamp64\www\gii\fpdf_tpl.php;f4;193;5;238;;;;vpos;;v;;a;;r&#10;Definition&#10;    useTemplate($tplidx, $_x = null, $_y = null, $_w = 0, $_h = 0)&#10;&#10;Description&#10;     Use a Template in current Page or other Template&#10;&#10;Parameters:&#10;    int $tplidx - A valid template-Id&#10;    int $_x - The x-position&#10;    int $_y - The y-position&#10;    int $_w - The new width of the template&#10;    int $_h - The new height of the template;;d76,193;;b0,0;;m0;;eint $tplidx;;pint $_x;;pint $_y;;pint $_w;;pint $_h;;p">
+</treenode>
+</treenode>
+<treenode node="FPDI;PHP:Class Name;C:\wamp64\www\gii\FPDI\fpdi.php;f0;30;1;587;;C:\wamp64\www\gii\fpdf\fpdi.php;f0;30;1;587;;C:\wamp64\www\gii\fpdi.php;f0;30;1;587;;;;vpos;;v;;aFPDF_TPL;;c;;r;;d28,30;;b0,0;;m0;;e">
+<treenode node="_closeParsers;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;569;5;575;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;569;5;575;;C:\wamp64\www\gii\fpdi.php;f4;569;5;575;;;;vpos;;v;;a;;r&#10;Definition&#10;    _closeParsers()&#10;&#10;Description&#10;     close all files opened by parsers;;d29,569;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_enddoc;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;561;5;564;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;561;5;564;;C:\wamp64\www\gii\fpdi.php;f4;561;5;564;;;;vpos;;v;;a;;r&#10;Definition&#10;    _enddoc()&#10;&#10;Description&#10;     rewritten to close opened parsers;;d23,561;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_getPdfParser;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;101;5;103;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;101;5;103;;C:\wamp64\www\gii\fpdi.php;f4;101;5;103;;;;vpos;;v;;afpdi_pdf_parser;;r&#10;Definition&#10;    _getPdfParser($filename)&#10;&#10;Description&#10;     Returns a PDF parser object&#10;&#10;Parameters:&#10;    string $filename;;d38,101;;b0,0;;m0;;estring $filename;;p">
+</treenode>
+<treenode node="_newobj;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;404;5;417;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;404;5;417;;C:\wamp64\www\gii\fpdi.php;f4;404;5;417;;;;vpos;;v;;a;;r&#10;Definition&#10;    _newobj($obj_id = false, $onlynewobj = false)&#10;&#10;Description&#10;     Rewritten to handle existing own defined objects;;d59,404;;b0,0;;m0;;eobj_id;;ponlynewobj;;p">
+</treenode>
+<treenode node="_putformxobjects;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;289;5;399;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;289;5;399;;C:\wamp64\www\gii\fpdi.php;f4;289;5;399;;;;vpos;;v;;a;;r&#10;Definition&#10;    _putformxobjects()&#10;&#10;Description&#10;     Private Method that writes the form xobjects;;d32,289;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putimportedobjects;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;259;5;283;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;259;5;283;;C:\wamp64\www\gii\fpdi.php;f4;259;5;283;;;;vpos;;v;;a;;r&#10;Definition&#10;    _putimportedobjects()&#10;&#10;Description&#10;     Private method, that rebuilds all needed objects of source files;;d35,259;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_straightOut;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;527;5;555;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;527;5;555;;C:\wamp64\www\gii\fpdi.php;f4;527;5;555;;;;vpos;;v;;a;;r&#10;Definition&#10;    _straightOut($s)&#10;&#10;Description&#10;     Modified so not each call will add a newline to the output.;;d30,527;;b0,0;;m0;;es;;p">
+</treenode>
+<treenode node="cleanUp;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;580;5;586;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;580;5;586;;C:\wamp64\www\gii\fpdi.php;f4;580;5;586;;;;vpos;;v;;a;;r&#10;Definition&#10;    cleanUp()&#10;&#10;Description&#10;     Removes cylced references and closes the file handles of the parser objects;;d23,580;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getLastUsedPageBox;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;210;5;212;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;210;5;212;;C:\wamp64\www\gii\fpdi.php;f4;210;5;212;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getLastUsedPageBox()&#10;&#10;Description&#10;     Returns the last used page box;;d34,210;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getPDFVersion;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;110;2;112;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;110;2;112;;C:\wamp64\www\gii\fpdi.php;f4;110;2;112;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getPDFVersion()&#10;&#10;Description&#10;     Get the current PDF version;;d29,110;;b0,0;;m0;;e">
+</treenode>
+<treenode node="importPage;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;129;5;203;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;129;5;203;;C:\wamp64\www\gii\fpdi.php;f4;129;5;203;;;;vpos;;v;;aint;;r&#10;Definition&#10;    importPage($pageno, $boxName = &apos;/CropBox&apos;)&#10;&#10;Description&#10;     Import a page&#10;&#10;Parameters:&#10;    int $pageno - pagenumber&#10;&#10;Return:&#10;   Index of imported page - to use with fpdf_tpl::useTemplate();;d56,129;;b0,0;;m0;;epageno;;pboxName;;p">
+</treenode>
+<treenode node="pdf_write_value;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;425;5;521;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;425;5;521;;C:\wamp64\www\gii\fpdi.php;f4;425;5;521;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_write_value(&amp;$value)&#10;&#10;Description&#10;     Writes a value Needed to rebuild the source document&#10;&#10;Parameters:&#10;    mixed $value - A PDF-Value;;d4,426;;b0,0;;m0;;emixed $value;;p">
+</treenode>
+<treenode node="setPDFVersion;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f1;119;2;121;;C:\wamp64\www\gii\fpdf\fpdi.php;f1;119;2;121;;C:\wamp64\www\gii\fpdi.php;f1;119;2;121;;;;vpos;;v;;astring;;r&#10;Definition&#10;    setPDFVersion($version = &apos;1.3&apos;)&#10;&#10;Description&#10;     Set the PDF version;;d42,119;;b0,0;;m0;;eversion;;p">
+</treenode>
+<treenode node="setSourceFile;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;85;5;93;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;85;5;93;;C:\wamp64\www\gii\fpdi.php;f4;85;5;93;;;;vpos;;v;;aint;;r&#10;Definition&#10;    setSourceFile($filename)&#10;&#10;Description&#10;     Set a source-file&#10;&#10;Parameters:&#10;    string $filename - a valid filename&#10;&#10;Return:&#10;   number of available pages;;d38,85;;b0,0;;m0;;estring $filename;;p">
+</treenode>
+<treenode node="useTemplate;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi.php;f4;215;5;254;;C:\wamp64\www\gii\fpdf\fpdi.php;f4;215;5;254;;C:\wamp64\www\gii\fpdi.php;f4;215;5;254;;;;vpos;;v;;a;;r;;d101,215;;b0,0;;m0;;etplidx;;p_x;;p_y;;p_w;;p_h;;padjustPageSize;;p">
+</treenode>
+</treenode>
+<treenode node="fpdi_pdf_parser;PHP:Class Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f0;21;1;420;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f0;21;1;420;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f0;21;1;420;;;;vpos;;v;;apdf_parser;;c;;r;;d41,21;;b0,0;;m0;;e">
+<treenode node="_getPageBoxes;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;336;5;346;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;336;5;346;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;336;5;346;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    _getPageBoxes($page, $k)&#10;&#10;Description&#10;     Get all boxes from /Page&#10;&#10;Parameters:&#10;    array - a /Page;;d38,336;;b0,0;;m0;;epage;;pk;;p">
+</treenode>
+<treenode node="_getPageContent;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;191;5;208;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;191;5;208;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;191;5;208;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    _getPageContent($content_ref)&#10;&#10;Description&#10;     Resolve all content-objects&#10;&#10;Parameters:&#10;    array $content_ref;;d43,191;;b0,0;;m0;;earray $content_ref;;p">
+</treenode>
+<treenode node="_getPageResources;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;139;5;161;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;139;5;161;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;139;5;161;;;;vpos;;v;;a;;r&#10;Definition&#10;    _getPageResources ($obj)&#10;&#10;Description&#10;     Get page-resources from /Page&#10;&#10;Parameters:&#10;    array $obj - Array of pdf-data;;d38,139;;b0,0;;m0;;earray $obj;;p">
+</treenode>
+<treenode node="_getPageRotation;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;358;5;375;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;358;5;375;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;358;5;375;;;;vpos;;v;;a;;r;;d36,358;;b0,0;;m0;;eobj;;p">
+</treenode>
+<treenode node="_rebuildContentStream;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;217;5;278;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;217;5;278;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;217;5;278;;;;vpos;;v;;astring;;r&#10;Definition&#10;    _rebuildContentStream($obj)&#10;&#10;Description&#10;     Rebuild content-streams&#10;&#10;Parameters:&#10;    array $obj;;d41,217;;b0,0;;m0;;earray $obj;;p">
+</treenode>
+<treenode node="cleanUp;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;86;5;89;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;86;5;89;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;86;5;89;;;;vpos;;v;;a;;r&#10;Definition&#10;    cleanUp()&#10;&#10;Description&#10;     Removes reference to fpdi object and closes the file handle;;d23,86;;b0,0;;m0;;e">
+</treenode>
+<treenode node="error;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;96;5;98;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;96;5;98;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;96;5;98;;;;vpos;;v;;a;;r&#10;Definition&#10;    error($msg)&#10;&#10;Description&#10;     Overwrite parent::error()&#10;&#10;Parameters:&#10;    string $msg - Error-Message;;d25,96;;b0,0;;m0;;estring $msg;;p">
+</treenode>
+<treenode node="fpdi_pdf_parser;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;68;5;81;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;68;5;81;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;68;5;81;;;;vpos;;v;;a;;r&#10;Definition&#10;    fpdi_pdf_parser($filename, &amp;$fpdi)&#10;&#10;Description&#10;     Constructor&#10;&#10;Parameters:&#10;    string $filename - Source-Filename&#10;    object $fpdi - Object of type fpdi;;d48,68;;b0,0;;m0;;estring $filename;;pobject $fpdi;;p">
+</treenode>
+<treenode node="getContent;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;171;5;182;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;171;5;182;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;171;5;182;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getContent()&#10;&#10;Description&#10;     Get content of current page;;d26,171;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getPageBox;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;290;5;317;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;290;5;317;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;290;5;317;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    getPageBox($page, $box_index, $k)&#10;&#10;Description&#10;     Get a Box from a page Arrayformat is same as used by fpdf_tpl&#10;&#10;Parameters:&#10;    array $page - a /Page&#10;    string $box_index - Type of Box&#10;    float - Scale factor from user space units to points;;d47,290;;b0,0;;m0;;earray $page;;pstring $box_index;;pfloat;;p">
+</treenode>
+<treenode node="getPageBoxes;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f5;326;5;328;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f5;326;5;328;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f5;326;5;328;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    getPageBoxes($pageno, $k)&#10;&#10;Description&#10;     Get all page boxes by page no&#10;&#10;Parameters:&#10;    int - The page number&#10;    float - Scale factor from user space units to points;;d40,326;;b0,0;;m0;;eint;;pfloat;;p">
+</treenode>
+<treenode node="getPageCount;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;105;5;107;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;105;5;107;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;105;5;107;;;;vpos;;v;;aint;;r&#10;Definition&#10;    getPageCount()&#10;&#10;Description&#10;     Get pagecount from sourcefile;;d28,105;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getPageResources;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;130;5;132;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;130;5;132;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;130;5;132;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    getPageResources()&#10;&#10;Description&#10;     Get page-resources from current page;;d32,130;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getPageRotation;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;354;5;356;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;354;5;356;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;354;5;356;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    getPageRotation($pageno)&#10;&#10;Description&#10;     Get the page rotation by pageno&#10;&#10;Parameters:&#10;    integer $pageno;;d38,354;;b0,0;;m0;;einteger $pageno;;p">
+</treenode>
+<treenode node="getPDFVersion;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;416;5;419;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;416;5;419;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;416;5;419;;;;vpos;;v;;a;;r&#10;Definition&#10;    getPDFVersion()&#10;&#10;Description&#10;     Get PDF-Version;;d29,416;;b0,0;;m0;;e">
+</treenode>
+<treenode node="read_pages;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;384;5;407;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;384;5;407;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;384;5;407;;;;vpos;;v;;a;;r&#10;Definition&#10;    read_pages(&amp;$c, &amp;$pages, &amp;$result)&#10;&#10;Description&#10;     Read all /Page(es)&#10;&#10;Parameters:&#10;    object - pdf_context&#10;    array - /Pages&#10;    array - the result-array;;d48,384;;b0,0;;m0;;eobject;;parray;;parray;;p">
+</treenode>
+<treenode node="setPageno;PHP:Function Name;C:\wamp64\www\gii\FPDI\fpdi_pdf_parser.php;f4;115;5;123;;C:\wamp64\www\gii\fpdf\fpdi_pdf_parser.php;f4;115;5;123;;C:\wamp64\www\gii\fpdi_pdf_parser.php;f4;115;5;123;;;;vpos;;v;;a;;r&#10;Definition&#10;    setPageno($pageno)&#10;&#10;Description&#10;     Set pageno&#10;&#10;Parameters:&#10;    int $pageno - Pagenumber to use;;d32,115;;b0,0;;m0;;eint $pageno;;p">
+</treenode>
+</treenode>
+<treenode node="PDF_AutoPrint;PHP:Class Name;C:\wamp64\www\gii\stampaordcl_2.php;f0;115;1;491;;C:\wamp64\www\gii\staboll.php;f0;99;1;486;;C:\wamp64\www\gii\stafat.php;f0;88;1;362;;C:\wamp64\www\gii\stampaord.php;f0;130;1;506;;C:\wamp64\www\gii\stampaordfo.php;f0;116;1;509;;C:\wamp64\www\gii\stampaprev.php;f0;99;1;442;;;;vpos;;v;;aPDF_Javascript;;c;;r;;d0,100;;b0,0;;m0;;e">
+<treenode node="AutoPrint;PHP:Function Name;C:\wamp64\www\gii\stampaordcl_2.php;f0;117;1;123;;C:\wamp64\www\gii\staboll.php;f0;101;1;108;;C:\wamp64\www\gii\stafat.php;f0;90;1;95;;C:\wamp64\www\gii\stampaord.php;f0;132;1;138;;C:\wamp64\www\gii\stampaordfo.php;f0;118;1;124;;C:\wamp64\www\gii\stampaprev.php;f0;101;1;107;;;;vpos;;v;;a;;r;;d0,102;;b0,0;;m0;;edialog;;p">
+</treenode>
+<treenode node="Footer;PHP:Function Name;C:\wamp64\www\gii\stampaordcl_2.php;f0;420;1;490;;C:\wamp64\www\gii\staboll.php;f0;437;1;484;;C:\wamp64\www\gii\stafat.php;f0;352;1;361;;C:\wamp64\www\gii\stampaord.php;f0;435;1;505;;C:\wamp64\www\gii\stampaordfo.php;f0;409;1;508;;C:\wamp64\www\gii\stampaprev.php;f0;362;1;441;;;;vpos;;v;;a;;r;;d0,363;;b0,0;;m0;;e">
+</treenode>
+<treenode node="Header;PHP:Function Name;C:\wamp64\www\gii\stampaordcl_2.php;f0;125;1;418;;C:\wamp64\www\gii\staboll.php;f0;110;1;435;;C:\wamp64\www\gii\stafat.php;f0;97;1;350;;C:\wamp64\www\gii\stampaord.php;f0;140;1;433;;C:\wamp64\www\gii\stampaordfo.php;f0;126;1;407;;C:\wamp64\www\gii\stampaprev.php;f0;109;1;360;;;;vpos;;v;;a;;r;;d0,110;;b0,0;;m0;;e">
+</treenode>
+</treenode>
+<treenode node="pdf_context;PHP:Class Name;C:\wamp64\www\gii\FPDI\pdf_context.php;f4;21;5;102;;;;vpos;;v;;a;;r;;d22,21;;b0,0;;m0;;e">
+<treenode node="ensure_content;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_context.php;f5;74;6;80;;;;vpos;;v;;a;;r;;d31,74;;b0,0;;m0;;e">
+</treenode>
+<treenode node="increase_length;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_context.php;f5;84;3;101;;;;vpos;;v;;a;;r;;d40,84;;b0,0;;m0;;el;;p">
+</treenode>
+<treenode node="pdf_context;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_context.php;f5;39;6;44;;;;vpos;;v;;a;;r;;d31,39;;b0,0;;m0;;ef;;p">
+</treenode>
+<treenode node="reset;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_context.php;f5;50;6;66;;;;vpos;;v;;a;;r;;d43,50;;b0,0;;m0;;epos;;pl;;p">
+</treenode>
+</treenode>
+<treenode node="PDF_Draw;PHP:Class Name;C:\wamp64\www\gii\draw.php;f0;3;1;479;;;;vpos;;v;;aFPDF;;c;;r;;d28,3;;b0,0;;m0;;e">
+<treenode node="_Curve;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;475;2;477;;;;vpos;;v;;a;;r;;d47,475;;b0,0;;m0;;ex1;;py1;;px2;;py2;;px3;;py3;;p">
+</treenode>
+<treenode node="_Line;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;466;2;468;;;;vpos;;v;;a;;r;;d24,466;;b0,0;;m0;;ex;;py;;p">
+</treenode>
+<treenode node="_Point;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;459;2;461;;;;vpos;;v;;a;;r;;d25,459;;b0,0;;m0;;ex;;py;;p">
+</treenode>
+<treenode node="Circle;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;249;2;251;;;;vpos;;v;;a;;r;;d124,249;;b0,0;;m0;;ex0;;py0;;pr;;pastart;;pafinish;;pstyle;;pline_style;;pfill_color;;pnSeg;;p">
+</treenode>
+<treenode node="Curve;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;127;2;150;;;;vpos;;v;;a;;r;;d109,127;;b0,0;;m0;;ex0;;py0;;px1;;py1;;px2;;py2;;px3;;py3;;pstyle;;pline_style;;pfill_color;;p">
+</treenode>
+<treenode node="Ellipse;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;163;2;237;;;;vpos;;v;;a;;r;;d147,163;;b0,0;;m0;;ex0;;py0;;prx;;pry;;pangle;;pastart;;pafinish;;pstyle;;pline_style;;pfill_color;;pnSeg;;p">
+</treenode>
+<treenode node="Line;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;58;2;62;;;;vpos;;v;;a;;r;;d50,58;;b0,0;;m0;;ex1;;py1;;px2;;py2;;pstyle;;p">
+</treenode>
+<treenode node="Polygon;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;261;2;307;;;;vpos;;v;;a;;r;;d75,261;;b0,0;;m0;;ep;;pstyle;;pline_style;;pfill_color;;p">
+</treenode>
+<treenode node="Rect;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;76;2;116;;;;vpos;;v;;a;;r;;d86,76;;b0,0;;m0;;ex;;py;;pw;;ph;;pstyle;;pborder_style;;pfill_color;;p">
+</treenode>
+<treenode node="RegularPolygon;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;324;2;337;;;;vpos;;v;;a;;r;;d200,324;;b0,0;;m0;;ex0;;py0;;pr;;pns;;pangle;;pcircle;;pstyle;;pline_style;;pfill_color;;pcircle_style;;pcircle_line_style;;pcircle_fill_color;;p">
+</treenode>
+<treenode node="RoundedRect;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;390;2;452;;;;vpos;;v;;a;;r;;d121,390;;b0,0;;m0;;ex;;py;;pw;;ph;;pr;;pround_corner;;pstyle;;pborder_style;;pfill_color;;p">
+</treenode>
+<treenode node="SetLineStyle;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;15;2;51;;;;vpos;;v;;a;;r;;d31,15;;b0,0;;m0;;estyle;;p">
+</treenode>
+<treenode node="StarPolygon;PHP:Function Name;C:\wamp64\www\gii\draw.php;f1;355;2;379;;;;vpos;;v;;a;;r;;d202,355;;b0,0;;m0;;ex0;;py0;;pr;;pnv;;png;;pangle;;pcircle;;pstyle;;pline_style;;pfill_color;;pcircle_style;;pcircle_line_style;;pcircle_fill_color;;p">
+</treenode>
+</treenode>
+<treenode node="PDF_Javascript;PHP:Class Name;C:\wamp64\www\gii\fpdf\fpdf_js.php;f0;3;1;40;;C:\wamp64\www\gii\fpdf_js.php;f0;3;1;40;;;;vpos;;v;;aFPDF;;c;;r;;d34,3;;b0,0;;m0;;e">
+<treenode node="_putcatalog;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_js.php;f1;34;2;39;;C:\wamp64\www\gii\fpdf_js.php;f1;34;2;39;;;;vpos;;v;;a;;r;;d24,34;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putjavascript;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_js.php;f1;12;2;25;;C:\wamp64\www\gii\fpdf_js.php;f1;12;2;25;;;;vpos;;v;;a;;r;;d27,12;;b0,0;;m0;;e">
+</treenode>
+<treenode node="_putresources;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_js.php;f1;27;2;32;;C:\wamp64\www\gii\fpdf_js.php;f1;27;2;32;;;;vpos;;v;;a;;r;;d26,27;;b0,0;;m0;;e">
+</treenode>
+<treenode node="IncludeJS;PHP:Function Name;C:\wamp64\www\gii\fpdf\fpdf_js.php;f1;8;2;10;;C:\wamp64\www\gii\fpdf_js.php;f1;8;2;10;;;;vpos;;v;;a;;r;;d29,8;;b0,0;;m0;;escript;;p">
+</treenode>
+</treenode>
+<treenode node="pdf_parser;PHP:Class Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f4;50;5;717;;;;vpos;;v;;a;;r;;d21,50;;b0,0;;m0;;e">
+<treenode node="closeFile;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;126;9;131;;;;vpos;;v;;a;;r&#10;Definition&#10;    closeFile()&#10;&#10;Description&#10;     Close the opened file;;d29,126;;b0,0;;m0;;e">
+</treenode>
+<treenode node="error;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;138;9;140;;;;vpos;;v;;a;;r&#10;Definition&#10;    error($msg)&#10;&#10;Description&#10;     Print Error and die&#10;&#10;Parameters:&#10;    string $msg - Error-Message;;d29,138;;b0,0;;m0;;estring $msg;;p">
+</treenode>
+<treenode node="getEncryption;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;145;9;149;;;;vpos;;v;;a;;r&#10;Definition&#10;    getEncryption()&#10;&#10;Description&#10;     Check Trailer for Encryption;;d33,145;;b0,0;;m0;;e">
+</treenode>
+<treenode node="getPDFVersion;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;177;9;183;;;;vpos;;v;;a;;r&#10;Definition&#10;    getPDFVersion()&#10;&#10;Description&#10;     Get PDF-Version;;d33,177;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_find_root;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;156;9;162;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    pdf_find_root()&#10;&#10;Description&#10;     Find/Return /Root;;d33,156;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_find_xref;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;188;9;205;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_find_xref()&#10;&#10;Description&#10;     Find the xref-Table;;d33,188;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_parser;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f5;100;9;121;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_parser($filename)&#10;&#10;Description&#10;     Constructor&#10;&#10;Parameters:&#10;    string $filename - Source-Filename;;d36,100;;b0,0;;m0;;estring $filename;;p">
+</treenode>
+<treenode node="pdf_read_root;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;167;9;170;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_read_root()&#10;&#10;Description&#10;     Read the /Root;;d33,167;;b0,0;;m0;;e">
+</treenode>
+<treenode node="pdf_read_token;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;610;9;716;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    pdf_read_token(&amp;$c)&#10;&#10;Description&#10;     Reads a token from the file&#10;&#10;Parameters:&#10;    object $c - pdf_context;;d8,611;;b0,0;;m0;;eobject $c;;p">
+</treenode>
+<treenode node="pdf_read_value;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;330;9;513;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    pdf_read_value(&amp;$c, $token = null)&#10;&#10;Description&#10;     Reads an Value&#10;&#10;Parameters:&#10;    object $c - pdf_context&#10;    string $token - a Token;;d52,330;;b0,0;;m0;;eobject $c;;pstring $token;;p">
+</treenode>
+<treenode node="pdf_read_xref;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;213;9;321;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_read_xref(&amp;$result, $offset)&#10;&#10;Description&#10;     Read xref-table&#10;&#10;Parameters:&#10;    array $result - Array of xref-table&#10;    integer $offset - of xref-table;;d50,213;;b0,0;;m0;;earray $result;;pinteger $offset;;p">
+</treenode>
+<treenode node="pdf_resolve_object;PHP:Function Name;C:\wamp64\www\gii\FPDI\pdf_parser.php;f8;522;9;600;;;;vpos;;v;;a;;r&#10;Definition&#10;    pdf_resolve_object(&amp;$c, $obj_spec, $encapsulate = true)&#10;&#10;Description&#10;     Resolve an object&#10;&#10;Parameters:&#10;    object $c - pdf_context&#10;    array $obj_spec - The object-data&#10;    boolean $encapsulate - Must set to true, cause the parsing and fpdi use this method only without this para;;d73,522;;b0,0;;m0;;eobject $c;;parray $obj_spec;;pboolean $encapsulate;;p">
+</treenode>
+</treenode>
+<treenode node="scrivi_log;PHP:Class Name;C:\wamp64\www\gii\class_varie.php;f2;3;3;17;;;;vpos;;v;;a;;r;;d19,3;;b0,0;;m0;;e">
+<treenode node="scrivi_log;PHP:Function Name;C:\wamp64\www\gii\class_varie.php;f4;5;6;15;;;;vpos;;v;;a;;r;;d45,5;;b0,0;;m0;;eutente;;pmessaggio;;p">
+<treenode node="include/database.php;PHP:PHP Include;C:\wamp64\www\gii\class_varie.php;f16;6;36;6;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+</treenode>
+</treenode>
+<treenode node="addrizza;PHP:Function Name;C:\wamp64\www\gii\include\java.php;f0;1;1;9;;;;vpos;;v;;a;;r;;d0,2;;b0,0;;m0;;erovescio;;pdritto;;p">
+</treenode>
+<treenode node="calcola_valore_medio;PHP:Function Name;C:\wamp64\www\gii\valore_medio.php;f0;1;1;106;;C:\wamp64\www\gii\xls_medio2.php;f0;32;1;131;;C:\wamp64\www\gii\valore_medio_json.php;f0;31;1;171;;;;vpos;;v;;a;;r;;d0,32;;b0,0;;m0;;earticolo;;pdeposito;;pdal;;pal;;pfittizi;;p">
+</treenode>
+<treenode node="CheckTTF;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;246;1;284;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;246;1;284;;;;vpos;;v;;a;;r;;d0,247;;b0,0;;m0;;efile;;p">
+</treenode>
+<treenode node="closediv;PHP:Function Name;C:\wamp64\www\gii\functions_ajax.php;f0;1;1;4;;;;vpos;;v;;a;;r;;d28,1;;b0,0;;m0;;edivname;;p">
+</treenode>
+<treenode node="contatore;PHP:Function Name;C:\wamp64\www\gii\salva_cliente.php;f0;2;1;14;;;;vpos;;v;;a;;r;;d0,3;;b0,0;;m0;;e">
+</treenode>
+<treenode node="datediff;PHP:Function Name;C:\wamp64\www\gii\include\java.php;f0;10;1;16;;;;vpos;;v;;a;;r;;d0,11;;b0,0;;m0;;edal;;pal;;p">
+</treenode>
+<treenode node="leggi_articolo;PHP:Function Name;C:\wamp64\www\gii\stampaordfo.php;f0;4;1;16;;;;vpos;;v;;a;;r;;d0,5;;b0,0;;m0;;earticolo;;pfornitore;;p">
+</treenode>
+<treenode node="leggi_tabelle;PHP:Function Name;C:\wamp64\www\gii\calcola_scadenze.php;f0;6;1;16;;C:\wamp64\www\gii\staboll.php;f0;2;1;12;;C:\wamp64\www\gii\stafat.php;f0;2;1;12;;C:\wamp64\www\gii\stampaprev.php;f0;6;1;16;;;;vpos;;v;;a;;r;;d0,7;;b0,0;;m0;;ecodice;;pdescri;;p">
+</treenode>
+<treenode node="MakeFont;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;293;1;398;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;293;1;398;;;;vpos;;v;;a;;r;;d0,294;;b0,0;;m0;;efontfile;;pafmfile;;penc;;ppatch;;ptype;;p">
+</treenode>
+<treenode node="MakeFontDescriptor;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;130;1;179;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;130;1;179;;;;vpos;;v;;a;;r;;d0,131;;b0,0;;m0;;efm;;psymbolic;;p">
+</treenode>
+<treenode node="MakeFontEncoding;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;206;1;223;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;206;1;223;;;;vpos;;v;;a;;r;;d0,207;;b0,0;;m0;;emap;;p">
+</treenode>
+<treenode node="MakeWidthArray;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;181;1;204;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;181;1;204;;;;vpos;;v;;a;;r;;d0,182;;b0,0;;m0;;efm;;p">
+</treenode>
+<treenode node="mysql_affected_rows;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;70;3;77;;;;vpos;;v;;a;;r;;d55,70;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_close;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;113;3;115;;;;vpos;;v;;a;;r;;d47,113;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_connect;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;30;3;34;;;;vpos;;v;;a;;r;;d91,30;;b0,0;;m0;;ehost;;pusername;;ppassword;;pnew_link;;pclient_flags;;p">
+</treenode>
+<treenode node="mysql_data_seek;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;125;3;127;;;;vpos;;v;;a;;r;;d48,125;;b0,0;;m0;;eresult;;prow_number;;p">
+</treenode>
+<treenode node="mysql_errno;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;97;3;103;;;;vpos;;v;;a;;r;;d47,97;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_error;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;89;3;95;;;;vpos;;v;;a;;r;;d47,89;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_escape_string;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;141;3;147;;;;vpos;;v;;a;;r;;d59,141;;b0,0;;m0;;es;;plink_identifier;;p">
+</treenode>
+<treenode node="mysql_fetch_array;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;10;3;13;;;;vpos;;v;;a;;r;;d64,10;;b0,0;;m0;;eresult;;presult_type;;p">
+</treenode>
+<treenode node="mysql_fetch_assoc;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;15;3;18;;;;vpos;;v;;a;;r;;d37,15;;b0,0;;m0;;eresult;;p">
+</treenode>
+<treenode node="mysql_fetch_object;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;25;3;28;;;;vpos;;v;;a;;r;;d39,25;;b0,0;;m0;;eresult;;p">
+</treenode>
+<treenode node="mysql_fetch_row;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;20;3;23;;;;vpos;;v;;a;;r;;d36,20;;b0,0;;m0;;eresult;;p">
+</treenode>
+<treenode node="mysql_field_name;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;149;3;151;;;;vpos;;v;;a;;r;;d41,149;;b0,0;;m0;;eresult;;pi;;p">
+</treenode>
+<treenode node="mysql_free_result;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;153;3;155;;;;vpos;;v;;a;;r;;d38,153;;b0,0;;m0;;eresult;;p">
+</treenode>
+<treenode node="mysql_get_server_info;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;157;3;163;;;;vpos;;v;;a;;r;;d57,157;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_insert_id;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;105;3;111;;;;vpos;;v;;a;;r;;d51,105;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_list_tables;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;79;3;87;;;;vpos;;v;;a;;r;;d62,79;;b0,0;;m0;;edbname;;plink_identifier;;p">
+</treenode>
+<treenode node="mysql_num_rows;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;66;3;68;;;;vpos;;v;;a;;r;;d34,66;;b0,0;;m0;;eresult;;p">
+</treenode>
+<treenode node="mysql_pconnect;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;36;3;40;;;;vpos;;v;;a;;r;;d73,36;;b0,0;;m0;;ehost;;pusername;;ppassword;;pclient_flags;;p">
+</treenode>
+<treenode node="mysql_ping;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;50;3;56;;;;vpos;;v;;a;;r;;d46,50;;b0,0;;m0;;elink_identifier;;p">
+</treenode>
+<treenode node="mysql_query;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;58;3;64;;;;vpos;;v;;a;;r;;d54,58;;b0,0;;m0;;estmt;;plink_identifier;;p">
+</treenode>
+<treenode node="mysql_real_escape_string;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;117;3;123;;;;vpos;;v;;a;;r;;d79,117;;b0,0;;m0;;eunescaped_string;;plink_identifier;;p">
+</treenode>
+<treenode node="mysql_result;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;129;3;139;;;;vpos;;v;;a;;r;;d48,129;;b0,0;;m0;;eresult;;prow;;pcol;;p">
+</treenode>
+<treenode node="mysql_select_db;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;42;3;48;;;;vpos;;v;;a;;r;;d60,42;;b0,0;;m0;;edbname;;plink_identifier;;p">
+</treenode>
+<treenode node="mysql_set_charset;PHP:Function Name;C:\wamp64\www\gii\mysql-fix.php;f2;165;3;171;;;;vpos;;v;;a;;r;;d62,165;;b0,0;;m0;;ecsname;;plink_identifier;;p">
+</treenode>
+<treenode node="progressivo;PHP:Function Name;C:\wamp64\www\gii\include\functions.php;f0;1;1;45;;;;vpos;;v;;a;;r;;d0,2;;b0,0;;m0;;eanno;;pdeposito;;ptipo;;p">
+</treenode>
+<treenode node="ReadAFM;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;31;1;128;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;31;1;128;;;;vpos;;v;;a;;r;;d0,32;;b0,0;;m0;;efile;;pmap;;p">
+</treenode>
+<treenode node="ReadLong;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;240;1;244;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;240;1;244;;;;vpos;;v;;a;;r;;d0,241;;b0,0;;m0;;ef;;p">
+</treenode>
+<treenode node="ReadMap;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;7;1;29;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;7;1;29;;;;vpos;;v;;a;;r;;d0,8;;b0,0;;m0;;eenc;;p">
+</treenode>
+<treenode node="ReadShort;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;234;1;238;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;234;1;238;;;;vpos;;v;;a;;r;;d0,235;;b0,0;;m0;;ef;;p">
+</treenode>
+<treenode node="SaveToFile;PHP:Function Name;C:\wamp64\www\gii\fpdf\font\makefont\makefont.php;f0;225;1;232;;C:\wamp64\www\gii\font\makefont\makefont.php;f0;225;1;232;;;;vpos;;v;;a;;r;;d0,226;;b0,0;;m0;;efile;;ps;;pmode;;p">
+</treenode>
+<treenode node="scheda;PHP:Function Name;C:\wamp64\www\gii\giace_articoli.php;f0;40;1;56;;;;vpos;;v;;a;;r;;d0,41;;b0,0;;m0;;ecodice;;pdeposito;;p">
+</treenode>
+<treenode node="showpopup3;PHP:Function Name;C:\wamp64\www\gii\functions_ajax.php;f0;6;1;24;;;;vpos;;v;;a;;r;;d62,6;;b0,0;;m0;;eprefix;;ptitle;;pcontent;;poptions;;p">
+</treenode>
+<treenode node="showpopupe;PHP:Function Name;C:\wamp64\www\gii\functions_ajax.php;f0;25;1;41;;;;vpos;;v;;a;;r;;d62,25;;b0,0;;m0;;eprefix;;ptitle;;pcontent;;poptions;;p">
+</treenode>
+<treenode node="truncate;PHP:Function Name;C:\wamp64\www\gii\get_articolofo.php;f0;6;1;10;;C:\wamp64\www\gii\get_articolo.php;f0;6;1;10;;;;vpos;;v;;a;;r;;d43,6;;b0,0;;m0;;enumber;;pprecision;;p">
+</treenode>
+</phptree>
+</codestructure>
