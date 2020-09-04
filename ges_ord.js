@@ -719,8 +719,8 @@ function sopra_dati_()
 $(document).ready(function() {
 	$(document).bind("ajaxStop",function() { $("#oscura").hide(); });
 	$(document).bind("ajaxStart",function() { $("#oscura").show(); });
-    $('#nav').addClass('hiding');
-	  $('#ali0 option[value="22"]').attr("selected",true);
+	$('#nav').addClass('hiding');
+	$('#ali0 option[value="22"]').attr("selected",true);
     $('#ragsoc').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsoc", ret2: "cliente", ret3: "", ret4: "" }, gestisci_clienti);    
     $('#ragsocfo').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsocfo", ret2: "fornitore", ret3: "", ret4: "" }, gestisci_fornitori1);            
     $('#codart').bind('keyup', { ar_lista: "lista_articoli", ret1: "desart", ret2: "codart", ret3: "desart", ret4: "" }, gestisci_articoli);

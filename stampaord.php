@@ -340,7 +340,7 @@ $this->Cell(0,0,"Del",0,0,'L');
     $this->SetXY(137,117);
     $this->Cell(0,4,"um",0,0,'L');
     $this->SetXY(146,117);
-    $this->Cell(0,4,"Quantità",0,0,'L');
+    $this->Cell(0,4,"Quantitï¿½",0,0,'L');
     $this->SetXY(160,117);
     $this->Cell(0,4,"Prezzo Un.",0,0,'L');
     $this->SetXY(177.4,117);
@@ -492,7 +492,7 @@ if ($num_pag==$tot_pag){
 	$this->Cell(22,0,$tot_iva,0,0,'R');
 	
 	$this->SetXY(170,267);
-	$this->Cell(22,0,"€",0,0,'L');
+	$this->Cell(22,0,"ï¿½",0,0,'L');
 	$this->SetFont('Times','B',12);
 	$this->SetXY(176,267);
 	$this->Cell(22,0,$totpre,0,0,'L');
@@ -514,20 +514,7 @@ $pdf->AddPage();
 //$pdf->SetAutoPageBreak(1,98);
 $pdf->SetFont('Times','',8);
 $k=1;
-$pdf->SetXY(5.5,122);
-/*
-//legge righe
-  $prog=0; 
-  $qr="SELECT * FROM documrig LEFT JOIN articoli ON DOCR_ARTICOLO=Codice WHERE DOCR_ID=$idt ORDER BY DOCR_PROG";
-  $rst = mysql_query($qr, $con);
-  if (!$rst) {
-	echo "(leggi documrig) " . mysql_error();
-	mysql_close($con);
-	exit;
-	}
-  $tot_rec=mysql_num_rows($rst);
-  while($row = mysql_fetch_array($rst)) { 
-*/
+$pdf->SetXY(5.5,122); 
 $tot_rec=count($righe["desc"]) + 1;
 //
 for($j=0;$j<count($righe["desc"]);$j++)
@@ -543,25 +530,7 @@ for($j=0;$j<count($righe["desc"]);$j++)
      $umis="";
      $aliq=$righe["iva"][$j];     	
      	
-/*
-     $codfor=$row["DOCR_ARTICOLO_FO"];
-     $articolo=$row["DOCR_ARTICOLO"];
-     $descri=$row["DOCR_DESCRI"];
-     $quantita=$row["DOCR_QUANTITA"];
-     $prezzo=$row["DOCR_IMPORTO_EU"];
-     $sconto=$row["DOCR_SCONTO"];
-     $totale=$row["DOCR_TOTALE_EU"];
-     $rae=$row["DOCR_RAE"];
-     $umis=$row["umis"];
-     $umis1=$row["DOCR_UM"];
-	 if(strlen(trim($umis))==0) { $umis=$umis1; }
-     $aliq=$row["DOCR_IVA"];
-     $estesa=$row["DOCR_ESTESA"];
-	 $desestesa=$row["desestesa"];
-     if($estesa==1 && strlen(trim($desestesa))>0) {
-	    $descri=$desestesa;
-        }
-*/        
+  
      if(trim($sconto)=="0") { $sconto=""; }
 	 $quantita=number_format($quantita, 2, ',', '.');
 	 $prezzo=number_format($prezzo, 4, ',', '.');
@@ -659,36 +628,9 @@ for($j=0;$j<count($righe["desc"]);$j++)
 		$pdf->SetX(23,$y);
 		$pdf->Multicell(110,2,$dicitura_2,0,'L');   
 		
-////////////////////////////////////////////   
-//stampa righe note
+ //stampa righe note
    $pdf->SetXY(6,228);
    $pdf->MultiCell(180,3.5,$note,0,'L');   
-/*
-$j1=0;
-if(isset($riga_note)&&substr($riga_note[0],0,6)=="C.I.G.")
-  {
-   $pdf->SetX(22.9);
-   $pdf->Cell(114,4,$riga_note[0],0,1,'L');
-   $j1=1;
-  }
-$pdf->SetFont('Times','B',5.7);
-for($j=$j1;$j<$kr;$j++)
-   {
-   $pdf->SetX(22.9);
-   $pdf->Cell(114,4,$riga_note[$j],0,1,'L');
-   $k=$k+1;   
-   if($k>$tot_rig) { 
-      $k=1;
-      $pdf->AddPage(); 
-      $pdf->SetXY(22.9,122);
-	  }
-    }
-*/
-/////////////////////////////////////////////
-////stampa automatica////////////////////////////////////////
-//$pdf->AutoPrint(true);
-//
-//ob_end_flush();
-//$pdf->Output("/tmp/$numid.pdf");
+ 
 $pdf->Output();
 ?>
