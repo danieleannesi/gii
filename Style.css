@@ -3,7 +3,7 @@ body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 a {text-decoration: none;}
 body.prev {
 background: #ffffcc;	
-}
+} 
 
 input[type=text], textarea, select {
   -webkit-transition: all 0.30s ease-in-out;
@@ -1033,3 +1033,40 @@ a.linkgiallo:hover {
 .nascosto {
 visibility:hidden;
 }
+ 
+
+label { 
+	margin-bottom: .1rem!important;
+}
+
+* TEA */
+td.details-control {
+	background: url('./immagini/plus.png') no-repeat center center;
+	background-size: 20px;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+	background: url('./immagini/details_close.png') no-repeat center center;
+	background-size: 20px;
+	cursor: pointer;
+}
+
+.row { 
+      margin-right: 0!important;  
+     margin-left: 0!important;  
+}
+
+.scofor {
+	max-width: 1100px!important;
+	width: 100%!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+      border: 0;  
+    background: transparent!important; 
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	padding:5px!important;
+} 

@@ -3,7 +3,7 @@ body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 a {text-decoration: none;}
 body.prev {
 background: #ffffcc;	
-}
+} 
 
 input[type=text], textarea, select {
   -webkit-transition: all 0.30s ease-in-out;
