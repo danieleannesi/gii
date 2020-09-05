@@ -21,6 +21,10 @@ input[type=text], textarea, select {
 	margin-left: 0px!important;
 }
 
+.ui-datepicker-calendar {
+	background: #d1d1d1;
+}
+
 .a_button {
 	background: #17a2b8;
     padding: 4px;
@@ -410,7 +414,7 @@ position:absolute;
 visibility:hidden;
 z-index:1;
 -moz-opacity:0.94;
-opacity: 0.94; */
+opacity: 0.94; 
 }
 .impianti {
 width:920px;

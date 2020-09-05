@@ -19,8 +19,7 @@
             </tr>
         </thead> 
     </table>
-    
-
+     
     <div class="container scofor" id="detail_scofor" style="display:none;"> 
             <input type="hidden" name="sco_id" value="">
             <div class="form-row col-8">
