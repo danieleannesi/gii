@@ -19,23 +19,18 @@ $count=mysql_num_rows($qry);
       $art_classe_merc = $_POST["art_classe_merc"];
       
       $art_listino1 = $_POST["art_listino1"];
-      $art_listino2 = $_POST["art_listino2"];
-      $art_data_listino = $_POST["art_data_listino"];
+      $art_listino2 = $_POST["art_listino2"]; 
       
-      $art_scorta_max = $_POST["art_scorta_max"];
-      $art_scorta_min = $_POST["art_scorta_min"];
-      
-      $art_cod_iva = $_POST["art_cod_iva"]; 
-      $art_codice_raee = $_POST["art_codice_raee"];
+      $art_cod_iva = $_POST["art_cod_iva"];  
       
       
       $art_data_ins = date("Y-m-d H:i:s");
       $art_data_mod = date("Y-m-d H:i:s");
      
-      $sql = "INSERT INTO `articoli`(`art_codice`,`art_fornitore`, `art_descrizione`, `art_listino1`, `art_listino2`, `art_data_listino`, `art_codice_raee`, 
+      $sql = "INSERT INTO `articoli`(`art_codice`,`art_fornitore`, `art_descrizione`, `art_listino1`, `art_listino2`,  
       `art_uni_mis`, `art_cod_iva`, `art_scorta_min`, `art_scorta_max`, `art_data_ins`, `art_data_mod`, `art_classe_merc`) 
-      VALUES ('$art_codice', '$art_fornitore', '$art_descrizione','$art_listino1', '$art_listino2','$art_data_listino','$art_codice_raee', 
-      '$art_uni_mis',$art_cod_iva, $art_scorta_min ,  $art_scorta_max , '$art_data_ins' ,'$art_data_mod','$art_classe_merc')";
+      VALUES ('$art_codice', '$art_fornitore', '$art_descrizione','$art_listino1', '$art_listino2', 
+      '$art_uni_mis',$art_cod_iva, '$art_data_ins' ,'$art_data_mod','$art_classe_merc')";
             
       mysql_query($sql,$con);
       $msg = mysql_error();

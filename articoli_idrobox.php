@@ -59,7 +59,7 @@ while($rol = mysql_fetch_assoc($rsl)) {
             </div>
             <div class="col-3">
                 <label for="art_codice">Codice GI:</label>
-                <input name="art_codice" type="text" size="11" class="form-control">
+                <input name="art_codice" type="text" size="10" class="form-control">
             </div>
         </div>
         <div class="row">

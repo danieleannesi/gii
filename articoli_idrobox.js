@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     $("#insertArticolo").on("click","input.btnArticolo" , function(){ 
         var size_codice = $("input[name=art_codice]").val().length;
-        if(size_codice == 11){
+        if(size_codice == 10){
             $.ajax({
                 type: 'post',
                 url: 'save_articolo.php',
