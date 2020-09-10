@@ -7,6 +7,7 @@ function stampa_ordi(idt)
 {
 apri_win2("Stampa Ordini","stampaord.php?idt=" + idt);
 }
+ 
 
 function elimina_doc(idt)
 {
@@ -54,7 +55,12 @@ $(document).ready(function() {
 	$(document).bind("ajaxStop",function() { $("#oscura").hide(); });
 	$(document).bind("ajaxStart",function() { $("#oscura").show(); });
     $('#nav').addClass('hiding');
-    $('#ragsoc').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsoc", ret2: "cliente", ret3: "", ret4: "" }, gestisci_clienti);    
+	$('#ragsoc').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsoc", ret2: "cliente", ret3: "", ret4: "" }, gestisci_clienti);   
+	
+	$(".ordini").on("click","input#stampa", function(){
+		var dati = $("#formperdata").serialize();
+		window.location.assign("stampa_listaOrdini.php?"+dati);
+	});
 });
 
     

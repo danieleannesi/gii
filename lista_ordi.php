@@ -6,8 +6,7 @@
 <link rel="stylesheet" href="style_listaper.css" type="text/css">
 <link rel="stylesheet" href="calendar/calendar.css">
 <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
-<link rel="stylesheet" href="css/dropdown.css" media="screen"  type="text/css" />
-
+<link rel="stylesheet" href="css/dropdown.css" media="screen"  type="text/css" /> 
 <script type="text/javascript" src="include/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="include/jquery-ui.min.js"></script>
 <script type="text/javascript" src="include/jquery-dateFormat.min.js"></script>
@@ -54,8 +53,8 @@ $data_a=$oggi;
 $data_da=date('d/m/Y', strtotime('-3 months'));
 $dal=addrizza("",$data_da);
 $al=addrizza("",$data_a);
-if(isset($_POST["data_da"]))
-  {
+
+if(isset($_POST["data_da"])){
   $utente=$_POST["utente"];
   $cliente=$_POST["cliente"];
   $ragsoc=$_POST["ragsoc"];
@@ -65,13 +64,13 @@ if(isset($_POST["data_da"]))
   $numero=$_POST["numero"];
   $dal=addrizza("",$data_da);
   $al=addrizza("",$data_a);
-  }
+}
 ?>
 <body>
 <div id="dialog" ></div>
 <div id="stampa" title=""></div>
 <div id="popup" title=""></div>
-<div>
+<div class="ordini">
 <form action="lista_ordi.php" method='POST' id='formperdata' name='formperdata'>
 
 <label for="deposito">Deposito</label>
@@ -122,14 +121,20 @@ while(isset($codcom[$j])) {
         });
         </script>
 &nbsp;&nbsp;
-<label for="numero">Numero:</label>
-<input id="numero" name="numero" type="text" size="11" maxlength="11" value="<?php echo $numero?>"/>
-<br>        
-<label for="cliente">Cliente</label>
-<input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente?>" readonly>
-<input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc?>">
-&nbsp;&nbsp;
-<input type="button" id="listap" name="listap" value="LISTA" onclick="document.formperdata.submit();">
+  <label for="numero">Numero:</label>
+  <input id="numero" name="numero" type="text" size="11" maxlength="11" value="<?php echo $numero?>"/>
+  <br>   
+  <label for="cliente">Cliente</label>
+  <input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente?>" readonly>
+  <input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc?>">
+  &nbsp;&nbsp; 
+  <select name="evaso" class="form-control">
+      <option value=""></option>
+      <option value="E">Evaso</option>
+      <option value="N">Non Evaso</option>
+  </select> 
+  <input type="button" id="listap" name="listap" value="LISTA" onclick="document.formperdata.submit();">
+  <input type="button" id="stampa" name="stampa" value="STAMPA">
 
 </form>	
 </div>
@@ -137,47 +142,42 @@ while(isset($codcom[$j])) {
 <?php
 $q1="";
 $numero=intval($numero);
-if($cliente>"")
-  {
+if($cliente>""){
   $q1="AND ORDI_CLIENTE='$cliente'";
   }
 $q2="";
-if($utente>"")
-  {
+if($utente>"") {
   $q2="AND ORDI_UTENTE='$utente'";
-  }  
-if($numero>0)
-  {
+}  
+if($numero>0) {
   $qr="SELECT * FROM ordini LEFT JOIN clienti ON ORDI_CLIENTE=cf_cod WHERE ORDI_NUM_DOC='$numero'";
-  }
-else
-  {
+} else {
   $qr="SELECT * FROM ordini LEFT JOIN clienti ON ORDI_CLIENTE=cf_cod WHERE ORDI_DEPOSITO='$deposito' AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al' $q1 $q2 ORDER BY ORDI_DATA_DOC DESC, ORDI_NUM_DOC DESC LIMIT 500";
-  }  
+}  
 //echo $qr;   
 $rst=mysql_query($qr,$con);
 ?>
 <div class='tablewrap'><div class='tablewrap-inner'><table><thead><tr><th class='a'>Data</th><th class='b'>Numero</th><th class='c'>Ragione Sociale</th><th class='i'>&nbsp;</th><th class='i'>&nbsp;</th><th class='i'>&nbsp;</th></tr></thead><tbody>
 <?php
 while($row=mysql_fetch_assoc($rst)){
-  extract($row);
-  $totresto=0;
-  $righej=$ORDI_RIGHE;
-  $righe=json_decode($righej,true);
-  for($j=0;$j<count($righe["qta"]);$j++)
-     {
-	 $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
-	 $totresto+=$resto;
-	 }
-  $classe="";	 
-  if($totresto==0 || $ORDI_EVASO=="S")
-     {
-     $classe="style='background-color: #f7f493;'";
-	 }
-  $data=addrizza($row["ORDI_DATA_DOC"],"");
-  echo "<tr $classe>";
-  echo "<td class='a'>$data</td><td class='b'>$ORDI_NUM_DOC</td><td class='c'>$cf_ragsoc</td><td class='d'><td class='i'><img src='immagini/pencil.png' width='20px' title='MODIFICA ORDINE' onclick='chiama_ordi($ORDI_ID);'></td><td class='i'><img src='immagini/printer.png' width='20px' title='Stampa' onclick='stampa_ordi($ORDI_ID);'></td><td class='i'>&nbsp;&nbsp;&nbsp;&nbsp;<img src='immagini/button_drop.png' width='15px' title='ELIMINA ORDINE CLIENTE' onclick='cancella_doc($ORDI_ID, $ORDI_NUM_DOC);'></td></tr>";
-  }
+    extract($row);
+    $totresto=0;
+    $righej=$ORDI_RIGHE;
+    $righe=json_decode($righej,true);
+    for($j=0;$j<count($righe["qta"]);$j++)
+      {
+    $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
+    $totresto+=$resto;
+    }
+    $classe="";	 
+    if($totresto==0 || $ORDI_EVASO=="S")
+      {
+      $classe="style='background-color: #f7f493;'";
+    }
+    $data=addrizza($row["ORDI_DATA_DOC"],"");
+    echo "<tr $classe>";
+    echo "<td class='a'>$data</td><td class='b'>$ORDI_NUM_DOC</td><td class='c'>$cf_ragsoc</td><td class='d'><td class='i'><img src='immagini/pencil.png' width='20px' title='MODIFICA ORDINE' onclick='chiama_ordi($ORDI_ID);'></td><td class='i'><img src='immagini/printer.png' width='20px' title='Stampa' onclick='stampa_ordi($ORDI_ID);'></td><td class='i'>&nbsp;&nbsp;&nbsp;&nbsp;<img src='immagini/button_drop.png' width='15px' title='ELIMINA ORDINE CLIENTE' onclick='cancella_doc($ORDI_ID, $ORDI_NUM_DOC);'></td></tr>";
+}
 ?>
 </tbody></table></div></div>
 </div>

@@ -9,4 +9,4 @@ $result=mysql_query($sql,$con);
 $marca =  mysql_result($result, 0); 
   
 echo $marca;
- ?>
+?>
