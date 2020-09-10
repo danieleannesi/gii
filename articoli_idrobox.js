@@ -31,16 +31,27 @@ $(document).ready(function() {
     });
 
     $("#result").on("click","input.btnSelect" , function(){ 
-         
+            var marca = $(this).closest('tr').find('td:eq(1)').text();
             var cod_prod = $(this).closest('tr').find('td:eq(2)').text();
             var descr = $(this).closest('tr').find('td:eq(3)').text();
             var art_uni_mis = $(this).closest('tr').find('td:eq(4)').text();
             var art_listino1 = $(this).closest('tr').find('td:eq(9)').text();
-            $("input[name=art_fornitore]").val(cod_prod); 
-            $("input[name=art_descrizione]").val(descr); 
-            $("input[name=art_uni_mis]").val(art_uni_mis);
-            $("input[name=art_listino1]").val(art_listino1); 
-            $('#insertArticolo').show();
+            var fornitore = "";
+            $.ajax({
+                type: 'post',
+                url: 'get_marca.php',
+                data: {codice : marca},
+                success: function(res) {
+                   console.log(res);
+                   $("input[name=art_fornitore]").val(res); 
+                    $("input[name=art_descrizione]").val(descr); 
+                    $("input[name=art_uni_mis]").val(art_uni_mis);
+                    $("input[name=art_listino1]").val(art_listino1); 
+                    $('#insertArticolo').show();
+                }
+            });
+
+            
         
     });
 
