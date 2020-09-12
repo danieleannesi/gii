@@ -284,7 +284,7 @@ $this->Cell(0,4,"web: www.gallinnocenti.it   mail: info@gallinnocenti.it",0,0,'L
     $this->SetXY(124,92);
     $this->Cell(0,4,"um",0,0,'L');
     $this->SetXY(133,92);
-    $this->Cell(0,4,"Quantit�",0,0,'L');
+    $this->Cell(0,4,"Quantita",0,0,'L');
     $this->SetXY(150,92);
     $this->Cell(0,4,"Prezzo Un.",0,0,'L');
     $this->SetXY(171,92);
@@ -308,7 +308,7 @@ $this->Cell(0,4,"web: www.gallinnocenti.it   mail: info@gallinnocenti.it",0,0,'L
 
     $this->SetXY(7,267);
 //  $this->Cell(0,4,"Note",0,0,'L');
-    $this->Cell(0,4,'Il preventivo � valido 15 giorni dalla data di emissione.',0,0,'L');
+    $this->Cell(0,4,'Il preventivo e\' valido 15 giorni dalla data di emissione.',0,0,'L');
 
     $this->SetXY(165,253.5);
     $this->Cell(0,4,"TOTALE PREVENTIVO",0,0,'L');
@@ -426,7 +426,7 @@ if ($num_pag==$tot_pag){
 	$this->SetXY(175,248);
 	$this->Cell(22,0,$tot_iva,0,0,'R');
 	$this->SetXY(170,262);
-	$this->Cell(22,0,"�",0,0,'L');
+	$this->Cell(22,0,"",0,0,'L');
 	$this->SetFont('Times','B',12);
 	$this->SetXY(176,262);
 	$this->Cell(22,0,$totpre,0,0,'L');
