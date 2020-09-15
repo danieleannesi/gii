@@ -3,6 +3,7 @@
 function leggi_tabelle($codice,$descri)
 {
 	global $con;
+	$descrizione="";
 	$qr="SELECT * FROM tabelle WHERE tab_key = '$codice'";
     $rsi = mysql_query($qr, $con);
     while($roi = mysql_fetch_array($rsi)) {
@@ -22,6 +23,7 @@ $tot_pag=1;
 //
 $idt=0;
 $tipo=0;
+$file=0;
 if(isset($_GET["idt"]))
   {
   $idt=$_GET["idt"];
@@ -29,6 +31,10 @@ if(isset($_GET["idt"]))
 if(isset($_GET["tipo"]))
   {
   $tipo=$_GET["tipo"];
+  }
+if(isset($_GET["file"]))
+  {
+  $file=$_GET["file"];
   }
 switch ($tipo) {
     case "7":
@@ -74,6 +80,7 @@ $partiva=$row["cf_piva"];
 $banca=$row["cf_banca"];
 
   $data_doc=$row["DOCT_DATA_DOC"];
+  $data_stretta=substr($data_doc,0,4) . substr($data_doc,5,2) . substr($data_doc,8,2);
   $data_doc=substr($data_doc,8,2) . "/" . substr($data_doc,5,2) . "/" . substr($data_doc,0,4);
   $num_doc=$row["DOCT_NUM_DOC"];
   $cliente=$row["DOCT_CLIENTE"];
@@ -373,6 +380,17 @@ $pdf->SetXY(6,101);
 //
 $tot_merce=0;
 $tot_raee=0;
+
+//CIG E CUP
+if($row["DOCT_CIG"]>"" || $row["DOCT_CUP"]>"") {
+           $des="CIG: " . $row["DOCT_CIG"] . " CUP: " . $row["DOCT_CUP"];
+           $pdf->SetXY(29.5,$mm);
+           $pdf->MultiCell(87,4,$des,0,'L');
+           $y=$pdf->GetY();
+           $a=$y-$mm;
+           $mm+=$a;
+   }
+   
 for($j=0;$j<count($righe["desc"]);$j++)
      {
      $articolo=$righe["cod"][$j];
@@ -424,12 +442,10 @@ for($j=0;$j<count($righe["desc"]);$j++)
    	 $pdf->Cell(22.5,4,$totale,0,0,'R');
      $pdf->Cell(5,4,$aliq,0,1,'R');
      $k=$k+1;
-     $tot_rec++;
      $mm+=$a;
 
         if($raee>0)
           {
-           $tot_rec++;
            $totale=$raee*$righe["qta"][$j];
            $tot_raee+=$totale;
 	       $prezzo=number_format($raee, 4, ',', '.');
@@ -554,5 +570,14 @@ if($tipo=="7" || $tipo=="5")
 //$pdf->IncludeJS("pp=getPrintParams(); print(pp);");
 $pdf->AutoPrint(false);
 //
-$pdf->Output();
+if($file==0)
+  {
+  $pdf->Output();
+  }
+else
+  {
+  $doc=sprintf("%08d", $num_doc);  
+  $nomefile="tmp/FATT_EMAIL/F" . $data_stretta . "_" . $cliente .  "_" . $doc . ".pdf";
+  $pdf->Output($nomefile);
+  }
 ?>

@@ -42,6 +42,8 @@ function calcola_valore_medio($articolo,$deposito,$dal,$al,$fittizi)
    $tqta=$giac_iniz;
    $nw_totale=$val_iniz;
    $nw_medio=0;
+   $vendite=0;
+   $acquisti=0;
 
    if($nw_qta>0)
      {
@@ -50,7 +52,7 @@ function calcola_valore_medio($articolo,$deposito,$dal,$al,$fittizi)
 // query movimenti
    $qr1="SELECT * FROM movmag WHERE mov_codart = '$articolo'
          AND mov_data BETWEEN '$dal' AND '$al' ORDER BY mov_dep, mov_data, mov_causale DESC";
-   //file_put_contents("test.txt",$qr1);
+   //file_put_contents("testf.txt",$qr1, FILE_APPEND);
    $rst = mysql_query($qr1, $con);
    while(($row = mysql_fetch_assoc($rst))!=0)
       {
@@ -73,6 +75,14 @@ function calcola_valore_medio($articolo,$deposito,$dal,$al,$fittizi)
 		exit;
 		}
 	  */
+      if($cau=="02")
+        {
+		$acquisti+=$qua;
+		}
+      if($cau=="50")
+        {
+		$vendite+=$qua;
+		}
 //scarichi
       if($cs=="S")
         {       	
@@ -143,6 +153,8 @@ function calcola_valore_medio($articolo,$deposito,$dal,$al,$fittizi)
    $valori["tqta"]=$tqta;
    $valori["nw_medio"]=$nw_medio;
    $valori["depo_val"]=$depo_val;
+   $valori["acquisti"]=$acquisti;
+   $valori["vendite"]=$vendite;
    return $valori;
 }
 //
@@ -165,5 +177,55 @@ while(($row = mysql_fetch_assoc($rst))!=0)
 	    }
 	  }
 return $qta;
+}
+//
+function g_ordini_per_articolo($dal,$al)
+{
+global $con;
+$aqta=array();
+$qr="SELECT * FROM ordini WHERE (NOT ORDI_EVASO='E' OR ORDI_EVASO IS NULL) AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al'";
+$rst = mysql_query($qr, $con);
+while(($row = mysql_fetch_assoc($rst))!=0)
+      {	
+      $righe=json_decode($row["ORDI_RIGHE"],true);
+      for($j=0;$j<count($righe["cod"]);$j++)
+        {
+        $articolo=$righe["cod"][$j];
+        if(!isset($aqta["$articolo"]))
+          {
+          $aqta["$articolo"]=($righe["qta"][$j] - $righe["qta_sca"][$j]);
+		  }
+		else
+		  {
+          $aqta["$articolo"]+=($righe["qta"][$j] - $righe["qta_sca"][$j]);
+		  }
+	    }
+	  }
+return $aqta;
+}
+//
+function g_ordinifo_per_articolo($dal,$al)
+{
+global $con;
+$aqtafo=array();
+$qr="SELECT * FROM ordinifo WHERE (NOT ORDI_EVASO='E' OR ORDI_EVASO IS NULL) AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al'";
+$rst = mysql_query($qr, $con);
+while(($row = mysql_fetch_assoc($rst))!=0)
+      {	
+      $righe=json_decode($row["ORDI_RIGHE"],true);
+      for($j=0;$j<count($righe["cod"]);$j++)
+        {
+        $articolo=$righe["cod"][$j];
+        if(!isset($aqta["$articolo"]))
+          {
+          $aqtafo["$articolo"]=($righe["qta"][$j] - $righe["qta_sca"][$j]);
+		  }
+		else
+		  {
+          $aqtafo["$articolo"]+=($righe["qta"][$j] - $righe["qta_sca"][$j]);
+		  }
+	    }
+	  }
+return $aqtafo;
 }
 ?>

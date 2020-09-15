@@ -140,7 +140,7 @@ while($row = mysql_fetch_assoc($rst)) {
 //scrivi righe su movmag
 if($cot_magazzino=="S")
   {
-$qd="DELETE FROM movmag WHERE mov_clifor='$cliente' AND mov_tipo_doc='$tipodoc' AND mov_id_rife='$idt'";
+$qd="DELETE FROM movmag WHERE mov_clifor='$cliente_cipi' AND mov_tipo_doc='$tipodoc' AND mov_id_rife='$idt'";
 mysql_query($qd,$con);
 for($j=0; $j<count($righe["cod"]); $j++)
   {
@@ -150,7 +150,7 @@ for($j=0; $j<count($righe["cod"]); $j++)
   $uni=$righe["uni"][$j];
   $sco=$righe["sco"][$j];
   $tot=$righe["tot"][$j];
-  if(substr($cod,0,1)<"A")
+  if(substr($cod,0,1)<"A" && trim($cod)>"")
     {  
     $qw="INSERT INTO movmag (mov_data, mov_codart, mov_dep, mov_causale, mov_qua, mov_prezzo, mov_sconto, mov_totale, mov_tipo_doc, mov_doc, mov_clifor, mov_id_rife, mov_data_ins, mov_data_mod, mov_utente) VALUES ('$data_doc', '$cod', '$deposito', '$causale', '$qta', '$uni', '$sco', '$tot', '$tipodoc', '$numero', '$cliente', '$idt', NOW(), NOW(), '$iddu')";
     mysql_query($qw,$con);

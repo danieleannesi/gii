@@ -339,7 +339,7 @@ if(document.getElementById("codart").value>"")
    if(unitario<val_medio)
      {
 	 alert("Prezzo minore del valore medio " + val_medio);
-	 return;
+	 //return;
 	 }
 //              
   }
@@ -389,7 +389,6 @@ function disegna_tabella() {
    	var righe="";
    	var totale=0;
    	var totaleraee=0;
-    var a="";
     var sconto=0;
     for(j=0;j<qta.length;j++){
       	sconto=sco[j];
@@ -405,11 +404,12 @@ function disegna_tabella() {
        	var scon=parseFloat(dif) * parseFloat(sconto) / 100;
        	dif=parseFloat(dif) - parseFloat(scon) - parseFloat(tot[j]);
        	//alert(dif + "-" + scon + "-" + parseFloat(qta[j]) + "-" + parseFloat(uni[j]) + "-" + sconto);
+        var a="";
        	if(Math.abs(dif)>0.02)
        	  {
 		  a="*";
 		  }
-       	
+
        	righe = righe + "<tr id='row"+j+"' class='r'><td>" + a + cod[j] + "</td><td>" + desc[j] + "</td><td class='r'>" + qta[j] + "</td><td class='r'>" + uni[j] + "</td><td class='r'>"  + sco[j] + "</td><td class='r'>" + totale + "</td><td class='r'>" + iva[j] + "</td><td>" + "<img id='row"+j+"img1' class='img_art_tab' src='immagini/button_edit.png' title='MODIFICA RIGA' onclick='modificariga(" + j + ");'/>" + "</td><td>" + "<img id='row"+j+"img2' class='img_art_tab' src='immagini/button_drop.png' title='ELIMINA RIGA' onclick='eliminariga(" + j + ");'/>" +  "</td></tr>";
 	    if(raee[j]>0)
 	      {

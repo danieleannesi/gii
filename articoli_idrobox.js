@@ -50,8 +50,6 @@ $(document).ready(function() {
                     $('#insertArticolo').show();
                 }
             });
-
-            
         
     });
 
@@ -64,18 +62,23 @@ $(document).ready(function() {
                 data:  $("#formArticolo").serialize(),
                 async: false,
                 success: function(res) { 
-                     alert("Articolo inserito correttamente");
+                     if(res.success)
+                       {
+                       alert("Articolo inserito correttamente");
+					   }
+					 else
+					   {
+					   alert("Errore: " + res.msg);
+					   }
                 },
                 error: function(xhr, ajaxOptions, thrownError) { 
-                    alert(xhr.responseText); 
-                    $("#dialog").html('<p>Errore (search_idrobox.php)</p>').dialog({modal: true });
+                    alert("aaa" + xhr.responseText); 
+                    $("#dialog").html('<p>Errore (save_articolo.php)</p>').dialog({modal: true });
                  }
             });   
         } else {
-            alert("Codice Articolo deve essere di 11 caratteri");
+            alert("Codice Articolo deve essere di 10 caratteri");
         }
-       
-         
     
     });
     

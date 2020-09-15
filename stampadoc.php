@@ -1,6 +1,7 @@
 <?php
 $idt=0;
 $tipo=0;
+$file=0;
 if(isset($_GET["idt"]))
   {
   $idt=$_GET["idt"];
@@ -17,13 +18,17 @@ if(isset($_POST["tipo"]))
   {
   $tipo=$_POST["tipo"];
   }
+if(isset($_POST["file"]))
+  {
+  $file=$_POST["file"];
+  }
 if($tipo=="1")
   {
   header("Location: staboll.php?idt=$idt&tipo=$tipo");
   }
-if($tipo=="2")
+if($tipo=="2" || $tipo=="A")
   {
-  header("Location: staboll.php?idt=$idt&tipo=$tipo");
+  header("Location: staboll.php?idt=$idt&tipo=$tipo&file=$file");
   }
 if($tipo=="3")
   {
@@ -31,12 +36,12 @@ if($tipo=="3")
   }
 if($tipo=="7")
   {
-  header("Location: stafat.php?idt=$idt&tipo=$tipo");
+  header("Location: stafat.php?idt=$idt&tipo=$tipo&file=$file");
   }
 if($tipo=="8")
   {
-  header("Location: stafat.php?idt=$idt&tipo=$tipo");
+  header("Location: stafat.php?idt=$idt&tipo=$tipo&file=$file");
   }  
-echo "errore: mancante tipo=$tipo";  
+echo "errore stampadoc.php: mancante tipo=$tipo";  
 exit;
 ?>

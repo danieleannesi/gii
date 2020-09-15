@@ -11,22 +11,20 @@ function AutoPrint($dialog=false)
 }
 
 $deposito = $_GET["deposito"];
-$evasi = $_GET["evaso"];
+$cliente = $_GET["cliente"];
+$evaso = $_GET["evaso"];
 $data_da = date_format(date_create_from_format('d/m/Y', $_GET["data_da"]), 'Y-m-d');
 $data_a =  date_format(date_create_from_format('d/m/Y', $_GET["data_a"]), 'Y-m-d');
   /*
 if($deposito=="02") { $depdes="Via R.B.Bandinelli"; }
     if($deposito=="03") { $depdes="Via del Fosso di Settebagni"; }
     if($deposito=="04") { $depdes="Via Tor de' Schiavi"; }*/
-    
+$q1="";
+if($cliente>""){
+  $q1="AND ORDI_CLIENTE='$cliente'";
+  }   
 $sql="SELECT * FROM ordini INNER JOIN clienti ON cf_cod = ordi_cliente ";
-$where = " WHERE `ORDI_DEPOSITO` =  ".$deposito."  and `ORDI_DATA_DOC` BETWEEN '".$data_da."' AND '".$data_a."' ";
-if($evasi == "E"){
-    $where = $where." AND ORDI_EVASO LIKE 'E' ";
-} else {
-    $where = $where." AND (ORDI_EVASO IS NULL OR ORDI_EVASO = '') ";
-}
-
+$where = " WHERE `ORDI_DEPOSITO` =  ".$deposito."  and `ORDI_DATA_DOC` BETWEEN '".$data_da."' AND '".$data_a."' $q1 ORDER BY ORDI_DATA_DOC, ORDI_NUM_DOC";
 $sql = $sql.$where;
 //echo $sql; 
 $today = date("d-m-Y");
@@ -45,6 +43,31 @@ $pdf->SetXY(105,15);
 $pdf->Cell(0,4,"STAMPA ORDINI",0,0,'L'); 
     
 while($row = mysql_fetch_assoc($rst)) {
+
+  $righe=json_decode($row["ORDI_RIGHE"],true);
+  $totresto=0;
+  for($j=0;$j<count($righe["qta"]);$j++)
+     {
+	 $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
+	 $totresto+=$resto;
+	 }
+	 
+    $salta=0;
+    if($evaso=="N" && ($totresto==0 || $row["ORDI_EVASO"]=="S"))
+      {
+      $salta=1;	  	
+	  }
+    if($evaso=="E" && $totresto>0)
+      {
+      $salta=2;
+	  }
+    if($evaso=="E" && $row["ORDI_EVASO"]=="S")
+      {
+      $salta=3;
+	  }
+	  
+    if($salta==0)
+      {
 
   $deposito=$row["ORDI_DEPOSITO"];
   $data_doc=$row["ORDI_DATA_DOC"];
@@ -110,6 +133,19 @@ while($row = mysql_fetch_assoc($rst)) {
     $data_consegna=substr($data_consegna,8,2) . "/" . substr($data_consegna,5,2) . "/" . substr($data_consegna,0,4);
     $tot_rig=24;
     $y = $pdf->getY();
+    
+    if($y>=150){
+        $pdf->AddPage("L"); 
+        $pdf->SetFont('Arial','',10);
+        $pdf->SetTopMargin(0);
+        $pdf->SetLineWidth(0.05);   
+        $pdf->SetXY(5,10);
+        $pdf->Cell(0,4,"GALLI INNOCENTI & C. S.p.A.",0,0,'L'); 
+        $pdf->SetXY(250,10);
+        $pdf->Cell(0,4,$depdes,0,0,'L'); 
+        $y=15;
+    }
+    
     $pdf->SetXY(5,$y+5);
     $pdf->Cell(0,4,"DEPOSITO: ".$deposito,0,0,'L'); 
     $pdf->SetXY(5,$y+15);
@@ -145,7 +181,6 @@ while($row = mysql_fetch_assoc($rst)) {
     $pdf->SetXY(210,$y+35);
     $pdf->Cell(0,4,"IVA",0,1,'L'); 
  
-    $righe=json_decode($row["ORDI_RIGHE"],true);
     // INIZIO STAMPA RIGHE ORDINE
     for($j=0;$j<count($righe["desc"]);$j++)    { 
         $articolo=$righe["cod"][$j];
@@ -176,18 +211,31 @@ while($row = mysql_fetch_assoc($rst)) {
         $pdf->Cell(18,4,$prezzo,0,0,'R');
         $pdf->Cell(13,4,$sconto,0,0,'R');
         $pdf->Cell(20,4,$totale,0,0,'R'); 
-        $pdf->Cell(10,4,$aliq,0,0,'L');  
-        if($stato == "E"){
+        $pdf->Cell(10,4,$aliq,0,0,'L'); 
+        
+        $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
+        if($resto == 0){
             $pdf->Cell(8,4,"EV S",0,1,'L');  
         } else {
             $pdf->Cell(8,4,"EV N",0,1,'L');  
         }
  
-        
     }
+    
+        $y = $pdf->getY();
 
-     
-        $y = $pdf->getY(); 
+    if($y>=150){
+        $pdf->AddPage("L"); 
+        $pdf->SetFont('Arial','',10);
+        $pdf->SetTopMargin(0);
+        $pdf->SetLineWidth(0.05);   
+        $pdf->SetXY(5,10);
+        $pdf->Cell(0,4,"GALLI INNOCENTI & C. S.p.A.",0,0,'L'); 
+        $pdf->SetXY(250,10);
+        $pdf->Cell(0,4,$depdes,0,0,'L'); 
+        $y=15;
+    }
+        
         $pdf->SetXY(195,$y); 
         $pdf->Cell(0,4,"---------",0,0,'L'); 
         $pdf->SetXY(180,$y+3); 
@@ -215,7 +263,7 @@ while($row = mysql_fetch_assoc($rst)) {
         }
 
     //fine righe ordine
-   
+
  /*   $dicitura = "CONSEGNA BORDO CAMION AL NUMERO CIVICO. LA DATA DI CONSEGNA NON PUO' ESSERE GARANTITA, E' PURAMENTE INDICATIVA ";
     $dicitura_2 = "ESSENDO SUBORDINATA ALLE SPEDIZIONI DELLE SINGOLE CASE PRODUTTRICI E POTREBBE CAMBIARE A SECONDA DELLE DISPONIBILITA'";
 
@@ -228,7 +276,7 @@ while($row = mysql_fetch_assoc($rst)) {
     $pdf->SetXY(5,$y+4);
     $pdf->Cell(0,4,"***************************************************************************************************************************************************************************************",0,0,'L'); 
     $y = $pdf->getY();
-    if($y>=150){
+    if($y>=170){
         $pdf->AddPage("L"); 
         $pdf->SetFont('Arial','',10);
         $pdf->SetTopMargin(0);
@@ -237,12 +285,11 @@ while($row = mysql_fetch_assoc($rst)) {
         $pdf->Cell(0,4,"GALLI INNOCENTI & C. S.p.A.",0,0,'L'); 
         $pdf->SetXY(250,10);
         $pdf->Cell(0,4,$depdes,0,0,'L'); 
+        $y=15;
     }
 }
+}
 
- 
 $pdf->Output();
-
-
 
 ?>

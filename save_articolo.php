@@ -1,15 +1,15 @@
 <?php 
 require 'include/database.php';
+require 'class_varie.php';
 session_start();
 $iddu=$_SESSION["iddu"];
 $utente=$_SESSION["ute"];
 global $con;
 
-
 $art_codice = $_POST["art_codice"]; 
 $art_fornitore = $_POST["art_fornitore"];
 //check articolo
-$checkArt = "SELECT * FROM articoli WHERE art_codice LIKE '".$art_codice."' "; 
+$checkArt = "SELECT * FROM articoli WHERE art_codice ='$art_codice'"; 
 $qry=mysql_query($checkArt,$con);
 $count=mysql_num_rows($qry);
 
@@ -17,12 +17,14 @@ $count=mysql_num_rows($qry);
       $art_descrizione = addslashes($_POST["art_descrizione"]);
       $art_uni_mis = $_POST["art_uni_mis"];
       $art_classe_merc = $_POST["art_classe_merc"];
+      $art_fornitore = $_POST["art_fornitore"];
+      $art_scorta_min = $_POST["art_scorta_min"];
+      $art_scorta_max = $_POST["art_scorta_max"];
       
       $art_listino1 = $_POST["art_listino1"];
       $art_listino2 = $_POST["art_listino2"]; 
       
       $art_cod_iva = $_POST["art_cod_iva"];  
-      
       
       $art_data_ins = date("Y-m-d H:i:s");
       $art_data_mod = date("Y-m-d H:i:s");
@@ -30,7 +32,9 @@ $count=mysql_num_rows($qry);
       $sql = "INSERT INTO `articoli`(`art_codice`,`art_fornitore`, `art_descrizione`, `art_listino1`, `art_listino2`,  
       `art_uni_mis`, `art_cod_iva`, `art_scorta_min`, `art_scorta_max`, `art_data_ins`, `art_data_mod`, `art_classe_merc`) 
       VALUES ('$art_codice', '$art_fornitore', '$art_descrizione','$art_listino1', '$art_listino2', 
-      '$art_uni_mis',$art_cod_iva, '$art_data_ins' ,'$art_data_mod','$art_classe_merc')";
+      '$art_uni_mis',$art_cod_iva, '$art_scorta_min','$art_scorta_max','$art_data_ins' ,'$art_data_mod','$art_classe_merc')";
+
+      //file_put_contents("testart.txt","$sql");
             
       mysql_query($sql,$con);
       $msg = mysql_error();

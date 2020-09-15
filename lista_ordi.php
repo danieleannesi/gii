@@ -62,6 +62,7 @@ if(isset($_POST["data_da"])){
   $data_a=$_POST["data_a"];
   $deposito=$_POST["deposito"];
   $numero=$_POST["numero"];
+  $evaso=$_POST["evaso"];
   $dal=addrizza("",$data_da);
   $al=addrizza("",$data_a);
 }
@@ -128,10 +129,10 @@ while(isset($codcom[$j])) {
   <input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente?>" readonly>
   <input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc?>">
   &nbsp;&nbsp; 
-  <select name="evaso" class="form-control">
-      <option value=""></option>
-      <option value="E">Evaso</option>
-      <option value="N">Non Evaso</option>
+  <select id="evaso" name="evaso" class="form-control">
+      <option value="T" <?php if($evaso=="T") echo "selected";?>>Tutti</option>
+      <option value="E" <?php if($evaso=="E") echo "selected";?>>Evasi</option>
+      <option value="N"<?php if($evaso=="N") echo "selected";?>>Non Evasi</option>
   </select> 
   <input type="button" id="listap" name="listap" value="LISTA" onclick="document.formperdata.submit();">
   <input type="button" id="stampa" name="stampa" value="STAMPA">
@@ -169,6 +170,23 @@ while($row=mysql_fetch_assoc($rst)){
     $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
     $totresto+=$resto;
     }
+
+    $salta=0;
+    if($evaso=="N" && ($totresto==0 || $ORDI_EVASO=="S"))
+      {
+      $salta=1;	  	
+	  }
+    if($evaso=="E" && $totresto>0)
+      {
+      $salta=2;
+	  }
+    if($evaso=="E" && $ORDI_EVASO=="S")
+      {
+      $salta=3;
+	  }
+	  
+    if($salta==0)
+      {
     $classe="";	 
     if($totresto==0 || $ORDI_EVASO=="S")
       {
@@ -177,6 +195,7 @@ while($row=mysql_fetch_assoc($rst)){
     $data=addrizza($row["ORDI_DATA_DOC"],"");
     echo "<tr $classe>";
     echo "<td class='a'>$data</td><td class='b'>$ORDI_NUM_DOC</td><td class='c'>$cf_ragsoc</td><td class='d'><td class='i'><img src='immagini/pencil.png' width='20px' title='MODIFICA ORDINE' onclick='chiama_ordi($ORDI_ID);'></td><td class='i'><img src='immagini/printer.png' width='20px' title='Stampa' onclick='stampa_ordi($ORDI_ID);'></td><td class='i'>&nbsp;&nbsp;&nbsp;&nbsp;<img src='immagini/button_drop.png' width='15px' title='ELIMINA ORDINE CLIENTE' onclick='cancella_doc($ORDI_ID, $ORDI_NUM_DOC);'></td></tr>";
+	  }    
 }
 ?>
 </tbody></table></div></div>

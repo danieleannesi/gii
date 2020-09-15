@@ -14,7 +14,11 @@ return $descrizione;
 require 'fpdf_js.php';
 require 'include/database.php';
 require 'include/java.php';////////////////////////////////////////////////////
-//   
+//
+$idt=0;
+$tipo=0;
+$file=0;
+//
 if(isset($_GET["idt"]))
   {
   $idt=$_GET["idt"];
@@ -23,7 +27,11 @@ if(isset($_GET["tipo"]))
   {
   $tipo=$_GET["tipo"];
   }
-  
+if(isset($_GET["file"]))
+  {
+  $file=$_GET["file"];
+  }
+//    
 switch ($tipo) {
     case "1":
         $tipodoc="Doc.di Trasporto";
@@ -76,6 +84,7 @@ switch ($tipo) {
   $codcom=$row["DOCT_COMMESSO_VEND"];
 
   $data_doc=$row["DOCT_DATA_DOC"];
+  $data_stretta=substr($data_doc,0,4) . substr($data_doc,5,2) . substr($data_doc,8,2);
   $data_doc=substr($data_doc,8,2) . "/" . substr($data_doc,5,2) . "/" . substr($data_doc,0,4);
   $num_doc=$row["DOCT_NUM_DOC"];
   $cliente=$row["DOCT_CLIENTE"];
@@ -775,10 +784,22 @@ if($tipo=="2" || $tip=="4")
 	$pdf->Cell(22,0,$tot_raee,0,0,'R');
 */	
 ////stampa automatica////////////////////////////////////////
-$pdf->IncludeJS("pp=getPrintParams(); print(pp);");
-$pdf->AutoPrint(true);
+if($file==0)
+  {
+  $pdf->IncludeJS("pp=getPrintParams(); print(pp);");
+  $pdf->AutoPrint(true);
+  }
 //
 //ob_end_flush();
-$pdf->Output();
-//$pdf->Output("/tmp/$numid.pdf");
+if($file==0)
+  {
+  $pdf->Output();
+  }
+else
+  {
+  $doc=sprintf("%08d", $num_doc);  
+  $nomefile="tmp/FATT_EMAIL/F" . $data_stretta . "_" . $cliente .  "_" . $doc . ".pdf";
+  file_put_contents("testboll.txt",$nomefile);
+  $pdf->Output($nomefile);
+  }
 ?>
