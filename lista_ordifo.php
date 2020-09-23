@@ -53,6 +53,7 @@ $dal=addrizza("",$data_da);
 $al=addrizza("",$data_a);
 $fornitore="";
 $ragsoc="";
+$evaso=$_POST["evaso"];
 if(isset($_POST["data_da"]))
   {
   $utente=$_POST["utente"];
@@ -119,11 +120,18 @@ while(isset($codcom[$j])) {
                 'controlname': 'data_a'
         });
         </script>
+<label for="evaso">Stato Ordine:</label> 
+<select name="evaso" class="form-control">
+      <option value=""></option>
+      <option value="E">Evaso</option>
+      <option value="N">Non Evaso</option>
+  </select> 
 <br>        
 <label for="cliente">Fornitore</label>
 <input id="fornitore" name="fornitore" type="text"size="9" maxlength="8" value="<?php echo $fornitore;?>" readonly>
 <input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc;?>">
 &nbsp;&nbsp;
+
 <input type="button" id="listap" name="listap" value="LISTA" onclick="document.formperdata.submit();">
 
 </form>	
@@ -140,8 +148,16 @@ if($utente>"")
   {
   $q2="AND ORDI_UTENTE='$utente'";
   }  
-$qr="SELECT * FROM ordinifo LEFT JOIN clienti ON ORDI_FORNITORE=cf_cod WHERE ORDI_DEPOSITO='$deposito' AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al' $q1 $q2 ORDER BY ORDI_DATA_DOC DESC, ORDI_NUM_DOC DESC LIMIT 500";
-//echo $qr;   
+
+  $q3 = "";
+if($evaso == "E"){
+  $q3=" AND ORDI_EVASO LIKE 'E' ";
+} 
+if($evaso == "N"){
+  $q3=" AND (ORDI_EVASO IS NULL OR ORDI_EVASO = '') ";
+}
+ $qr="SELECT * FROM ordinifo LEFT JOIN clienti ON ORDI_FORNITORE=cf_cod WHERE ORDI_DEPOSITO='$deposito' AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al' $q1 $q2 $q3 ORDER BY ORDI_DATA_DOC DESC, ORDI_NUM_DOC DESC LIMIT 500";
+// echo $qr;   
 $rst=mysql_query($qr,$con);
 ?>
 <div class='tablewrap'><div class='tablewrap-inner'><table><thead><tr><th class='a'>Data</th><th class='b'>Numero</th><th class='c'>Ragione Sociale</th><th class='i'>&nbsp;</th><th class='i'>&nbsp;</th><th class='i'>&nbsp;</th></tr></thead><tbody>
