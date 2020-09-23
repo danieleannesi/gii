@@ -26,7 +26,7 @@ $deposito=$dati["deposito"];
 $nume_man=$dati["nume_man"];
 $cliente=$dati["cliente"];
 $fornitore=$dati["fornitore"];
-$age="";
+$age=$dati["age"];
 $utente=$dati["utente"];
 $paga=$dati["paga"];
 $tot_ali=$dati["tot_ali"];
@@ -95,7 +95,7 @@ if($idt==""||$idt=="0")
   }
 else
   {
-  $qr="UPDATE ordini SET ORDI_DATA_CONS='$data_cons', ORDI_ALIQUOTA_1='$ORDI_ALIQUOTA_1', ORDI_IMPONIBILE_1='$ORDI_IMPONIBILE_1', ORDI_IMPOSTA_1='$ORDI_IMPOSTA_1',ORDI_ALIQUOTA_2='$ORDI_ALIQUOTA_2', ORDI_IMPONIBILE_2='$ORDI_IMPONIBILE_2', ORDI_IMPOSTA_2='$ORDI_IMPOSTA_2', ORDI_ALIQUOTA_3='$ORDI_ALIQUOTA_3', ORDI_IMPONIBILE_3='$ORDI_IMPONIBILE_3', ORDI_IMPOSTA_3='$ORDI_IMPOSTA_3', ORDI_TOT_IMPONIBILE='$ORDI_TOT_IMPONIBILE', ORDI_TOT_IMPOSTA='$ORDI_TOT_IMPOSTA', ORDI_TOT_ORDINE='$ORDI_TOT_PREVENT', ORDI_AGENTE='$age', ORDI_COD_PAG='$paga', ORDI_UTENTE='$utente', ORDI_DES_RAG_SOC='$des_rag_soc',ORDI_DES_INDIRIZZO='$des_indirizzo',ORDI_DES_CAP='$des_cap', ORDI_DES_LOC='$des_localita', ORDI_DES_PR='$des_prov', ORDI_CIG='$cig', ORDI_CUP='$cup', ORDI_NOTE='$notes', ORDI_ACCONTO='$acconto', ORDI_VERSAMENTO='$caparra', ORDI_TRASPORTO='$trasporto', ORDI_INSTALLAZ='$installazione', ORDI_JOLLY='$jolly', ORDI_NOLEGGIO='$noleggio', ORDI_COLLAUDO='$collaudo', ORDI_EUROPALLET='$europallet', ORDI_ADDVARI='$addvari', ORDI_RIGHE='$righej' WHERE ORDI_ID='$idt'";
+  $qr="UPDATE ordini SET ORDI_CLIENTE='$cliente', ORDI_DATA_CONS='$data_cons', ORDI_ALIQUOTA_1='$ORDI_ALIQUOTA_1', ORDI_IMPONIBILE_1='$ORDI_IMPONIBILE_1', ORDI_IMPOSTA_1='$ORDI_IMPOSTA_1',ORDI_ALIQUOTA_2='$ORDI_ALIQUOTA_2', ORDI_IMPONIBILE_2='$ORDI_IMPONIBILE_2', ORDI_IMPOSTA_2='$ORDI_IMPOSTA_2', ORDI_ALIQUOTA_3='$ORDI_ALIQUOTA_3', ORDI_IMPONIBILE_3='$ORDI_IMPONIBILE_3', ORDI_IMPOSTA_3='$ORDI_IMPOSTA_3', ORDI_TOT_IMPONIBILE='$ORDI_TOT_IMPONIBILE', ORDI_TOT_IMPOSTA='$ORDI_TOT_IMPOSTA', ORDI_TOT_ORDINE='$ORDI_TOT_PREVENT', ORDI_AGENTE='$age', ORDI_COD_PAG='$paga', ORDI_UTENTE='$utente', ORDI_DES_RAG_SOC='$des_rag_soc',ORDI_DES_INDIRIZZO='$des_indirizzo',ORDI_DES_CAP='$des_cap', ORDI_DES_LOC='$des_localita', ORDI_DES_PR='$des_prov', ORDI_CIG='$cig', ORDI_CUP='$cup', ORDI_NOTE='$notes', ORDI_ACCONTO='$acconto', ORDI_VERSAMENTO='$caparra', ORDI_TRASPORTO='$trasporto', ORDI_INSTALLAZ='$installazione', ORDI_JOLLY='$jolly', ORDI_NOLEGGIO='$noleggio', ORDI_COLLAUDO='$collaudo', ORDI_EUROPALLET='$europallet', ORDI_ADDVARI='$addvari', ORDI_RIGHE='$righej' WHERE ORDI_ID='$idt'";
   }
 file_put_contents("debugqr.txt", "$qr\n");
 mysql_query($qr,$con);

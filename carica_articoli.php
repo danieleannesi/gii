@@ -21,7 +21,7 @@ while($row = mysql_fetch_array($rst)) {
      $causali[$a]=$tipo;     
 	 }
 //
-file_put_contents("testf.txt", "");
+//file_put_contents("testf.txt", "");
 //
 $codart=trim($_POST["codart"]);
 $qr="SELECT art_codice, art_descrizione FROM articoli WHERE NOT art_codice < '$codart' and art_descrizione NOT LIKE '' ORDER BY art_codice LIMIT 1000";
@@ -38,9 +38,9 @@ $al="2020-12-31";
 $valori=calcola_valore_medio($row["art_codice"],$deposito,$dal,$al,"S");
 $tqta="(" . $valori["tqta"] . ")";
 
-$a=print_r($valori,true);
-file_put_contents("testf.txt", $row["art_codice"] . " dep=$deposito dal=$dal al=$al\n", FILE_APPEND);
-file_put_contents("testf.txt", "$a\n", FILE_APPEND);
+//$a=print_r($valori,true);
+//file_put_contents("testf.txt", $row["art_codice"] . " dep=$deposito dal=$dal al=$al\n", FILE_APPEND);
+//file_put_contents("testf.txt", "$a\n", FILE_APPEND);
 
 //$depositi=$valori["depo_val"];
 //$res["valori"]=$valori;	

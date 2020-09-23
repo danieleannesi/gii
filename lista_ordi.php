@@ -11,6 +11,7 @@
 <script type="text/javascript" src="include/jquery-ui.min.js"></script>
 <script type="text/javascript" src="include/jquery-dateFormat.min.js"></script>
 <script type="text/javascript" src="calendar/calendar_eu.js"></script>
+<script type="text/javaScript" src="include/jquery.typewatch.js"></script>
 <script type="text/javascript" src="lib2.js"></script>
 <script type="text/javascript" src="elenchi.js"></script>
 <script type="text/javascript" src="lista_ordi.js"></script>
@@ -41,6 +42,7 @@ $ute=$_SESSION["ute"];
 $utente=$ute;
 $cliente="";
 $ragsoc="";
+$agente="";
 //
 require 'include/database.php';
 require 'include/java.php';
@@ -56,6 +58,7 @@ $al=addrizza("",$data_a);
 
 if(isset($_POST["data_da"])){
   $utente=$_POST["utente"];
+  $agente=$_POST["agente"];
   $cliente=$_POST["cliente"];
   $ragsoc=$_POST["ragsoc"];
   $data_da=$_POST["data_da"];
@@ -87,7 +90,7 @@ while(isset($coddep[$j])) {
 ?>
 </select>
 &nbsp;&nbsp;
-<label for="utente">Commesso</label>
+<label for="utente">Comm.</label>
 <select id="utente" name="utente">
 <?php
 $j=0;
@@ -95,6 +98,19 @@ while(isset($codcom[$j])) {
   echo "<option value=\"$codcom[$j]\"";
   if($utente==$codcom[$j]) { echo " selected"; };
   echo ">" . $descom[$j] . "</option>";
+  $j++;
+  }
+?>
+</select>
+&nbsp;&nbsp;
+<label for="agente">Age.</label>
+<select id="agente" name="agente">
+<?php
+$j=0;
+while(isset($codage[$j])) {
+  echo "<option value=\"$codage[$j]\"";
+  if($agente==$codage[$j]) { echo " selected"; };
+  echo ">" . $desage[$j] . "</option>";
   $j++;
   }
 ?>
@@ -126,8 +142,9 @@ while(isset($codcom[$j])) {
   <input id="numero" name="numero" type="text" size="11" maxlength="11" value="<?php echo $numero?>"/>
   <br>   
   <label for="cliente">Cliente</label>
-  <input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente?>" readonly>
-  <input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc?>">
+  <input id="test_rag" name="test_rag" type="text" size="8" placeholder="ricerca" style="background-color: yellow;">	
+  <input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente;?>">
+  <input name="ragsoc"  id="ragsoc" type="text" size="70" value="<?php echo $ragsoc;?>">
   &nbsp;&nbsp; 
   <select id="evaso" name="evaso" class="form-control">
       <option value="T" <?php if($evaso=="T") echo "selected";?>>Tutti</option>
@@ -172,6 +189,20 @@ while($row=mysql_fetch_assoc($rst)){
     }
 
     $salta=0;
+    if($agente>"" && $ORDI_AGENTE=="")
+      {
+	  if($cf_agente!=$agente)
+	    {
+		$salta=1;
+		}
+	  }
+    if($agente>"" && $ORDI_AGENTE>"")
+      {
+	  if($ORDI_AGENTE!=$agente)
+	    {
+		$salta=1;
+		}
+	  }
     if($evaso=="N" && ($totresto==0 || $ORDI_EVASO=="S"))
       {
       $salta=1;	  	

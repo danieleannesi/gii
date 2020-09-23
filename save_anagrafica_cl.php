@@ -59,7 +59,7 @@ if($nuovo=="0"){
     
     $operazione = "inserito cliente:";
   } else   {
-    $qr="UPDATE clienti SET cf_cli_for='$tipo_anagrafica', cf_ragsoc='$cf_ragsoc', cf_tipo='$cf_tipo', cf_cognome='$cf_cognome', cf_nome='$cf_nome', cf_cnazione='$cf_cnazione', cf_nazione='$cf_nazione', cf_piva='$cf_piva', cf_codfisc='$cf_codfisc', cf_indirizzo='$cf_indirizzo', cf_clocalita='$cf_clocalita', cf_localita='$cf_localita', cf_cap='$cf_cap', cf_prov='$cf_prov', cf_add_imballo='$cf_add_imballo', cf_add_sp_inc='$cf_add_sp_inc', cf_no_ec='$cf_no_ec', cf_fatt_separate='$cf_fatt_separate', cf_rb_unicacig='$cf_rb_unicacig', cf_note='$cf_note' WHERE cf_cod='$cf_cod'";
+    $qr="UPDATE clienti SET cf_cf_ragsoc='$cf_ragsoc', cf_tipo='$cf_tipo', cf_cognome='$cf_cognome', cf_nome='$cf_nome', cf_cnazione='$cf_cnazione', cf_nazione='$cf_nazione', cf_piva='$cf_piva', cf_codfisc='$cf_codfisc', cf_indirizzo='$cf_indirizzo', cf_clocalita='$cf_clocalita', cf_localita='$cf_localita', cf_cap='$cf_cap', cf_prov='$cf_prov', cf_add_imballo='$cf_add_imballo', cf_add_sp_inc='$cf_add_sp_inc', cf_no_ec='$cf_no_ec', cf_fatt_separate='$cf_fatt_separate', cf_rb_unicacig='$cf_rb_unicacig', cf_note='$cf_note' WHERE cf_cod='$cf_cod'";
     mysql_query($qr,$con);
     $msg = mysql_error();
     $qs=addslashes($qr);

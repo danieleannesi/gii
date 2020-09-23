@@ -8,12 +8,12 @@ $(document).ready(function() {
         $.ajax({
             type: 'post',
             url: 'search_idrobox.php',
-            data:  $("#searchIdro").serialize(),
+            data:  $("#formArticolo").serialize(),
             async: false,
             success: function(res) {
 
                 if(!res.success){
-                    alert(res.msg);
+                    alert("errore " + res.msg);
                 } else {
                     var header = "<table id='resArticolo'><thead><th></th><th>Marca</th><th>Codice</th><th>Descrizione</th><th>Um</th><th>Set</th><th>Mac. Fam.</th><th>Famiglia</th><th>Confezione</th><th>Prezzo Lis.</th><th>Data Lis.</th></thead><tbody></tbody></table>"; 
                     $("#result").append(header);
@@ -33,20 +33,32 @@ $(document).ready(function() {
     $("#result").on("click","input.btnSelect" , function(){ 
             var marca = $(this).closest('tr').find('td:eq(1)').text();
             var cod_prod = $(this).closest('tr').find('td:eq(2)').text();
-            var descr = $(this).closest('tr').find('td:eq(3)').text();
-            var art_uni_mis = $(this).closest('tr').find('td:eq(4)').text();
-            var art_listino1 = $(this).closest('tr').find('td:eq(9)').text();
-            var fornitore = "";
+            var dati="marca=" + marca + "&codiceproduttore=" + cod_prod;
             $.ajax({
                 type: 'post',
-                url: 'get_marca.php',
-                data: {codice : marca},
+                url: 'per_scofor.php',
+                data: dati,
                 success: function(res) {
-                   console.log(res);
-                   $("input[name=art_fornitore]").val(res); 
-                    $("input[name=art_descrizione]").val(descr); 
-                    $("input[name=art_uni_mis]").val(art_uni_mis);
-                    $("input[name=art_listino1]").val(art_listino1); 
+                    $("input[name=art_fornitore]").val(res.codfor);
+                    $("input[name=art_descrizione]").val(res.descri); 
+                    $("input[name=art_uni_mis]").val(res.articolo.art_uni_mis);
+                    $("input[name=art_scorta_min]").val(res.articolo.art_scorta_min);
+                    $("input[name=art_scorta_max]").val(res.articolo.art_scorta_max);
+                    $("input[name=art_codice_raee]").val(res.articolo.art_codice_raee);
+                    $("input[name=art_tempo_appro]").val(res.articolo.art_tempo_appro);
+                    $("input[name=art_tipo_art]").val(res.articolo.art_tipo_art);
+                    $("input[name=art_trasporto]").val(res.articolo.art_trasporto);
+                    $("input[name=art_cod_iva]").val(res.articolo.art_cod_iva);
+                    $("input[name=mgf_listino1]").val(res.cal_prezzo); 
+                    $("input[name=mgf_listino2]").val(res.cal_prezzo); 
+                    $("input[name=art_listino1]").val(res.listino); 
+                    $("input[name=art_listino2]").val(res.listino); 
+                    $("input[name=art_data_listino]").val(res.oggi); 
+                    $("input[name=mgf_data_listino]").val(res.oggi); 
+                    $("input[name=mgf_sconto1]").val(res.sconto_for); 
+                    $("input[name=mgf_sconto2]").val(res.sconto_for); 
+                    $("input[name=mgf_data_sconto]").val(res.oggi); 
+
                     $('#insertArticolo').show();
                 }
             });

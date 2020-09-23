@@ -1,7 +1,8 @@
 <?php
 session_start();
 require_once "include/database.php";
-$ragsoc=trim($_POST["ragsoc"]);
+$ragsoc=addslashes(trim($_POST["ragsoc"]));
+//$ragsoc=addslashes(trim("d'eramo"));
 $qr="SELECT * FROM clienti WHERE cf_cli_for='1' AND cf_eliminato=0 AND cf_ragsoc LIKE '$ragsoc%' ORDER BY cf_ragsoc";
 $rst=mysql_query($qr,$con);
 $lista_nomi = array();

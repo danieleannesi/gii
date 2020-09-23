@@ -1,7 +1,9 @@
 <?php
 require 'fpdf.php';
+require 'cellfit.php';
 require 'include/database.php';
-
+require 'calcola_medio.php';
+//
 function AutoPrint($dialog=false)
 {
     //Embed some JavaScript to show the print dialog or start printing immediately
@@ -13,12 +15,22 @@ function AutoPrint($dialog=false)
 $deposito = $_GET["deposito"];
 $cliente = $_GET["cliente"];
 $evaso = $_GET["evaso"];
+$agente1 = $_GET["agente"];
 $data_da = date_format(date_create_from_format('d/m/Y', $_GET["data_da"]), 'Y-m-d');
 $data_a =  date_format(date_create_from_format('d/m/Y', $_GET["data_a"]), 'Y-m-d');
-  /*
+/*
 if($deposito=="02") { $depdes="Via R.B.Bandinelli"; }
     if($deposito=="03") { $depdes="Via del Fosso di Settebagni"; }
-    if($deposito=="04") { $depdes="Via Tor de' Schiavi"; }*/
+    if($deposito=="04") { $depdes="Via Tor de' Schiavi"; }
+*/
+$totale_impo=0;    
+$totale_iva=0;    
+$totale_tot=0;    
+$dal="2020-01-01";
+$al="2020-12-31";
+$aord=g_ordini_per_articolo($dal,$al,"false");
+$aordfo=g_ordinifo_per_articolo($dal,$al);
+//
 $q1="";
 if($cliente>""){
   $q1="AND ORDI_CLIENTE='$cliente'";
@@ -30,8 +42,8 @@ $sql = $sql.$where;
 $today = date("d-m-Y");
 $rst=mysql_query($sql,$con);
   
-$pdf = new FPDF();
-$pdf->AddPage("L"); 
+$pdf = new FPDF_CellFit();
+$pdf->AddPage("L","A4"); 
 $pdf->SetFont('Arial','',10);
 $pdf->SetTopMargin(5);
 $pdf->SetLineWidth(0.05);   
@@ -51,8 +63,22 @@ while($row = mysql_fetch_assoc($rst)) {
 	 $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
 	 $totresto+=$resto;
 	 }
-	 
+    //file_put_contents("testord.txt","$agente1 - " . $row["ORDI_AGENTE"] . " - " . $row["cf_agente"] . "\n", FILE_APPEND);
     $salta=0;
+    if($agente1>"" && $row["ORDI_AGENTE"]=="")
+      {
+	  if($row["cf_agente"]!=$agente1)
+	    {
+		$salta=1;
+		}
+	  }
+    if($agente1>"" && $row["ORDI_AGENTE"]>"")
+      {
+	  if($row["ORDI_AGENTE"]!=$agente1)
+	    {
+		$salta=1;
+		}
+	  }
     if($evaso=="N" && ($totresto==0 || $row["ORDI_EVASO"]=="S"))
       {
       $salta=1;	  	
@@ -120,6 +146,9 @@ while($row = mysql_fetch_assoc($rst)) {
     $acconto=$row["ORDI_ACCONTO"];
     $tot_impo= $impon1 + $impon2;
     $tot_iva= $iva1 + $iva2;
+    $totale_impo+=$tot_impo;
+    $totale_iva+=$tot_iva;
+    $totale_tot+=$totpre;
     $tot_impo=number_format($tot_impo, 2, ',', '.');
     $spese=number_format($spese, 2, ',', '.');
     $tot_iva=number_format($tot_iva, 2, ',', '.');
@@ -135,7 +164,7 @@ while($row = mysql_fetch_assoc($rst)) {
     $y = $pdf->getY();
     
     if($y>=150){
-        $pdf->AddPage("L"); 
+        $pdf->AddPage("L","A4"); 
         $pdf->SetFont('Arial','',10);
         $pdf->SetTopMargin(0);
         $pdf->SetLineWidth(0.05);   
@@ -179,11 +208,51 @@ while($row = mysql_fetch_assoc($rst)) {
     $pdf->SetXY(192,$y+35);
     $pdf->Cell(0,4,"Tot riga",0,0,'L');  
     $pdf->SetXY(210,$y+35);
-    $pdf->Cell(0,4,"IVA",0,1,'L'); 
+    $pdf->Cell(0,4,"IVA",0,0,'L'); 
+    $pdf->SetXY(218,$y+35);
+    $pdf->Cell(8,4,"",0,0,'L'); 
+    $pdf->SetXY(228,$y+35);
+    $pdf->SetFont('Arial','',7.5);
+    $pdf->Cell(11,4,"Gia.02",0,0,'R');
+    $pdf->Cell(11,4,"Gia.03",0,0,'R');
+    $pdf->Cell(11,4,"Ord.02",0,0,'R');
+    $pdf->Cell(11,4,"Ord.03",0,0,'R');
+    $pdf->Cell(11,4,"Orf.02",0,0,'R');
+    $pdf->Cell(11,4,"Orf.03",0,1,'R');
+    $pdf->SetFont('Arial','',10);    
  
     // INIZIO STAMPA RIGHE ORDINE
     for($j=0;$j<count($righe["desc"]);$j++)    { 
         $articolo=$righe["cod"][$j];
+
+        $valori=calcola_valore_medio($articolo,"",$dal,$al,"S");
+        $z_giacenza2=number_format($valori["depo_val"]["02"]["qta"]+$valori["depo_val"]["12"]["qta"],2,",",".");
+        $z_giacenza3=number_format($valori["depo_val"]["03"]["qta"]+$valori["depo_val"]["13"]["qta"],2,",",".");        
+     $ord2=0;
+     if(isset($aord["$art_codice"]["2"]))
+       {
+	   	$ord2=$aord["$art_codice"]["2"];
+	   }
+     $z_ordini2=number_format($ord2,2,",",".");     
+     $ord3=0;
+     if(isset($aord["$art_codice"]["3"]))
+       {
+	   	$ord3=$aord["$art_codice"]["3"];
+	   }
+     $z_ordini3=number_format($ord3,2,",",".");     
+     $ordfo2=0;
+     if(isset($aordfo["$art_codice"]["2"]))
+       {
+	   	$ordfo2=$aordfo["$art_codice"]["2"];
+	   }
+     $z_ordinifo2=number_format($ordfo2,2,",",".");     
+     $ordfo3=0;
+     if(isset($aordfo["$art_codice"]["3"]))
+       {
+	   	$ordfo3=$aordfo["$art_codice"]["3"];
+	   }
+     $z_ordinifo3=number_format($ordfo3,2,",",".");     
+
         $descri=$righe["desc"][$j];
         $quantita=$righe["qta"][$j];
         $prezzo=$righe["uni"][$j];
@@ -201,31 +270,47 @@ while($row = mysql_fetch_assoc($rst)) {
         $totale=number_format($totale, 2, ',', '.');
         $sconto=number_format($sconto, 2, ',', '.');
         
-    
+        $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
+        $nosta=0;
+        if($evaso=="N" && $resto==0)
+          { $nosta=1; }
+        if($evaso=="S" && $resto>0)
+          { $nosta=1; }
+        if($nosta==0)
+          {
         $y = $pdf->getY(); 
         $pdf->SetXY(5,$y); 
-        $pdf->Cell(22,4,$articolo,0,0,'L');
-        $pdf->Cell(110,4, $descri,0,0,'L');
+        //$pdf->Cell(22,4,$articolo,0,0,'L');
+   	    $pdf->CellFit(22,4,$articolo,0,0,'L',false,'',true,false);
+        //$pdf->Cell(110,4, $descri,0,0,'L');
+   	    $pdf->CellFit(110,4,$descri,0,0,'L',false,'',true,false);
         $pdf->Cell(10,4,$umis,0,0,'R');
         $pdf->Cell(12,4,$quantita,0,0,'R');
         $pdf->Cell(18,4,$prezzo,0,0,'R');
         $pdf->Cell(13,4,$sconto,0,0,'R');
         $pdf->Cell(20,4,$totale,0,0,'R'); 
         $pdf->Cell(10,4,$aliq,0,0,'L'); 
-        
-        $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
         if($resto == 0){
-            $pdf->Cell(8,4,"EV S",0,1,'L');  
+            $pdf->Cell(8,4,"EV S",0,0,'L');  
         } else {
-            $pdf->Cell(8,4,"EV N",0,1,'L');  
+            $pdf->Cell(8,4,"EV N",0,0,'L');  
         }
+        $pdf->SetFont('Arial','',7.5);
+        $pdf->Cell(11,4,$z_giacenza2,0,0,'R');
+        $pdf->Cell(11,4,$z_giacenza3,0,0,'R');
+        $pdf->Cell(11,4,$z_ordini2,0,0,'R');
+        $pdf->Cell(11,4,$z_ordini3,0,0,'R');
+        $pdf->Cell(11,4,$z_ordinifo2,0,0,'R');
+        $pdf->Cell(11,4,$z_ordinifo3,0,1,'R');
+        $pdf->SetFont('Arial','',10);
+		  } //fine nosta
  
     }
     
         $y = $pdf->getY();
 
     if($y>=150){
-        $pdf->AddPage("L"); 
+        $pdf->AddPage("L","A4"); 
         $pdf->SetFont('Arial','',10);
         $pdf->SetTopMargin(0);
         $pdf->SetLineWidth(0.05);   
@@ -277,7 +362,7 @@ while($row = mysql_fetch_assoc($rst)) {
     $pdf->Cell(0,4,"***************************************************************************************************************************************************************************************",0,0,'L'); 
     $y = $pdf->getY();
     if($y>=170){
-        $pdf->AddPage("L"); 
+        $pdf->AddPage("L","A4"); 
         $pdf->SetFont('Arial','',10);
         $pdf->SetTopMargin(0);
         $pdf->SetLineWidth(0.05);   
@@ -289,7 +374,23 @@ while($row = mysql_fetch_assoc($rst)) {
     }
 }
 }
-
+//
+        $y+=5;  
+        $pdf->SetXY(180,$y+3); 
+        $pdf->Cell(0,4,"Totale: ",0,0,'L'); 
+        $pdf->SetXY(195,$y+3); 
+        $pdf->Cell(0,4,$totale_impo,0,0,'L'); 
+        $pdf->SetXY(180,$y+8); 
+        $pdf->Cell(0,4,"IVA: ",0,0,'L'); 
+        $pdf->SetXY(195,$y+8); 
+        $pdf->Cell(0,4,$totale_iva,0,0,'L');
+        $pdf->SetXY(195,$y+12); 
+        $pdf->Cell(0,4,"---------",0,0,'L');  
+        $pdf->SetXY(180,$y+15); 
+        $pdf->Cell(0,4,"TOT. ",0,0,'L'); 
+        $pdf->SetXY(195,$y+15); 
+        $pdf->Cell(0,4,$totale_tot,0,0,'L'); 
+//        
 $pdf->Output();
 
 ?>

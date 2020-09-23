@@ -90,6 +90,7 @@ while(isset($coddep[$j])) {
 <select id="tipodoc" name="tipodoc">
 <option value="7"<?php if($tipodoc=="7") echo " selected";?>>Fattura</option>
 <option value="8"<?php if($tipodoc=="8") echo " selected";?>>Nota di Credito</option>
+<option value="9"<?php if($tipodoc=="9") echo " selected";?>>Nota di Debito</option>
 <option value="2"<?php if($tipodoc=="2") echo " selected";?>>Fattura accompagnatoria</option>
 <option value="4"<?php if($tipodoc=="4") echo " selected";?>>Buono di acquisto (da reso merce)</option>
 </select>

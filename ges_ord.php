@@ -17,6 +17,7 @@ $utente=$ute;
 <script type="text/javascript" src="include/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="include/jquery-ui.min.js"></script>
 <script type="text/javaScript" src="calendar/calendar_eu.js"></script>
+<script type="text/javaScript" src="include/jquery.typewatch.js"></script>
 <script type="text/javascript" src="elenchi.js"></script>
 <script type="text/javaScript" src="ges_ord.js"></script>
 
@@ -132,10 +133,13 @@ while(isset($coddep[$j])) {
 <tr>
 <td>
 <label for="cliente">Cliente</label>
-<input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente?>" readonly onchange="carica_cliente(this);">
+<input id="cliente" name="cliente" type="text"size="9" maxlength="8" value="<?php echo $cliente?>" onchange="carica_cliente(this);">
 </td>
 <td>
-<input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc?>">
+<input id="test_rag" name="test_rag" type="text" size="8" placeholder="ricerca" style="background-color: yellow;">	
+</td>
+<td>
+<input name="ragsoc"  id="ragsoc" type="text" size="70" value="<?php echo $ragsoc?>">
 <input type="button" id="preventivi" name="preventivi" value="Preventivi" onclick="vedi_preventivi();" style="display: none;">
 </td>
 </tr>
@@ -256,10 +260,11 @@ while(isset($codpaga[$j])) {
 <tr>
 <td>
 <input type="button" id="idro" value="idro" onclick="win_idro();">
+<input id="test_art" name="test_art" type="text" size="10" placeholder="ricerca" style="background-color: yellow;">	
 <input type="text" id="codart" name="codart" size="10" placeholder="codice articolo" onchange="carica_articolo(this);">
 </td>
 <td>
-<textarea id="desart" name="desart" placeholder="descrizione articolo" rows="1" cols="80">
+<textarea id="desart" name="desart" placeholder="descrizione articolo" rows="1" cols="70">
 </textarea>
 <input type="hidden" id="raee" name="raee">
 </td>

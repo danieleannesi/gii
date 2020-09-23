@@ -55,7 +55,7 @@ if(isset($_POST["idt"]))
   $flag_foto=$row["ORDI_FOTO"];
   $flag_scheda=$row["ORDI_SCHEDA"];
 */
-  $data_doc=substr($data_doc,8,2) . "/" . substr($data_doc,5,2) . "/" . substr($data_doc,0,4);
+$data_doc=substr($data_doc,8,2) . "/" . substr($data_doc,5,2) . "/" . substr($data_doc,0,4);
 $ragsoc=$row["cf_ragsoc"];
 $indirizzo=$row["cf_indirizzo"];
 $cap=$row["cf_cap"];
@@ -340,7 +340,7 @@ $this->Cell(0,0,"Del",0,0,'L');
     $this->SetXY(137,117);
     $this->Cell(0,4,"um",0,0,'L');
     $this->SetXY(146,117);
-    $this->Cell(0,4,"Quantitï¿½",0,0,'L');
+    $this->Cell(0,4,"Quantità",0,0,'L');
     $this->SetXY(160,117);
     $this->Cell(0,4,"Prezzo Un.",0,0,'L');
     $this->SetXY(177.4,117);
@@ -492,7 +492,7 @@ if ($num_pag==$tot_pag){
 	$this->Cell(22,0,$tot_iva,0,0,'R');
 	
 	$this->SetXY(170,267);
-	$this->Cell(22,0,"ï¿½",0,0,'L');
+	$this->Cell(22,0,"€",0,0,'L');
 	$this->SetFont('Times','B',12);
 	$this->SetXY(176,267);
 	$this->Cell(22,0,$totpre,0,0,'L');
@@ -514,31 +514,42 @@ $pdf->AddPage();
 //$pdf->SetAutoPageBreak(1,98);
 $pdf->SetFont('Times','',8);
 $k=1;
-$pdf->SetXY(5.5,122); 
+$pdf->SetXY(5.5,122);
+/*
+//legge righe
+  $prog=0; 
+  $qr="SELECT * FROM documrig LEFT JOIN articoli ON DOCR_ARTICOLO=Codice WHERE DOCR_ID=$idt ORDER BY DOCR_PROG";
+  $rst = mysql_query($qr, $con);
+  if (!$rst) {
+	echo "(leggi documrig) " . mysql_error();
+	mysql_close($con);
+	exit;
+	}
+  $tot_rec=mysql_num_rows($rst);
+  while($row = mysql_fetch_array($rst)) { 
+*/
+$dicitura = "CONSEGNA BORDO CAMION AL NUMERO CIVICO.";
+$dicitura_2 = "LA DATA DI CONSEGNA NON PUO' ESSERE GARANTITA, E' PURAMENTE INDICATIVA ESSENDO SUBORDINATA ALLE SPEDIZIONI DELLE SINGOLE CASE PRODUTTRICI E POTREBBE CAMBIARE A SECONDA DELLE DISPONIBILITA'";
+//	 
 $tot_rec=count($righe["desc"]) + 1;
 //
-for($j=0;$j<count($righe["desc"]);$j++)
+for($z=0;$z<count($righe["desc"]);$z++)
      {
-     $articolo=$righe["cod"][$j];
-     $descri=$righe["desc"][$j];
-     $quantita=$righe["qta"][$j];
-     $prezzo=$righe["uni"][$j];
-     $sconto=$righe["sco"][$j];
-     $totale=$righe["tot"][$j];
-     $raee=$righe["raee"][$j];
-     //$umis=$row["umis"][$j];
+     $articolo=$righe["cod"][$z];
+     $descri=$righe["desc"][$z];
+     $quantita=$righe["qta"][$z];
+     $prezzo=$righe["uni"][$z];
+     $sconto=$righe["sco"][$z];
+     $totale=$righe["tot"][$z];
+     $raee=$righe["raee"][$z];
+     //$umis=$row["umis"][$z];
      $umis="";
-     $aliq=$righe["iva"][$j];     	
-     	
-  
+     $aliq=$righe["iva"][$z];     	
      if(trim($sconto)=="0") { $sconto=""; }
 	 $quantita=number_format($quantita, 2, ',', '.');
 	 $prezzo=number_format($prezzo, 4, ',', '.');
 	 $totale=number_format($totale, 2, ',', '.');
 	 $sconto=number_format($sconto, 2, ',', '.');
-	 
-	 $dicitura = "CONSEGNA BORDO CAMION AL NUMERO CIVICO.";
-	 $dicitura_2 = "LA DATA DI CONSEGNA NON PUO' ESSERE GARANTITA, E' PURAMENTE INDICATIVA ESSENDO SUBORDINATA ALLE SPEDIZIONI DELLE SINGOLE CASE PRODUTTRICI E POTREBBE CAMBIARE A SECONDA DELLE DISPONIBILITA'";
 //
 /////////////divide descri in righe///////////////////////
      $pdf->SetFont('Times','',8);
@@ -617,7 +628,7 @@ for($j=0;$j<count($righe["desc"]);$j++)
       		$pdf->AddPage(); 
       		$pdf->SetXY(5.5,122);
 			}
-   }
+   } //fine for righe
 		
 		$pdf->Ln();
 		$y=$pdf->GetY(); 
@@ -628,9 +639,36 @@ for($j=0;$j<count($righe["desc"]);$j++)
 		$pdf->SetX(23,$y);
 		$pdf->Multicell(110,2,$dicitura_2,0,'L');   
 		
- //stampa righe note
+////////////////////////////////////////////   
+//stampa righe note
    $pdf->SetXY(6,228);
    $pdf->MultiCell(180,3.5,$note,0,'L');   
- 
+/*
+$j1=0;
+if(isset($riga_note)&&substr($riga_note[0],0,6)=="C.I.G.")
+  {
+   $pdf->SetX(22.9);
+   $pdf->Cell(114,4,$riga_note[0],0,1,'L');
+   $j1=1;
+  }
+$pdf->SetFont('Times','B',5.7);
+for($j=$j1;$j<$kr;$j++)
+   {
+   $pdf->SetX(22.9);
+   $pdf->Cell(114,4,$riga_note[$j],0,1,'L');
+   $k=$k+1;   
+   if($k>$tot_rig) { 
+      $k=1;
+      $pdf->AddPage(); 
+      $pdf->SetXY(22.9,122);
+	  }
+    }
+*/
+/////////////////////////////////////////////
+////stampa automatica////////////////////////////////////////
+//$pdf->AutoPrint(true);
+//
+//ob_end_flush();
+//$pdf->Output("/tmp/$numid.pdf");
 $pdf->Output();
 ?>
