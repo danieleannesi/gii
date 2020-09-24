@@ -54,7 +54,12 @@ $(document).ready(function() {
 	$(document).bind("ajaxStop",function() { $("#oscura").hide(); });
 	$(document).bind("ajaxStart",function() { $("#oscura").show(); });
     $('#nav').addClass('hiding');
-    $('#ragsoc').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsoc", ret2: "fornitore", ret3: "", ret4: "" }, gestisci_fornitori);    
+	$('#ragsoc').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsoc", ret2: "fornitore", ret3: "", ret4: "" }, gestisci_fornitori);
+	
+	$(".ordini").on("click","input#stampa", function(){
+		var dati = $("#formperdata").serialize();
+		window.location.assign("stampa_listaOrdiniForn.php?"+dati);
+	});
 });
 
     
