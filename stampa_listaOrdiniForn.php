@@ -38,7 +38,7 @@ $pdf->Cell(0,4,"GALLI INNOCENTI & C. S.p.A.",0,0,'L');
 $pdf->SetXY(250,10);
 $pdf->Cell(0,4,$today,0,0,'L'); 
 $pdf->SetXY(105,15);
-$pdf->Cell(0,4,"STAMPA ORDINI",0,0,'L'); 
+$pdf->Cell(0,4,"STAMPA ORDINI FORNITORI",0,0,'L'); 
     
 while($row = mysql_fetch_assoc($rst)) {
 
