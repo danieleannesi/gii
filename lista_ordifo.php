@@ -120,6 +120,7 @@ while(isset($codcom[$j])) {
                 'controlname': 'data_a'
         });
         </script>
+  <label for="evaso">Stato Ordine:</label> 
   <select id="evaso" name="evaso" class="form-control">
       <option value="T" <?php if($evaso=="T") echo "selected";?>>Tutti</option>
       <option value="E" <?php if($evaso=="E") echo "selected";?>>Evasi</option>
