@@ -53,7 +53,6 @@ $dal=addrizza("",$data_da);
 $al=addrizza("",$data_a);
 $fornitore="";
 $ragsoc="";
-$evaso=$_POST["evaso"];
 if(isset($_POST["data_da"]))
   {
   $utente=$_POST["utente"];
@@ -61,6 +60,7 @@ if(isset($_POST["data_da"]))
   $ragsoc=$_POST["ragsoc"];
   $data_da=$_POST["data_da"];
   $data_a=$_POST["data_a"];
+  $evaso=$_POST["evaso"];
   $deposito=$_POST["deposito"];
   $dal=addrizza("",$data_da);
   $al=addrizza("",$data_a);
@@ -70,7 +70,7 @@ if(isset($_POST["data_da"]))
 <div id="dialog" ></div>
 <div id="stampa" title=""></div>
 <div id="popup" title=""></div>
-<div>
+<div class="ordini">
 <form action="lista_ordifo.php" method='POST' id='formperdata' name='formperdata'>
 
 <label for="deposito">Deposito</label>
@@ -120,19 +120,19 @@ while(isset($codcom[$j])) {
                 'controlname': 'data_a'
         });
         </script>
-<label for="evaso">Stato Ordine:</label> 
-<select name="evaso" class="form-control">
-      <option value=""></option>
-      <option value="E">Evaso</option>
-      <option value="N">Non Evaso</option>
+  <label for="evaso">Stato Ordine:</label> 
+  <select id="evaso" name="evaso" class="form-control">
+      <option value="T" <?php if($evaso=="T") echo "selected";?>>Tutti</option>
+      <option value="E" <?php if($evaso=="E") echo "selected";?>>Evasi</option>
+      <option value="N"<?php if($evaso=="N") echo "selected";?>>Non Evasi</option>
   </select> 
 <br>        
 <label for="cliente">Fornitore</label>
 <input id="fornitore" name="fornitore" type="text"size="9" maxlength="8" value="<?php echo $fornitore;?>" readonly>
 <input name="ragsoc"  id="ragsoc" type="text" size="90" value="<?php echo $ragsoc;?>">
 &nbsp;&nbsp;
-
 <input type="button" id="listap" name="listap" value="LISTA" onclick="document.formperdata.submit();">
+<input type="button" id="stampa" name="stampa" value="STAMPA">
 
 </form>	
 </div>
@@ -148,16 +148,8 @@ if($utente>"")
   {
   $q2="AND ORDI_UTENTE='$utente'";
   }  
-
-  $q3 = "";
-if($evaso == "E"){
-  $q3=" AND ORDI_EVASO LIKE 'E' ";
-} 
-if($evaso == "N"){
-  $q3=" AND (ORDI_EVASO IS NULL OR ORDI_EVASO = '') ";
-}
- $qr="SELECT * FROM ordinifo LEFT JOIN clienti ON ORDI_FORNITORE=cf_cod WHERE ORDI_DEPOSITO='$deposito' AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al' $q1 $q2 $q3 ORDER BY ORDI_DATA_DOC DESC, ORDI_NUM_DOC DESC LIMIT 500";
-// echo $qr;   
+$qr="SELECT * FROM ordinifo LEFT JOIN clienti ON ORDI_FORNITORE=cf_cod WHERE ORDI_DEPOSITO='$deposito' AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al' $q1 $q2 ORDER BY ORDI_DATA_DOC DESC, ORDI_NUM_DOC DESC LIMIT 500";
+//echo $qr;   
 $rst=mysql_query($qr,$con);
 ?>
 <div class='tablewrap'><div class='tablewrap-inner'><table><thead><tr><th class='a'>Data</th><th class='b'>Numero</th><th class='c'>Ragione Sociale</th><th class='i'>&nbsp;</th><th class='i'>&nbsp;</th><th class='i'>&nbsp;</th></tr></thead><tbody>
@@ -172,11 +164,24 @@ while($row=mysql_fetch_assoc($rst)){
 	 $resto=$righe["qta"][$j]-$righe["qta_sca"][$j];
 	 $totresto+=$resto;
 	 }
-  $classe="";	 
-  if($totresto==0 || $ORDI_EVASO=="S")
-     {
-     $classe="style='background-color: #f7f493;'";
-	 }
+   
+ 
+  if($evaso=="N" && ($totresto==0 || $ORDI_EVASO=="S")){
+      $salta=1;	  	
+	  }
+    if($evaso=="E" && $totresto>0){
+      $salta=2;
+	  }
+    if($evaso=="E" && $ORDI_EVASO=="S"){
+      $salta=3;
+	  }
+	  
+  if($salta==0){
+    $classe="";	 
+    if($totresto==0 || $ORDI_EVASO=="S"){
+      $classe="style='background-color: #f7f493;'";
+    }
+  }
   $data=addrizza($row["ORDI_DATA_DOC"],"");
   echo "<tr $classe>";
   echo "<td class='a'>$data</td><td class='b'>$ORDI_NUM_DOC</td><td class='c'>$cf_ragsoc</td><td class='d'><td class='i'><img src='immagini/pencil.png' width='20px' title='MODIFICA ORDINE' onclick='chiama_ordifo($ORDI_ID);'></td><td class='i'><img src='immagini/printer.png' width='20px' title='Stampa' onclick='stampa_ordifo($ORDI_ID);'></td><td class='i'>&nbsp;&nbsp;&nbsp;&nbsp;<img src='immagini/button_drop.png' width='15px' title='ELIMINA ORDINE FORNITORE' onclick='cancella_doc($ORDI_ID, $ORDI_NUM_DOC);'></td></tr>";
