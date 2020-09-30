@@ -139,6 +139,7 @@ $ali3=$row["DOCT_ALIQUOTA_3"];
 $totfat=$row["DOCT_TOT_FATTURA"];
 $caparra=$row["DOCT_VERSAMENTO"]*-1;
 $trasporto=$row["DOCT_TRASPORTO"];
+$collaudo=$row["DOCT_COLLAUDO"];
 $spese_incasso=$row["DOCT_SPESE_INCASSO"];
 $rit_acc=0;
 //$totpagare=number_format($totfat - $row["DOCT_RIT_ACC"],2,".","");
@@ -335,7 +336,7 @@ $f=$f . "<DatiBeniServizi>\r\n";
 	   $natura=$a_iva["$aliq"]["ese"];
 	   }
      if(trim($sconto)=="0") { $sconto=""; }
-	 $quantita=number_format($quantita, 2, '.', '');
+	 $quantita=number_format($quantita, 4, '.', '');
 	 $prezzo=number_format($prezzo, 4, '.', '');
 	 $totale=number_format($totale, 2, '.', '');
 	 $scontoz=number_format($sconto, 2, '.', '');
@@ -390,19 +391,36 @@ $f=$f . "<DatiBeniServizi>\r\n";
 //
      if($trasporto>0)
        {
-     $f=$f . "<DettaglioLinee>\r\n";
-     $f=$f . "<NumeroLinea>$prog</NumeroLinea>\r\n";
-     $f=$f . "<Descrizione>TRASPORTO</Descrizione>\r\n";
-     $f=$f . "<Quantita>1.00</Quantita>\r\n";
-     $f=$f . "<PrezzoUnitario>$trasporto</PrezzoUnitario>\r\n";
-     $f=$f . "<PrezzoTotale>$trasporto</PrezzoTotale>\r\n";
-     $f=$f . "<AliquotaIVA>$aliquota.00</AliquotaIVA>\r\n";
-     if($aliquota=="0")
-       {
-       $f=$f . "<Natura>$natura</Natura>\r\n";
+       $f=$f . "<DettaglioLinee>\r\n";
+       $f=$f . "<NumeroLinea>$prog</NumeroLinea>\r\n";
+       $f=$f . "<Descrizione>TRASPORTO</Descrizione>\r\n";
+       $f=$f . "<Quantita>1.00</Quantita>\r\n";
+       $f=$f . "<PrezzoUnitario>$trasporto</PrezzoUnitario>\r\n";
+       $f=$f . "<PrezzoTotale>$trasporto</PrezzoTotale>\r\n";
+       $f=$f . "<AliquotaIVA>$aliquota.00</AliquotaIVA>\r\n";
+       if($aliquota=="0")
+         {
+         $f=$f . "<Natura>$natura</Natura>\r\n";
+	     }
+       $f=$f . "</DettaglioLinee>\r\n";
+       $prog++;
 	   }
-     $f=$f . "</DettaglioLinee>\r\n";
-     $prog++;
+
+     if($collaudo>0)
+       {
+       $f=$f . "<DettaglioLinee>\r\n";
+       $f=$f . "<NumeroLinea>$prog</NumeroLinea>\r\n";
+       $f=$f . "<Descrizione>COLLAUDO</Descrizione>\r\n";
+       $f=$f . "<Quantita>1.00</Quantita>\r\n";
+       $f=$f . "<PrezzoUnitario>$collaudo</PrezzoUnitario>\r\n";
+       $f=$f . "<PrezzoTotale>$collaudo</PrezzoTotale>\r\n";
+       $f=$f . "<AliquotaIVA>$aliquota.00</AliquotaIVA>\r\n";
+       if($aliquota=="0")
+         {
+         $f=$f . "<Natura>$natura</Natura>\r\n";
+	     }
+       $f=$f . "</DettaglioLinee>\r\n";
+       $prog++;
 	   }
 
      if($caparra!=0)
@@ -560,7 +578,7 @@ $f=$f . "</q1:FatturaElettronica>\r\n";
 //
 $nome_file="IT$piva_aruba" . "_" . $tipodoc . "_" . $anno_doc . $num_doc . ".xml";
 $res["msg"]="";
-$ret=file_put_contents("elettroniche/$nome_file",$f);
+$ret=file_put_contents("tmp/elettroniche/$nome_file",$f);
 if($ret===false)
   {
   file_put_contents("errori_pa.txt","$nome_file\n",FILE_APPEND);

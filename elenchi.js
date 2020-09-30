@@ -81,7 +81,7 @@ function gestisci_tasti(evt){
 		      var left = offset.left;
 		      //var top = offset.top + $('#' + ret1).height() - 12;
 		      var top = offset.top + $('#' + ret1).height() + 17;
-		      var css = {display:'block', position:'absolute', top: top, left: left, width: w, height:'500px',padding:'0px', margin:'0px'};
+		      var css = {display:'block', position:'absolute', top: top, left: left, width: w, height:'500px',padding:'0px',margin:'0px' };
 		      $(ul).append(ul2);
 		      $('#lista_vie').css(css);
 		      //$('#lista_vie').center();

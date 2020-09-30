@@ -42,6 +42,10 @@ if($tipo=="8")
   {
   header("Location: stafat.php?idt=$idt&tipo=$tipo&file=$file");
   }  
+if($tipo=="9")
+  {
+  header("Location: stafat.php?idt=$idt&tipo=$tipo&file=$file");
+  }
 echo "errore stampadoc.php: mancante tipo=$tipo";  
 exit;
 ?>

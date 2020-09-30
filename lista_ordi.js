@@ -56,7 +56,16 @@ $(document).ready(function() {
 	$(document).bind("ajaxStart",function() { $("#oscura").show(); });
     $('#nav').addClass('hiding');
 	$('#ragsoc').bind('keyup', { ar_lista: "lista_clienti", ret1: "ragsoc", ret2: "cliente", ret3: "", ret4: "" }, gestisci_clienti);   
-	
+
+    var options_rag = {
+      callback: function () { $('#ragsoc').val($('#test_rag').val()); $('#ragsoc').trigger('keyup'); },
+      wait: 750,
+      highlight: true,
+      allowSubmit: false,
+      captureLength: 2
+      }
+    $("#test_rag").typeWatch( options_rag );
+    	
 	$(".ordini").on("click","input#stampa", function(){
 		var dati = $("#formperdata").serialize();
 		window.location.assign("stampa_listaOrdini.php?"+dati);
