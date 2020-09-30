@@ -146,8 +146,14 @@ if($fornitore>"")
 $q2="";
 if($utente>"")
   {
-  $q2="AND ORDI_UTENTE='$utente'";
+  $q2=" AND ORDI_UTENTE='$utente'";
   }  
+if($evaso  == "E"){
+  $q2 .= " AND ORDI_EVASO LIKE '$evaso' ";
+} else {
+  $q2 .= " AND (ORDI_EVASO IS NULL OR ORDI_EVASO = '') ";
+} 
+   
 $qr="SELECT * FROM ordinifo LEFT JOIN clienti ON ORDI_FORNITORE=cf_cod WHERE ORDI_DEPOSITO='$deposito' AND ORDI_DATA_DOC BETWEEN '$dal' AND '$al' $q1 $q2 ORDER BY ORDI_DATA_DOC DESC, ORDI_NUM_DOC DESC LIMIT 500";
 //echo $qr;   
 $rst=mysql_query($qr,$con);

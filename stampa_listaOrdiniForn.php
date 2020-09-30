@@ -12,6 +12,8 @@ function AutoPrint($dialog=false)
 
 $deposito = $_GET["deposito"];
 $evasi = $_GET["evaso"];
+$utente = $_GET["utente"];
+$fornitore = $_GET["fornitore"];
 $data_da = date_format(date_create_from_format('d/m/Y', $_GET["data_da"]), 'Y-m-d');
 $data_a =  date_format(date_create_from_format('d/m/Y', $_GET["data_a"]), 'Y-m-d');
  
@@ -22,7 +24,12 @@ if($evasi == "E"){
 } else {
     $where = $where." AND (ORDI_EVASO IS NULL OR ORDI_EVASO = '') ";
 }
-
+if($fornitore){
+    $where = $where. " AND ORDI_FORNITORE LIKE '".$fornitore."' ";
+}
+if($utente){
+    $where = $where. " AND ORDI_UTENTE LIKE '".$utente."' ";
+}
 $sql = $sql.$where;
 //echo $sql; 
 $today = date("d-m-Y");
@@ -181,11 +188,10 @@ while($row = mysql_fetch_assoc($rst)) {
  
         
     }
-
-    if($totpre>0.0){
+ 
          $y = $pdf->getY(); 
         
-        /*$pdf->SetXY(195,$y); 
+        $pdf->SetXY(195,$y); 
         $pdf->Cell(0,4,"---------",0,0,'L'); 
         $pdf->SetXY(180,$y+3); 
         $pdf->Cell(0,4,"Totale: ",0,0,'L'); 
@@ -195,14 +201,13 @@ while($row = mysql_fetch_assoc($rst)) {
         $pdf->Cell(0,4,"IVA: ",0,0,'L'); 
         $pdf->SetXY(195,$y+8); 
         $pdf->Cell(0,4,$tot_iva,0,0,'L');
-        $pdf->SetXY(195,$y+12); */
+        $pdf->SetXY(195,$y+12); 
         $pdf->Cell(0,4,"---------",0,0,'L');  
         $pdf->SetXY(180,$y+15); 
         $pdf->Cell(0,4,"TOT. ",0,0,'L'); 
         $pdf->SetXY(195,$y+15); 
         $pdf->Cell(0,4,$totpre,0,0,'L'); 
-    }
-       
+  
      
     //fine righe ordine
    
