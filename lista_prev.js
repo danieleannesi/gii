@@ -3,10 +3,39 @@ function chiama_prev(idt)
 apri_win2("Gestione Preventivi","ges_prev.php?idt=" + idt);
 }
 //
-function stampa_prev(idt)
-{
-apri_win2("Stampa Preventivi","stampaprev.php?idt=" + idt);
+function stampa_prev(idt){
+	$("#dialogs").dialog('destroy');
+	var html = "<div><input type='radio' name='tipoStampa' value='1' /><label>Solo Listino</label><br>"
+		+"<input type='radio' name='tipoStampa' value='2' /><label>Completo</label><br>"
+		+"<input type='radio' name='tipoStampa' value='3' /><label>Solo Netti</label></div>";
+
+	$("#dialogs").dialog({
+		autoOpen: false,
+		modal: true,
+		async: false,
+		//closeOnEscape: false,
+		title:'STAMPA PREVENTIVO',
+		buttons: {
+			Ok: function() {
+ 				var dataPrint = $('input[type="radio"]:checked').val();
+				 $("#dialogs").dialog("close");
+				 var h="<iframe src=\"stampaprev.php?dataPrint="+dataPrint+"&idt=" + idt + "\" width=\"600px\" height=\"700px\"></iframe>";
+				$("#dialog").html(h).dialog({modal: true, buttons: '',title: "Stampa Ordine", width: 'auto', height:'auto'});
+				$("#dialog").dialog("open");
+			},
+			Annulla: function(){
+				$(this).dialog("close");
+			}
+		},
+		close: function (event, ui) { 
+			$(this).dialog('destroy');
+		}
+	});
+		
+	$("#dialogs").html(html);
+	$("#dialogs").dialog("open");
 }
+ 
 
 
 function elimina_doc(idt)
@@ -30,21 +59,21 @@ function cancella_doc(idt,numero)
 {
 	var html="Eliminare Preventivo Numero " + numero;
 	 $("#dialogs").dialog({
-							autoOpen: false,
-							modal: true,
-							async: false,
-							//closeOnEscape: false,
-							title:'AVVISO',
-							buttons: {	Ok: function() {
-                                                        elimina_doc(idt);
-                                                        document.formperdata.submit();
-														$(this).dialog("close");
-														},
-										Annulla: function(){
-														$(this).dialog("close");
-														}
+			autoOpen: false,
+			modal: true,
+			async: false,
+			//closeOnEscape: false,
+			title:'AVVISO',
+			buttons: {	Ok: function() {
+										elimina_doc(idt);
+										document.formperdata.submit();
+										$(this).dialog("close");
+										},
+						Annulla: function(){
+										$(this).dialog("close");
 										}
-					});
+						}
+		});
 
 	$("#dialogs").html(html);
 	$("#dialogs").dialog("open");

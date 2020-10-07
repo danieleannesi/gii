@@ -25,6 +25,11 @@ if(isset($_POST["idt"]))
   {
   $idt=$_POST["idt"];
   }
+
+  $dataPrint = $_GET["dataPrint"];
+  /*switch $dataPrint {
+    case "1"
+  }*/
 //  
 //legge documento
   $qr="SELECT * FROM preventivi LEFT JOIN clienti ON PREV_CLIENTE=cf_cod WHERE PREV_ID=$idt";
@@ -468,7 +473,11 @@ for($j=0;$j<count($righe["desc"]);$j++)
      $umis="";
      $aliq=$righe["iva"][$j];
      if(trim($sconto)=="0") { $sconto=""; }
-	 $quantita=number_format($quantita, 2, ',', '.');
+   $quantita=number_format($quantita, 2, ',', '.');
+
+   if($dataPrint == "3"){
+     $prezzo = $prezzo - (($prezzo*$sconto)/100);
+   }  
 	 $prezzo=number_format($prezzo, 4, ',', '.');
 	 $totale=number_format($totale, 2, ',', '.');
 	 $sconto=number_format($sconto, 2, ',', '.');
@@ -482,13 +491,19 @@ for($j=0;$j<count($righe["desc"]);$j++)
      $pdf->SetFont('Times','',10);
      $pdf->SetXY(6,$mm1);
      $pdf->SetFont('Times','',10);
-	 $pdf->Cell(23.5,4,$articolo,0,0,'L');
+	   $pdf->Cell(23.5,4,$articolo,0,0,'L');
      $pdf->SetXY(122.5,$mm);
    	 $pdf->Cell(9,4,$umis,0,0,'L');
-   	 $pdf->Cell(17,4,$quantita,0,0,'R');
-   	 $pdf->Cell(22.6,4,$prezzo,0,0,'R');
-   	 $pdf->Cell(9,4,$sconto,0,0,'R');
-   	 $pdf->Cell(25,4,$totale,0,1,'R');
+     $pdf->Cell(17,4,$quantita,0,0,'R'); 
+     $pdf->Cell(22.6,4,$prezzo,0,0,'R');
+        
+    if($dataPrint == "2"){ 
+      $pdf->Cell(9,4,$sconto,0,0,'R');
+    } 
+     $pdf->Cell(25,4,$totale,0,1,'R');
+    
+     
+   	 
      $k=$k+1;
      $tot_rec++;
      $mm+=$a;			
@@ -499,17 +514,19 @@ for($j=0;$j<count($righe["desc"]);$j++)
            $totale=$raee*$righe["qta"][$j];
 	       $prezzo=number_format($raee, 4, ',', '.');
 	       $totale=number_format($totale, 2, ',', '.');
-    	   $pdf->SetXY(6,$mm);
+    	     $pdf->SetXY(6,$mm);
            $pdf->SetFont('Times','',10);
-	       $pdf->Cell(23.5,4,"",0,0,'L');
+	        $pdf->Cell(23.5,4,"",0,0,'L');
            $pdf->SetFont('Times','',9);
            $pdf->Cell(93,4,"ECO CONTRIBUTO RAEE",0,0,'L');
            $pdf->SetFont('Times','',10);
    		   $pdf->Cell(9,4,$umis,0,0,'L');
-   		   $pdf->Cell(17,4,$quantita,0,0,'R');
-   		   $pdf->Cell(22.6,4,$prezzo,0,0,'R');
-   		   $pdf->Cell(9,4,"",0,0,'R');
-   		   $pdf->Cell(25,4,$totale,0,1,'R');
+          $pdf->Cell(17,4,$quantita,0,0,'R');
+           
+            $pdf->Cell(22.6,4,$prezzo,0,0,'R');
+            $pdf->Cell(9,4,"",0,0,'R');
+            $pdf->Cell(25,4,$totale,0,1,'R');
+           
            $k=$k+1;
            $mm+=4;
 		  }
